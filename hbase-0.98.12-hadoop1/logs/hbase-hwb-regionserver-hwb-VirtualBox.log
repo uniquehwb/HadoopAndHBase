@@ -1,0 +1,356 @@
+So 3. Mai 11:37:13 CEST 2015 Starting regionserver on hwb-VirtualBox
+/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/hbase-daemon.sh: line 207: core: command not found
+2015-05-03 11:37:14,506 INFO  [main] util.VersionInfo: HBase 0.98.12-hadoop1
+2015-05-03 11:37:14,507 INFO  [main] util.VersionInfo: Subversion git://aspire/home/apurtell/src/hbase -r bbf8bf4362e858bd9bd0511c9289c31b09b7a927
+2015-05-03 11:37:14,507 INFO  [main] util.VersionInfo: Compiled by apurtell on Thu Apr  9 18:55:45 PDT 2015
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:LC_TELEPHONE=de_DE.UTF-8
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:JAVA_HOME=/usr
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:SHLVL=3
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:HBASE_LOG_DIR=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../logs
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:HBASE_HOME=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:HBASE_OPTS=-XX:+UseConcMarkSweepGC   -Dhbase.log.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../logs -Dhbase.log.file=hbase-hwb-regionserver-hwb-VirtualBox.log -Dhbase.home.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/.. -Dhbase.id.str=hwb -Dhbase.root.logger=INFO,RFA -Dhbase.security.logger=INFO,RFAS
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:HBASE_ENV_INIT=true
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:SSH_CLIENT=10.0.2.9 51356 22
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:LC_NUMERIC=de_DE.UTF-8
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:LC_NAME=de_DE.UTF-8
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:MAIL=/var/mail/hwb
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:HBASE_ZNODE_FILE=/tmp/hbase-hwb-regionserver.znode
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:PWD=/home/hwb/Documents/hbase-0.98.12-hadoop1
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:LC_PAPER=de_DE.UTF-8
+2015-05-03 11:37:15,110 INFO  [main] util.ServerCommandLine: env:LOGNAME=hwb
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:LC_IDENTIFICATION=de_DE.UTF-8
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:HBASE_NICENESS=0
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:HBASE_REST_OPTS=
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:MALLOC_ARENA_MAX=4
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:SSH_CONNECTION=10.0.2.9 51356 10.0.2.9 22
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:LC_ADDRESS=de_DE.UTF-8
+2015-05-03 11:37:15,111 INFO  [main] util.ServerCommandLine: env:SHELL=/bin/bash
+2015-05-03 11:37:15,123 INFO  [main] util.ServerCommandLine: env:HBASE_ROOT_LOGGER=INFO,RFA
+2015-05-03 11:37:15,127 INFO  [main] util.ServerCommandLine: env:CLASSPATH=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../conf:/usr/lib/tools.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/activation-1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/asm-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-1.7.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-core-1.8.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-cli-1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-codec-1.7.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-collections-3.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-configuration-1.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-digester-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-el-1.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-httpclient-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-io-2.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-lang-2.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-logging-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-math-2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-net-1.4.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/findbugs-annotations-1.3.9-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/guava-12.0.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hadoop-core-1.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hamcrest-core-1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-annotations-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-checkstyle-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-client-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-examples-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop1-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-prefix-tree-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-protocol-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-rest-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-shell-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-testing-util-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-thrift-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/high-scale-lib-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/htrace-core-2.04.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpclient-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpcore-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-core-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-jaxrs-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-mapper-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-xc-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jamon-runtime-2.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-compiler-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-runtime-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-api-2.2.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-impl-2.2.3-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jcodings-1.0.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-client-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-core-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-json-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-server-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jettison-1.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-sslengine-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-util-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/joni-2.1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jruby-complete-1.6.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-api-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsr305-1.3.9.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/junit-4.11.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/libthrift-0.9.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/log4j-1.2.17.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/metrics-core-2.2.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/netty-3.6.6.Final.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/protobuf-java-2.5.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/servlet-api-2.5-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-api-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-log4j12-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/xmlenc-0.52.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/zookeeper-3.4.6.jar:
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:HBASE_THRIFT_OPTS=
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:LC_MONETARY=de_DE.UTF-8
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:USER=hwb
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:HBASE_SECURITY_LOGGER=INFO,RFAS
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:HOME=/home/hwb
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:HBASE_START_FILE=/tmp/hbase-hwb-regionserver.autorestart
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:XDG_SESSION_ID=24
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:LC_MEASUREMENT=de_DE.UTF-8
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:LC_TIME=de_DE.UTF-8
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:HBASE_LOGFILE=hbase-hwb-regionserver-hwb-VirtualBox.log
+2015-05-03 11:37:15,128 INFO  [main] util.ServerCommandLine: env:XDG_RUNTIME_DIR=/run/user/1000
+2015-05-03 11:37:15,136 INFO  [main] util.ServerCommandLine: env:LANG=en_US.UTF-8
+2015-05-03 11:37:15,136 INFO  [main] util.ServerCommandLine: env:HBASE_LOG_PREFIX=hbase-hwb-regionserver-hwb-VirtualBox
+2015-05-03 11:37:15,136 INFO  [main] util.ServerCommandLine: env:HBASE_IDENT_STRING=hwb
+2015-05-03 11:37:15,147 INFO  [main] util.ServerCommandLine: vmName=OpenJDK 64-Bit Server VM, vmVendor=Oracle Corporation, vmVersion=24.79-b02
+2015-05-03 11:37:15,148 INFO  [main] util.ServerCommandLine: vmInputArguments=[-Dproc_regionserver, -XX:OnOutOfMemoryError=kill -9 %p, -Xmx1000m, -XX:+UseConcMarkSweepGC, -Dhbase.log.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../logs, -Dhbase.log.file=hbase-hwb-regionserver-hwb-VirtualBox.log, -Dhbase.home.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/.., -Dhbase.id.str=hwb, -Dhbase.root.logger=INFO,RFA, -Dhbase.security.logger=INFO,RFAS]
+2015-05-03 11:37:15,965 DEBUG [main] regionserver.HRegionServer: regionserver/hwb-VirtualBox/127.0.1.1:60020 HConnection server-to-server retries=350
+2015-05-03 11:37:16,834 INFO  [main] ipc.SimpleRpcScheduler: Using default user call queue, count=3
+2015-05-03 11:37:16,903 INFO  [main] ipc.RpcServer: regionserver/hwb-VirtualBox/127.0.1.1:60020: started 10 reader(s).
+2015-05-03 11:37:17,016 INFO  [main] impl.MetricsConfig: loaded properties from hadoop-metrics2-hbase.properties
+2015-05-03 11:37:17,113 INFO  [main] impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-03 11:37:17,124 INFO  [main] impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-03 11:37:17,124 INFO  [main] impl.MetricsSystemImpl: HBase metrics system started
+2015-05-03 11:37:17,128 INFO  [main] impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-03 11:37:17,146 INFO  [main] impl.MetricsSourceAdapter: MBean for source IPC,sub=IPC registered.
+2015-05-03 11:37:17,385 INFO  [main] impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-03 11:37:17,386 WARN  [main] impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-03 11:37:17,396 INFO  [main] hfile.CacheConfig: Allocating LruBlockCache with maximum size 396.7m
+2015-05-03 11:37:17,519 INFO  [main] mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-03 11:37:17,611 INFO  [main] http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-03 11:37:17,628 INFO  [main] http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 60030
+2015-05-03 11:37:17,630 INFO  [main] http.HttpServer: listener.getLocalPort() returned 60030 webServer.getConnectors()[0].getLocalPort() returned 60030
+2015-05-03 11:37:17,630 INFO  [main] http.HttpServer: Jetty bound to port 60030
+2015-05-03 11:37:17,630 INFO  [main] mortbay.log: jetty-6.1.26
+2015-05-03 11:37:18,764 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:60030
+2015-05-03 11:37:18,885 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Process identifier=regionserver:60020 connecting to ZooKeeper ensemble=rs1:2181,master:2181
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:host.name=hwb-VirtualBox
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.version=1.7.0_79
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.class.path=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../conf:/usr/lib/tools.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/activation-1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/asm-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-1.7.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-core-1.8.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-cli-1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-codec-1.7.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-collections-3.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-configuration-1.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-digester-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-el-1.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-httpclient-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-io-2.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-lang-2.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-logging-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-math-2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-net-1.4.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/findbugs-annotations-1.3.9-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/guava-12.0.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hadoop-core-1.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hamcrest-core-1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-annotations-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-checkstyle-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-client-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-examples-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop1-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-prefix-tree-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-protocol-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-rest-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-shell-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-testing-util-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-thrift-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/high-scale-lib-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/htrace-core-2.04.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpclient-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpcore-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-core-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-jaxrs-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-mapper-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-xc-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jamon-runtime-2.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-compiler-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-runtime-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-api-2.2.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-impl-2.2.3-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jcodings-1.0.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-client-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-core-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-json-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-server-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jettison-1.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-sslengine-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-util-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/joni-2.1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jruby-complete-1.6.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-api-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsr305-1.3.9.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/junit-4.11.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/libthrift-0.9.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/log4j-1.2.17.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/metrics-core-2.2.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/netty-3.6.6.Final.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/protobuf-java-2.5.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/servlet-api-2.5-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-api-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-log4j12-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/xmlenc-0.52.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/zookeeper-3.4.6.jar:
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:os.version=3.16.0-30-generic
+2015-05-03 11:37:18,911 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:user.name=hwb
+2015-05-03 11:37:18,932 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:user.home=/home/hwb
+2015-05-03 11:37:18,932 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:user.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1
+2015-05-03 11:37:18,937 INFO  [regionserver60020] zookeeper.ZooKeeper: Initiating client connection, connectString=rs1:2181,master:2181 sessionTimeout=90000 watcher=regionserver:600200x0, quorum=rs1:2181,master:2181, baseZNode=/hbase
+2015-05-03 11:37:18,926 INFO  [main] regionserver.ShutdownHook: Installed shutdown hook thread: Shutdownhook:regionserver60020
+2015-05-03 11:37:19,045 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-05-03 11:37:19,065 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-05-03 11:37:19,134 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x4d1922fbbb0000, negotiated timeout = 90000
+2015-05-03 11:37:19,324 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x6f943fe5 connecting to ZooKeeper ensemble=rs1:2181,master:2181
+2015-05-03 11:37:19,324 INFO  [regionserver60020] zookeeper.ZooKeeper: Initiating client connection, connectString=rs1:2181,master:2181 sessionTimeout=90000 watcher=hconnection-0x6f943fe50x0, quorum=rs1:2181,master:2181, baseZNode=/hbase
+2015-05-03 11:37:19,331 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-05-03 11:37:19,332 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-05-03 11:37:19,339 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x4d1922fbbb0001, negotiated timeout = 90000
+2015-05-03 11:37:19,657 DEBUG [regionserver60020] catalog.CatalogTracker: Starting catalog tracker org.apache.hadoop.hbase.catalog.CatalogTracker@7c161c95
+2015-05-03 11:37:19,665 INFO  [regionserver60020] regionserver.HRegionServer: ClusterId : b2aca81d-534c-4f1d-97cd-5703b16550e7
+2015-05-03 11:37:19,676 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is initializing
+2015-05-03 11:37:19,717 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/acquired already exists and this is not a retry
+2015-05-03 11:37:19,777 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is initialized
+2015-05-03 11:37:19,781 INFO  [regionserver60020] regionserver.MemStoreFlusher: globalMemStoreLimit=396.7m, globalMemStoreLimitLowMark=376.8m, maxHeap=991.7m
+2015-05-03 11:37:19,810 INFO  [regionserver60020] regionserver.HRegionServer: CompactionChecker runs every 10sec
+2015-05-03 11:37:19,822 INFO  [regionserver60020] regionserver.HRegionServer: reportForDuty to master=hwb-VirtualBox,60000,1430645834420 with port=60020, startcode=1430645837225
+2015-05-03 11:37:20,298 DEBUG [regionserver60020] regionserver.HRegionServer: Config from master: hbase.rootdir=file:///home/hwb/Documents/hbase
+2015-05-03 11:37:20,298 DEBUG [regionserver60020] regionserver.HRegionServer: Config from master: fs.default.name=file:/
+2015-05-03 11:37:20,298 DEBUG [regionserver60020] regionserver.HRegionServer: Config from master: hbase.master.info.port=60010
+2015-05-03 11:37:20,330 DEBUG [regionserver60020] fs.HFileSystem: FileSystem does not support setWriteChecksum, ignoring
+2015-05-03 11:37:20,342 DEBUG [regionserver60020] fs.HFileSystem: The file system is not a DistributedFileSystem. Skipping on block location reordering
+2015-05-03 11:37:20,729 DEBUG [regionserver60020] regionserver.HRegionServer: logdir=file:/home/hwb/Documents/hbase/WALs/hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:20,813 DEBUG [regionserver60020] regionserver.Replication: ReplicationStatisticsThread 300
+2015-05-03 11:37:20,837 INFO  [regionserver60020] wal.FSHLog: WAL/HLog configuration: blocksize=32 MB, rollsize=30.4 MB, enabled=true
+2015-05-03 11:37:20,872 WARN  [regionserver60020] util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-05-03 11:37:20,907 INFO  [regionserver60020] wal.FSHLog: New WAL /home/hwb/Documents/hbase/WALs/hwb-VirtualBox,60020,1430645837225/hwb-VirtualBox%2C60020%2C1430645837225.1430645840838
+2015-05-03 11:37:20,908 INFO  [regionserver60020] wal.FSHLog: FileSystem's output stream doesn't support getNumCurrentReplicas; --HDFS-826 not available; fsOut=org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer
+2015-05-03 11:37:20,908 INFO  [regionserver60020] wal.FSHLog: FileSystem's output stream doesn't support getPipeline; not available; fsOut=org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer
+2015-05-03 11:37:20,948 INFO  [regionserver60020] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=WAL registered.
+2015-05-03 11:37:20,968 INFO  [regionserver60020] regionserver.MetricsRegionServerWrapperImpl: Computing regionserver metrics every 5000 milliseconds
+2015-05-03 11:37:20,971 INFO  [regionserver60020] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=Server registered.
+2015-05-03 11:37:20,985 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_OPEN_REGION-hwb-VirtualBox:60020, corePoolSize=3, maxPoolSize=3
+2015-05-03 11:37:20,985 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_OPEN_META-hwb-VirtualBox:60020, corePoolSize=1, maxPoolSize=1
+2015-05-03 11:37:20,985 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_CLOSE_REGION-hwb-VirtualBox:60020, corePoolSize=3, maxPoolSize=3
+2015-05-03 11:37:20,986 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_CLOSE_META-hwb-VirtualBox:60020, corePoolSize=1, maxPoolSize=1
+2015-05-03 11:37:20,986 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_LOG_REPLAY_OPS-hwb-VirtualBox:60020, corePoolSize=2, maxPoolSize=2
+2015-05-03 11:37:21,005 INFO  [regionserver60020] regionserver.ReplicationSourceManager: Current list of replicators: [hwb-VirtualBox,60020,1430645837225] other RSs: [hwb-VirtualBox,60020,1430645837225]
+2015-05-03 11:37:21,087 INFO  [regionserver60020] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=Replication registered.
+2015-05-03 11:37:21,091 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0xf3a6f6d connecting to ZooKeeper ensemble=rs1:2181,master:2181
+2015-05-03 11:37:21,091 INFO  [regionserver60020] zookeeper.ZooKeeper: Initiating client connection, connectString=rs1:2181,master:2181 sessionTimeout=90000 watcher=hconnection-0xf3a6f6d0x0, quorum=rs1:2181,master:2181, baseZNode=/hbase
+2015-05-03 11:37:21,092 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-05-03 11:37:21,092 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-05-03 11:37:21,098 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x4d1922fbbb0003, negotiated timeout = 90000
+2015-05-03 11:37:21,106 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: starting
+2015-05-03 11:37:21,106 INFO  [RpcServer.listener,port=60020] ipc.RpcServer: RpcServer.listener,port=60020: starting
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=0 queue=0
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=1 queue=1
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=2 queue=2
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=3 queue=0
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=4 queue=1
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=5 queue=2
+2015-05-03 11:37:21,107 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=6 queue=0
+2015-05-03 11:37:21,108 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=7 queue=1
+2015-05-03 11:37:21,108 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=8 queue=2
+2015-05-03 11:37:21,108 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=9 queue=0
+2015-05-03 11:37:21,108 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=10 queue=1
+2015-05-03 11:37:21,108 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=11 queue=2
+2015-05-03 11:37:21,108 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=12 queue=0
+2015-05-03 11:37:21,109 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=13 queue=1
+2015-05-03 11:37:21,109 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=14 queue=2
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=15 queue=0
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=16 queue=1
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=17 queue=2
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=18 queue=0
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=19 queue=1
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=20 queue=2
+2015-05-03 11:37:21,110 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=21 queue=0
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=22 queue=1
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=23 queue=2
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=24 queue=0
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=25 queue=1
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=26 queue=2
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=27 queue=0
+2015-05-03 11:37:21,111 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=28 queue=1
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=29 queue=2
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=0 queue=0
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=1 queue=0
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=2 queue=0
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=3 queue=0
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=4 queue=0
+2015-05-03 11:37:21,112 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=5 queue=0
+2015-05-03 11:37:21,117 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=6 queue=0
+2015-05-03 11:37:21,118 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=7 queue=0
+2015-05-03 11:37:21,118 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=8 queue=0
+2015-05-03 11:37:21,118 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=9 queue=0
+2015-05-03 11:37:21,118 DEBUG [regionserver60020] ipc.RpcExecutor: Replication Start Handler index=0 queue=0
+2015-05-03 11:37:21,118 DEBUG [regionserver60020] ipc.RpcExecutor: Replication Start Handler index=1 queue=0
+2015-05-03 11:37:21,118 DEBUG [regionserver60020] ipc.RpcExecutor: Replication Start Handler index=2 queue=0
+2015-05-03 11:37:21,141 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225] regionserver.SplitLogWorker: SplitLogWorker hwb-VirtualBox,60020,1430645837225 starting
+2015-05-03 11:37:21,142 INFO  [regionserver60020] regionserver.HRegionServer: Serving as hwb-VirtualBox,60020,1430645837225, RpcServer on hwb-VirtualBox/127.0.1.1:60020, sessionid=0x4d1922fbbb0000
+2015-05-03 11:37:21,150 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x20d3e3b1 connecting to ZooKeeper ensemble=rs1:2181,master:2181
+2015-05-03 11:37:21,150 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225] zookeeper.ZooKeeper: Initiating client connection, connectString=rs1:2181,master:2181 sessionTimeout=90000 watcher=hconnection-0x20d3e3b10x0, quorum=rs1:2181,master:2181, baseZNode=/hbase
+2015-05-03 11:37:21,151 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-05-03 11:37:21,151 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-05-03 11:37:21,157 INFO  [regionserver60020] regionserver.RegionServerCoprocessorHost: System coprocessor loading is enabled
+2015-05-03 11:37:21,157 INFO  [regionserver60020] regionserver.RegionServerCoprocessorHost: Table coprocessor loading is enabled
+2015-05-03 11:37:21,157 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is starting
+2015-05-03 11:37:21,157 DEBUG [regionserver60020] snapshot.RegionServerSnapshotManager: Start Snapshot Manager hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:21,157 DEBUG [regionserver60020] procedure.ZKProcedureMemberRpcs: Starting procedure member 'hwb-VirtualBox,60020,1430645837225'
+2015-05-03 11:37:21,157 DEBUG [regionserver60020] procedure.ZKProcedureMemberRpcs: Checking for aborted procedures on node: '/hbase/online-snapshot/abort'
+2015-05-03 11:37:21,169 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x4d1922fbbb0004, negotiated timeout = 90000
+2015-05-03 11:37:21,170 DEBUG [regionserver60020] procedure.ZKProcedureMemberRpcs: Looking for new procedures under znode:'/hbase/online-snapshot/acquired'
+2015-05-03 11:37:21,172 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is started
+2015-05-03 11:37:25,102 INFO  [PriorityRpcServer.handler=0,queue=0,port=60020] regionserver.HRegionServer: Open hbase:meta,,1.1588230740
+2015-05-03 11:37:25,137 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioning 1588230740 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-05-03 11:37:25,221 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioned node 1588230740 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-05-03 11:37:25,222 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.HRegionServer: logdir=file:/home/hwb/Documents/hbase/WALs/hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:25,222 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] wal.FSHLog: WAL/HLog configuration: blocksize=32 MB, rollsize=30.4 MB, enabled=true
+2015-05-03 11:37:25,263 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] wal.FSHLog: New WAL /home/hwb/Documents/hbase/WALs/hwb-VirtualBox,60020,1430645837225/hwb-VirtualBox%2C60020%2C1430645837225.1430645845231.meta
+2015-05-03 11:37:25,263 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] wal.FSHLog: FileSystem's output stream doesn't support getNumCurrentReplicas; --HDFS-826 not available; fsOut=org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer
+2015-05-03 11:37:25,263 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] wal.FSHLog: FileSystem's output stream doesn't support getPipeline; not available; fsOut=org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer
+2015-05-03 11:37:25,315 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Opening region: {ENCODED => 1588230740, NAME => 'hbase:meta,,1', STARTKEY => '', ENDKEY => ''}
+2015-05-03 11:37:25,469 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] coprocessor.CoprocessorHost: Loading coprocessor class org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint with path null and priority 536870911
+2015-05-03 11:37:25,475 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Registered coprocessor service: region=hbase:meta,,1 service=MultiRowMutationService
+2015-05-03 11:37:25,488 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.RegionCoprocessorHost: Loaded coprocessor org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint from HTD of hbase:meta successfully.
+2015-05-03 11:37:25,491 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=Regions registered.
+2015-05-03 11:37:25,491 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table meta 1588230740
+2015-05-03 11:37:25,492 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Instantiated hbase:meta,,1.1588230740
+2015-05-03 11:37:25,619 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-05-03 11:37:25,648 INFO  [StoreFileOpenerThread-info-1] util.ChecksumType: Checksum using org.apache.hadoop.util.PureJavaCrc32
+2015-05-03 11:37:25,700 DEBUG [StoreOpener-1588230740-1] regionserver.HStore: loaded file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740/info/e0bbd598fb85413db905b9031207c22c, isReference=false, isBulkLoadResult=false, seqid=19, majorCompaction=false
+2015-05-03 11:37:25,711 DEBUG [StoreOpener-1588230740-1] regionserver.HStore: loaded file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740/info/00b7c52b22db4b17bb9a8e8c95e16361, isReference=false, isBulkLoadResult=false, seqid=14, majorCompaction=true
+2015-05-03 11:37:25,741 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Found 0 recovered edits file(s) under file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740
+2015-05-03 11:37:25,741 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Onlined 1588230740; next sequenceid=20
+2015-05-03 11:37:25,741 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Attempting to retransition opening state of node 1588230740
+2015-05-03 11:37:25,756 INFO  [PostOpenDeployTasks:1588230740] regionserver.HRegionServer: Post open deploy tasks for region=hbase:meta,,1.1588230740
+2015-05-03 11:37:25,757 INFO  [PostOpenDeployTasks:1588230740] regionserver.HRegionServer: Updating zk with meta location
+2015-05-03 11:37:25,758 INFO  [PostOpenDeployTasks:1588230740] zookeeper.ZooKeeperNodeTracker: Setting hbase:meta region location in ZooKeeper as hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:25,827 INFO  [PostOpenDeployTasks:1588230740] regionserver.HRegionServer: Finished post open deploy task for hbase:meta,,1.1588230740
+2015-05-03 11:37:25,828 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioning 1588230740 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-05-03 11:37:25,851 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioned node 1588230740 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-05-03 11:37:25,851 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] handler.OpenRegionHandler: Transitioned 1588230740 to OPENED in zk on hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:25,851 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0] handler.OpenRegionHandler: Opened hbase:meta,,1.1588230740 on hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:26,113 INFO  [PriorityRpcServer.handler=0,queue=0,port=60020] regionserver.HRegionServer: Open test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:37:26,131 INFO  [PriorityRpcServer.handler=0,queue=0,port=60020] regionserver.HRegionServer: Open hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:37:26,137 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioning 1c36300ce560a054f2aad4ce3b1afcd9 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-05-03 11:37:26,141 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioning f633db02a9250f006ed024a0dd01ade9 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-05-03 11:37:26,149 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioned node 1c36300ce560a054f2aad4ce3b1afcd9 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-05-03 11:37:26,149 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Opening region: {ENCODED => 1c36300ce560a054f2aad4ce3b1afcd9, NAME => 'test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.', STARTKEY => '', ENDKEY => ''}
+2015-05-03 11:37:26,151 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table test 1c36300ce560a054f2aad4ce3b1afcd9
+2015-05-03 11:37:26,152 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Instantiated test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:37:26,156 INFO  [StoreOpener-1c36300ce560a054f2aad4ce3b1afcd9-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-05-03 11:37:26,157 DEBUG [StoreOpener-1c36300ce560a054f2aad4ce3b1afcd9-1] regionserver.HRegionFileSystem: No StoreFiles for: file:/home/hwb/Documents/hbase/data/default/test/1c36300ce560a054f2aad4ce3b1afcd9/cf
+2015-05-03 11:37:26,158 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Found 0 recovered edits file(s) under file:/home/hwb/Documents/hbase/data/default/test/1c36300ce560a054f2aad4ce3b1afcd9
+2015-05-03 11:37:26,159 INFO  [RS_OPEN_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Onlined 1c36300ce560a054f2aad4ce3b1afcd9; next sequenceid=1
+2015-05-03 11:37:26,159 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Attempting to retransition opening state of node 1c36300ce560a054f2aad4ce3b1afcd9
+2015-05-03 11:37:26,165 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioned node f633db02a9250f006ed024a0dd01ade9 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-05-03 11:37:26,166 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Opening region: {ENCODED => f633db02a9250f006ed024a0dd01ade9, NAME => 'hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.', STARTKEY => '', ENDKEY => ''}
+2015-05-03 11:37:26,166 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table namespace f633db02a9250f006ed024a0dd01ade9
+2015-05-03 11:37:26,166 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Instantiated hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:37:26,178 INFO  [StoreOpener-f633db02a9250f006ed024a0dd01ade9-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-05-03 11:37:26,184 INFO  [PostOpenDeployTasks:1c36300ce560a054f2aad4ce3b1afcd9] regionserver.HRegionServer: Post open deploy tasks for region=test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:37:26,239 DEBUG [StoreOpener-f633db02a9250f006ed024a0dd01ade9-1] regionserver.HStore: loaded file:/home/hwb/Documents/hbase/data/hbase/namespace/f633db02a9250f006ed024a0dd01ade9/info/62eb3c5e7278491fa250f96dccc05a2e, isReference=false, isBulkLoadResult=false, seqid=4, majorCompaction=false
+2015-05-03 11:37:26,241 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Found 0 recovered edits file(s) under file:/home/hwb/Documents/hbase/data/hbase/namespace/f633db02a9250f006ed024a0dd01ade9
+2015-05-03 11:37:26,242 INFO  [RS_OPEN_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Onlined f633db02a9250f006ed024a0dd01ade9; next sequenceid=5
+2015-05-03 11:37:26,242 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Attempting to retransition opening state of node f633db02a9250f006ed024a0dd01ade9
+2015-05-03 11:37:26,252 INFO  [PostOpenDeployTasks:f633db02a9250f006ed024a0dd01ade9] regionserver.HRegionServer: Post open deploy tasks for region=hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:37:26,335 INFO  [PostOpenDeployTasks:f633db02a9250f006ed024a0dd01ade9] catalog.MetaEditor: Updated row hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9. with server=hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:26,335 INFO  [PostOpenDeployTasks:f633db02a9250f006ed024a0dd01ade9] regionserver.HRegionServer: Finished post open deploy task for hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:37:26,336 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioning f633db02a9250f006ed024a0dd01ade9 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-05-03 11:37:26,343 INFO  [PostOpenDeployTasks:1c36300ce560a054f2aad4ce3b1afcd9] catalog.MetaEditor: Updated row test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9. with server=hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:26,343 INFO  [PostOpenDeployTasks:1c36300ce560a054f2aad4ce3b1afcd9] regionserver.HRegionServer: Finished post open deploy task for test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:37:26,343 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioning 1c36300ce560a054f2aad4ce3b1afcd9 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-05-03 11:37:26,349 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioned node f633db02a9250f006ed024a0dd01ade9 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-05-03 11:37:26,349 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] handler.OpenRegionHandler: Transitioned f633db02a9250f006ed024a0dd01ade9 to OPENED in zk on hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:26,349 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-1] handler.OpenRegionHandler: Opened hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9. on hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:26,354 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] zookeeper.ZKAssign: regionserver:60020-0x4d1922fbbb0000, quorum=rs1:2181,master:2181, baseZNode=/hbase Transitioned node 1c36300ce560a054f2aad4ce3b1afcd9 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-05-03 11:37:26,354 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] handler.OpenRegionHandler: Transitioned 1c36300ce560a054f2aad4ce3b1afcd9 to OPENED in zk on hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:37:26,354 DEBUG [RS_OPEN_REGION-hwb-VirtualBox:60020-0] handler.OpenRegionHandler: Opened test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9. on hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:42:17,407 DEBUG [LruStats #0] hfile.LruBlockCache: Total=422.95 KB, free=396.26 MB, max=396.68 MB, blockCount=4, accesses=21, hits=17, hitRatio=80.95%, , cachingAccesses=21, cachingHits=17, cachingHitsRatio=80.95%, evictions=29, evicted=0, evictedPerRun=0.0
+2015-05-03 11:47:17,408 DEBUG [LruStats #0] hfile.LruBlockCache: Total=422.95 KB, free=396.26 MB, max=396.68 MB, blockCount=4, accesses=23, hits=19, hitRatio=82.60%, , cachingAccesses=23, cachingHits=19, cachingHitsRatio=82.60%, evictions=59, evicted=0, evictedPerRun=0.0
+2015-05-03 11:48:42,943 INFO  [regionserver60020] regionserver.HRegionServer: Closing user regions
+2015-05-03 11:48:42,950 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-0] handler.CloseRegionHandler: Processing close of test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:48:42,950 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Closing test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.: disabling compactions & flushes
+2015-05-03 11:48:42,950 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Updates disabled for region test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:48:42,954 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-1] handler.CloseRegionHandler: Processing close of hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:48:42,954 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Closing hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.: disabling compactions & flushes
+2015-05-03 11:48:42,954 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Updates disabled for region hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:48:42,954 INFO  [StoreCloserThread-test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.-1] regionserver.HStore: Closed cf
+2015-05-03 11:48:42,963 INFO  [RS_CLOSE_REGION-hwb-VirtualBox:60020-0] regionserver.HRegion: Closed test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:48:42,963 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-0] handler.CloseRegionHandler: Closed test,,1430580123464.1c36300ce560a054f2aad4ce3b1afcd9.
+2015-05-03 11:48:42,983 INFO  [StoreCloserThread-hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.-1] regionserver.HStore: Closed info
+2015-05-03 11:48:42,983 INFO  [RS_CLOSE_REGION-hwb-VirtualBox:60020-1] regionserver.HRegion: Closed hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:48:42,983 DEBUG [RS_CLOSE_REGION-hwb-VirtualBox:60020-1] handler.CloseRegionHandler: Closed hbase:namespace,,1430580062202.f633db02a9250f006ed024a0dd01ade9.
+2015-05-03 11:48:45,952 DEBUG [regionserver60020] regionserver.HRegionServer: Waiting on 1588230740
+2015-05-03 11:48:48,955 INFO  [regionserver60020] regionserver.HRegionServer: STOPPED: Stopped; only catalog regions remaining online
+2015-05-03 11:48:48,955 INFO  [regionserver60020] ipc.RpcServer: Stopping server on 60020
+2015-05-03 11:48:48,955 INFO  [RpcServer.listener,port=60020] ipc.RpcServer: RpcServer.listener,port=60020: stopping
+2015-05-03 11:48:48,956 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopped
+2015-05-03 11:48:48,957 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopping
+2015-05-03 11:48:48,956 INFO  [regionserver60020] regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+2015-05-03 11:48:48,964 INFO  [regionserver60020] regionserver.HRegionServer: Stopping infoServer
+2015-05-03 11:48:48,966 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225] regionserver.SplitLogWorker: SplitLogWorker interrupted while waiting for task, exiting: java.lang.InterruptedException
+2015-05-03 11:48:48,966 INFO  [SplitLogWorker-hwb-VirtualBox,60020,1430645837225] regionserver.SplitLogWorker: SplitLogWorker hwb-VirtualBox,60020,1430645837225 exiting
+2015-05-03 11:48:48,978 INFO  [regionserver60020] mortbay.log: Stopped SelectChannelConnector@0.0.0.0:60030
+2015-05-03 11:48:48,987 INFO  [hwb-VirtualBox,60020,1430645837225-HeapMemoryChore] regionserver.HeapMemoryManager$HeapMemoryChore: hwb-VirtualBox,60020,1430645837225-HeapMemoryChore exiting
+2015-05-03 11:48:48,988 INFO  [regionserver60020.logRoller] regionserver.LogRoller: LogRoller exiting.
+2015-05-03 11:48:48,988 INFO  [MemStoreFlusher.0] regionserver.MemStoreFlusher: MemStoreFlusher.0 exiting
+2015-05-03 11:48:48,988 INFO  [MemStoreFlusher.1] regionserver.MemStoreFlusher: MemStoreFlusher.1 exiting
+2015-05-03 11:48:48,988 INFO  [regionserver60020.compactionChecker] regionserver.HRegionServer$CompactionChecker: regionserver60020.compactionChecker exiting
+2015-05-03 11:48:48,988 INFO  [regionserver60020.nonceCleaner] regionserver.ServerNonceManager$1: regionserver60020.nonceCleaner exiting
+2015-05-03 11:48:48,988 INFO  [regionserver60020] snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+2015-05-03 11:48:48,989 INFO  [regionserver60020] regionserver.HRegionServer: stopping server hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:48:48,989 DEBUG [regionserver60020] catalog.CatalogTracker: Stopping catalog tracker org.apache.hadoop.hbase.catalog.CatalogTracker@7c161c95
+2015-05-03 11:48:48,989 INFO  [regionserver60020] client.HConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x4d1922fbbb0001
+2015-05-03 11:48:48,988 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-MetaLogRoller] regionserver.LogRoller: LogRoller exiting.
+2015-05-03 11:48:48,996 INFO  [regionserver60020-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2015-05-03 11:48:48,996 INFO  [regionserver60020] zookeeper.ZooKeeper: Session: 0x4d1922fbbb0001 closed
+2015-05-03 11:48:48,996 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Split Thread to finish...
+2015-05-03 11:48:48,996 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Merge Thread to finish...
+2015-05-03 11:48:48,996 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Large Compaction Thread to finish...
+2015-05-03 11:48:48,996 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Small Compaction Thread to finish...
+2015-05-03 11:48:48,997 INFO  [regionserver60020] regionserver.HRegionServer: Waiting on 1 regions to close
+2015-05-03 11:48:48,997 DEBUG [regionserver60020] regionserver.HRegionServer: {1588230740=hbase:meta,,1.1588230740}
+2015-05-03 11:48:48,997 DEBUG [RS_CLOSE_META-hwb-VirtualBox:60020-0] handler.CloseRegionHandler: Processing close of hbase:meta,,1.1588230740
+2015-05-03 11:48:48,997 DEBUG [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Closing hbase:meta,,1.1588230740: disabling compactions & flushes
+2015-05-03 11:48:48,997 DEBUG [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Updates disabled for region hbase:meta,,1.1588230740
+2015-05-03 11:48:48,997 INFO  [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Started memstore flush for hbase:meta,,1.1588230740, current region memstore size 1.4k
+2015-05-03 11:48:49,016 INFO  [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.DefaultStoreFlusher: Flushed, sequenceid=23, memsize=1.4k, hasBloomFilter=false, into tmp file file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740/.tmp/ed26fa51059c41058662522915c95889
+2015-05-03 11:48:49,018 DEBUG [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HRegionFileSystem: Committing store file file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740/.tmp/ed26fa51059c41058662522915c95889 as file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740/info/ed26fa51059c41058662522915c95889
+2015-05-03 11:48:49,023 INFO  [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HStore: Added file:/home/hwb/Documents/hbase/data/hbase/meta/1588230740/info/ed26fa51059c41058662522915c95889, entries=6, sequenceid=23, filesize=1.5k
+2015-05-03 11:48:49,024 INFO  [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Finished memstore flush of ~1.4k/1424, currentsize=0.0/0 for region hbase:meta,,1.1588230740 in 27ms, sequenceid=23, compaction requested=true
+2015-05-03 11:48:49,025 INFO  [StoreCloserThread-hbase:meta,,1.1588230740-1] regionserver.HStore: Closed info
+2015-05-03 11:48:49,025 DEBUG [RS_CLOSE_META-hwb-VirtualBox:60020-0] coprocessor.CoprocessorHost: Stop coprocessor org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint
+2015-05-03 11:48:49,025 INFO  [RS_CLOSE_META-hwb-VirtualBox:60020-0] regionserver.HRegion: Closed hbase:meta,,1.1588230740
+2015-05-03 11:48:49,026 DEBUG [RS_CLOSE_META-hwb-VirtualBox:60020-0] handler.CloseRegionHandler: Closed hbase:meta,,1.1588230740
+2015-05-03 11:48:49,197 INFO  [regionserver60020] regionserver.HRegionServer: stopping server hwb-VirtualBox,60020,1430645837225; all regions closed.
+2015-05-03 11:48:49,197 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncNotifier] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncNotifier interrupted while waiting for  notification from AsyncSyncer thread
+2015-05-03 11:48:49,197 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncNotifier] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncNotifier exiting
+2015-05-03 11:48:49,198 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer0] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer0 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,198 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer0] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer0 exiting
+2015-05-03 11:48:49,198 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer1] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer1 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,198 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer1] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer1 exiting
+2015-05-03 11:48:49,198 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer2] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer2 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,198 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer2] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer2 exiting
+2015-05-03 11:48:49,198 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer3] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer3 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,199 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer3] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer3 exiting
+2015-05-03 11:48:49,199 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer4] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer4 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,199 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer4] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncSyncer4 exiting
+2015-05-03 11:48:49,199 DEBUG [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncWriter] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncWriter interrupted while waiting for newer writes added to local buffer
+2015-05-03 11:48:49,199 INFO  [RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncWriter] wal.FSHLog: RS_OPEN_META-hwb-VirtualBox:60020-0-WAL.AsyncWriter exiting
+2015-05-03 11:48:49,199 DEBUG [regionserver60020] wal.FSHLog: Closing WAL writer in file:/home/hwb/Documents/hbase/WALs/hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:48:49,199 DEBUG [regionserver60020-WAL.AsyncNotifier] wal.FSHLog: regionserver60020-WAL.AsyncNotifier interrupted while waiting for  notification from AsyncSyncer thread
+2015-05-03 11:48:49,200 INFO  [regionserver60020-WAL.AsyncNotifier] wal.FSHLog: regionserver60020-WAL.AsyncNotifier exiting
+2015-05-03 11:48:49,200 DEBUG [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: regionserver60020-WAL.AsyncSyncer0 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,200 INFO  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: regionserver60020-WAL.AsyncSyncer0 exiting
+2015-05-03 11:48:49,200 DEBUG [regionserver60020-WAL.AsyncSyncer1] wal.FSHLog: regionserver60020-WAL.AsyncSyncer1 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,200 INFO  [regionserver60020-WAL.AsyncSyncer1] wal.FSHLog: regionserver60020-WAL.AsyncSyncer1 exiting
+2015-05-03 11:48:49,200 DEBUG [regionserver60020-WAL.AsyncSyncer2] wal.FSHLog: regionserver60020-WAL.AsyncSyncer2 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,200 INFO  [regionserver60020-WAL.AsyncSyncer2] wal.FSHLog: regionserver60020-WAL.AsyncSyncer2 exiting
+2015-05-03 11:48:49,200 DEBUG [regionserver60020-WAL.AsyncSyncer3] wal.FSHLog: regionserver60020-WAL.AsyncSyncer3 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,200 INFO  [regionserver60020-WAL.AsyncSyncer3] wal.FSHLog: regionserver60020-WAL.AsyncSyncer3 exiting
+2015-05-03 11:48:49,200 DEBUG [regionserver60020-WAL.AsyncSyncer4] wal.FSHLog: regionserver60020-WAL.AsyncSyncer4 interrupted while waiting for notification from AsyncWriter thread
+2015-05-03 11:48:49,200 INFO  [regionserver60020-WAL.AsyncSyncer4] wal.FSHLog: regionserver60020-WAL.AsyncSyncer4 exiting
+2015-05-03 11:48:49,201 DEBUG [regionserver60020-WAL.AsyncWriter] wal.FSHLog: regionserver60020-WAL.AsyncWriter interrupted while waiting for newer writes added to local buffer
+2015-05-03 11:48:49,201 INFO  [regionserver60020-WAL.AsyncWriter] wal.FSHLog: regionserver60020-WAL.AsyncWriter exiting
+2015-05-03 11:48:49,201 DEBUG [regionserver60020] wal.FSHLog: Closing WAL writer in file:/home/hwb/Documents/hbase/WALs/hwb-VirtualBox,60020,1430645837225
+2015-05-03 11:48:49,218 DEBUG [regionserver60020] wal.FSHLog: Moved 2 WAL file(s) to /home/hwb/Documents/hbase/oldWALs
+2015-05-03 11:48:49,321 INFO  [regionserver60020] regionserver.Leases: regionserver60020 closing leases
+2015-05-03 11:48:49,321 INFO  [regionserver60020] regionserver.Leases: regionserver60020 closed leases
+2015-05-03 11:48:51,036 INFO  [regionserver60020.periodicFlusher] regionserver.HRegionServer$PeriodicMemstoreFlusher: regionserver60020.periodicFlusher exiting
+2015-05-03 11:48:51,052 INFO  [regionserver60020] client.HConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x4d1922fbbb0003
+2015-05-03 11:48:51,055 INFO  [regionserver60020-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2015-05-03 11:48:51,055 INFO  [regionserver60020] zookeeper.ZooKeeper: Session: 0x4d1922fbbb0003 closed
+2015-05-03 11:48:51,058 INFO  [regionserver60020.leaseChecker] regionserver.Leases: regionserver60020.leaseChecker closing leases
+2015-05-03 11:48:51,058 INFO  [regionserver60020.leaseChecker] regionserver.Leases: regionserver60020.leaseChecker closed leases
+2015-05-03 11:48:51,080 INFO  [regionserver60020-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2015-05-03 11:48:51,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Session: 0x4d1922fbbb0000 closed
+2015-05-03 11:48:51,080 INFO  [regionserver60020] regionserver.HRegionServer: stopping server hwb-VirtualBox,60020,1430645837225; zookeeper connection closed.
+2015-05-03 11:48:51,081 INFO  [regionserver60020] regionserver.HRegionServer: regionserver60020 exiting
+2015-05-03 11:48:51,082 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=Thread[Thread-8,5,main]
+2015-05-03 11:48:51,082 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Starting fs shutdown hook thread.
+2015-05-03 11:48:51,082 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Shutdown hook finished.

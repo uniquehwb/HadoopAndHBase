@@ -1,0 +1,169 @@
+2015-05-07 10:46:48,795 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-07 10:46:49,991 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-07 10:46:50,041 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-07 10:46:50,063 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-07 10:46:50,063 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2015-05-07 10:46:51,244 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2015-05-07 10:46:51,972 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-07 10:46:51,972 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-07 10:46:51,973 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2015-05-07 10:46:52,001 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2015-05-07 10:46:52,002 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-05-07 10:46:52,008 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as hwb
+2015-05-07 10:46:52,029 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2015-05-07 10:46:52,069 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2015-05-07 10:46:52,134 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9001 registered.
+2015-05-07 10:46:52,134 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9001 registered.
+2015-05-07 10:46:52,137 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-07 10:46:52,410 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-07 10:46:52,683 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-07 10:46:52,686 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2015-05-07 10:46:52,687 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2015-05-07 10:46:52,687 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2015-05-07 10:46:52,687 INFO org.mortbay.log: jetty-6.1.26
+2015-05-07 10:46:53,743 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2015-05-07 10:46:53,746 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-07 10:46:53,747 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source JobTrackerMetrics registered.
+2015-05-07 10:46:53,770 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2015-05-07 10:46:53,770 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2015-05-07 10:46:53,853 INFO org.apache.hadoop.mapred.JobTracker: Setting safe mode to true. Requested by : hwb
+2015-05-07 10:46:53,826 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-07 10:46:53,827 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2015-05-07 10:46:53,832 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2015-05-07 10:46:53,832 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2015-05-07 10:46:53,833 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2015-05-07 10:46:53,833 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2015-05-07 10:46:53,833 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2015-05-07 10:46:53,843 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2015-05-07 10:46:53,843 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2015-05-07 10:46:53,843 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2015-05-07 10:46:53,843 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2015-05-07 10:46:53,861 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2015-05-07 10:46:54,409 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:46:55,452 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:46:56,486 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:46:57,540 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:46:58,556 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:46:59,586 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:00,610 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:01,629 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:02,651 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:03,669 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:04,697 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:05,722 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:06,739 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:07,774 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:08,793 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:09,828 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:10,845 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:11,870 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:12,883 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:47:13,154 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at master/10.0.2.9
+************************************************************/
+2015-05-07 10:47:57,205 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-07 10:47:58,047 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-07 10:47:58,105 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-07 10:47:58,123 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-07 10:47:58,123 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2015-05-07 10:47:59,182 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2015-05-07 10:47:59,976 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-07 10:47:59,976 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-07 10:47:59,977 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2015-05-07 10:47:59,994 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2015-05-07 10:47:59,995 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-05-07 10:48:00,004 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2015-05-07 10:48:00,004 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2015-05-07 10:48:00,038 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as hwb
+2015-05-07 10:48:00,146 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9001 registered.
+2015-05-07 10:48:00,162 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-07 10:48:00,163 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9001 registered.
+2015-05-07 10:48:00,580 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-07 10:48:00,948 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-07 10:48:00,950 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2015-05-07 10:48:00,952 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2015-05-07 10:48:00,952 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2015-05-07 10:48:00,952 INFO org.mortbay.log: jetty-6.1.26
+2015-05-07 10:48:01,598 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2015-05-07 10:48:01,602 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-07 10:48:01,602 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source JobTrackerMetrics registered.
+2015-05-07 10:48:01,639 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2015-05-07 10:48:01,639 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2015-05-07 10:48:01,683 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-07 10:48:01,696 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2015-05-07 10:48:01,696 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2015-05-07 10:48:01,696 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2015-05-07 10:48:01,697 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2015-05-07 10:48:01,697 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2015-05-07 10:48:01,697 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2015-05-07 10:48:01,703 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2015-05-07 10:48:01,707 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2015-05-07 10:48:01,707 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2015-05-07 10:48:01,707 INFO org.apache.hadoop.mapred.JobTracker: Setting safe mode to true. Requested by : hwb
+2015-05-07 10:48:01,711 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2015-05-07 10:48:01,744 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2015-05-07 10:48:02,143 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:03,186 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:04,204 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:05,264 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:06,283 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:07,303 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:08,326 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:09,346 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:10,362 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:11,385 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:12,408 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:13,465 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:14,480 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:15,514 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:16,559 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:17,624 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:18,642 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:19,716 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:20,758 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:21,788 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:22,849 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:23,877 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:24,890 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:25,907 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:26,934 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:27,955 INFO org.apache.hadoop.mapred.JobTracker: HDFS initialized but not 'healthy' yet, waiting...
+2015-05-07 10:48:28,979 INFO org.apache.hadoop.mapred.JobTracker: Setting safe mode to false. Requested by : hwb
+2015-05-07 10:48:29,069 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2015-05-07 10:48:29,164 INFO org.apache.hadoop.mapred.JobHistory: Job History MaxAge is 2592000000 ms (30.00 days), Cleanup Frequency is 86400000 ms (1.00 days)
+2015-05-07 10:48:29,165 INFO org.apache.hadoop.mapred.JobTracker: History server being initialized in embedded mode
+2015-05-07 10:48:29,175 INFO org.apache.hadoop.mapred.JobHistoryServer: Started job history server at: localhost:50030
+2015-05-07 10:48:29,175 INFO org.apache.hadoop.mapred.JobTracker: Job History Server web address: localhost:50030
+2015-05-07 10:48:29,177 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2015-05-07 10:48:29,402 INFO org.apache.hadoop.mapred.JobTracker: Starting the recovery process for 0 jobs ...
+2015-05-07 10:48:29,402 INFO org.apache.hadoop.mapred.JobTracker: Recovery done! Recoverd 0 of 0 jobs.
+2015-05-07 10:48:29,402 INFO org.apache.hadoop.mapred.JobTracker: Recovery Duration (ms):0
+2015-05-07 10:48:29,402 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2015-05-07 10:48:29,498 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2015-05-07 10:48:29,498 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2015-05-07 10:48:29,498 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-05-07 10:48:29,512 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2015-05-07 10:48:29,528 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2015-05-07 10:48:29,768 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/master
+2015-05-07 10:48:29,769 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_master:localhost/127.0.0.1:54779 to host master
+2015-05-07 11:52:49,083 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at master/10.0.2.9
+************************************************************/

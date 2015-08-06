@@ -1,0 +1,1067 @@
+n2015-08-06 13:04:42,054 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:04:42,761 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:04:42,785 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:04:42,785 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:04:42,785 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:04:43,338 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:04:43,344 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:04:43,348 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:04:43,349 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:04:43,369 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:04:43,369 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:04:43,369 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:04:43,369 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:04:43,369 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:04:43,400 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:04:43,400 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:04:43,400 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:04:43,411 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:04:43,411 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:04:43,486 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:04:43,535 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:04:43,536 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:04:43,541 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /home/hwb/dfsNameDir does not exist
+2015-08-06 13:04:43,542 ERROR org.apache.hadoop.hdfs.server.namenode.FSNamesystem: FSNamesystem initialization failed.
+org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /home/hwb/dfsNameDir is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:304)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+2015-08-06 13:04:43,548 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /home/hwb/dfsNameDir is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:304)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+
+2015-08-06 13:04:43,549 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/
+2015-08-06 13:15:56,240 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:15:56,515 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:15:56,542 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:15:56,560 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:15:56,560 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:15:57,660 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:15:57,674 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:15:57,684 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:15:57,685 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:15:57,739 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:15:57,739 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:15:57,739 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:15:57,739 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:15:57,739 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:15:57,784 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:15:57,784 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:15:57,784 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:15:57,811 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:15:57,811 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:15:57,914 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:15:57,997 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:15:57,997 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:15:58,005 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /home/hwb/dfsNameDir does not exist
+2015-08-06 13:15:58,007 ERROR org.apache.hadoop.hdfs.server.namenode.FSNamesystem: FSNamesystem initialization failed.
+org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /home/hwb/dfsNameDir is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:304)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+2015-08-06 13:15:58,020 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /home/hwb/dfsNameDir is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:304)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+
+2015-08-06 13:15:58,021 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/
+2015-08-06 13:16:55,715 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:16:55,939 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:16:55,953 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:16:55,954 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:16:55,954 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:16:56,547 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:16:56,583 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:16:56,586 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:16:56,587 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:16:56,720 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:16:56,720 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:16:56,720 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:16:56,721 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:16:56,721 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:16:56,772 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:16:56,772 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:16:56,772 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:16:56,805 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:16:56,806 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:16:56,943 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:16:57,063 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:16:57,063 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:16:57,066 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /home/hwb/dfsNameDir does not exist
+2015-08-06 13:16:57,074 ERROR org.apache.hadoop.hdfs.server.namenode.FSNamesystem: FSNamesystem initialization failed.
+org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /home/hwb/dfsNameDir is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:304)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+2015-08-06 13:16:57,081 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /home/hwb/dfsNameDir is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:304)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+
+2015-08-06 13:16:57,088 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/
+2015-08-06 13:24:29,227 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:24:29,442 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:24:29,457 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:24:29,458 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:24:29,458 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:24:30,299 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:24:30,378 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:24:30,413 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:24:30,414 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:24:30,472 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:24:30,473 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:24:30,473 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:24:30,473 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:24:30,473 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:24:30,509 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:24:30,523 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:24:30,523 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:24:30,536 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:24:30,536 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:24:30,653 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:24:30,774 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:24:30,774 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:24:30,800 ERROR org.apache.hadoop.hdfs.server.namenode.FSNamesystem: FSNamesystem initialization failed.
+java.io.IOException: NameNode is not formatted.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:331)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+2015-08-06 13:24:30,822 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.io.IOException: NameNode is not formatted.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:331)
+	at org.apache.hadoop.hdfs.server.namenode.FSDirectory.loadFSImage(FSDirectory.java:104)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.initialize(FSNamesystem.java:427)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.<init>(FSNamesystem.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:299)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:569)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1479)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1488)
+
+2015-08-06 13:24:30,828 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/
+2015-08-06 13:31:35,572 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:31:35,817 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:31:35,833 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:31:35,834 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:31:35,834 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:31:36,477 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:31:36,493 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:31:36,510 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:31:36,514 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:31:36,586 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:31:36,597 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:31:36,597 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:31:36,597 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:31:36,597 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:31:36,638 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:31:36,638 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:31:36,638 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:31:36,644 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:31:36,644 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:31:36,785 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:31:36,953 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:31:36,953 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:31:36,967 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /home/hwb/dfsNameDir/current/fsimage
+2015-08-06 13:31:36,979 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 109 bytes loaded in 0 seconds.
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /home/hwb/dfsNameDir/current/edits
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /home/hwb/dfsNameDir/current/edits, reached end of edit log Number of transactions found: 0.  Bytes read: 4
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/home/hwb/dfsNameDir/current/edits) ...
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/home/hwb/dfsNameDir/current/edits):
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = -1 (-1 means padding not found)
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 4
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 4
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2015-08-06 13:31:36,983 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2015-08-06 13:31:36,999 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=4 ----------|-- Corrupt=0 --|-- Pad=0 --|
+2015-08-06 13:31:37,008 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /home/hwb/dfsNameDir/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2015-08-06 13:31:37,010 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 109 bytes saved in 0 seconds.
+2015-08-06 13:31:37,101 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:31:37,101 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:31:37,242 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-08-06 13:31:37,242 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 639 msecs
+2015-08-06 13:31:37,265 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2015-08-06 13:31:37,265 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2015-08-06 13:31:37,265 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2015-08-06 13:31:37,265 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 0 and thus the safe blocks: 0
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 0
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 71 msec
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 0 secs
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 0 racks and 0 datanodes
+2015-08-06 13:31:37,336 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2015-08-06 13:31:37,366 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-08-06 13:31:37,378 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-08-06 13:31:37,379 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 13:31:37,379 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-08-06 13:31:37,379 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 13:31:37,392 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-08-06 13:31:37,489 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9000 registered.
+2015-08-06 13:31:37,494 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9000 registered.
+2015-08-06 13:31:37,496 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: master/10.0.2.9:9000
+2015-08-06 13:31:37,494 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-08-06 13:31:37,764 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-06 13:31:37,867 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-06 13:31:37,898 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-08-06 13:31:37,916 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-08-06 13:31:37,940 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-08-06 13:31:37,940 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-08-06 13:31:37,940 INFO org.mortbay.log: jetty-6.1.26
+2015-08-06 13:31:40,115 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-08-06 13:31:40,121 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-08-06 13:31:40,131 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-08-06 13:31:40,146 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2015-08-06 13:31:40,167 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2015-08-06 13:31:40,181 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2015-08-06 13:31:40,186 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2015-08-06 13:31:40,223 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2015-08-06 13:31:40,231 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2015-08-06 13:31:40,232 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2015-08-06 13:31:40,234 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2015-08-06 13:31:40,235 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2015-08-06 13:31:40,236 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2015-08-06 13:31:40,324 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2015-08-06 13:31:41,443 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.10:50010 storage DS-954022423-10.0.2.10-50010-1438860701440
+2015-08-06 13:31:41,446 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.10:50010
+2015-08-06 13:31:41,459 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.10:50010 0 blocks
+2015-08-06 13:31:41,511 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 0, processing time: 1 msecs
+2015-08-06 13:31:49,549 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-hwb/mapred/system/jobtracker.info. blk_-4095392074526035529_1001
+2015-08-06 13:31:49,708 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-4095392074526035529_1001 size 4
+2015-08-06 13:31:49,712 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /tmp/hadoop-hwb/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_412336525_1
+2015-08-06 13:31:49,712 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-hwb/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_412336525_1
+2015-08-06 13:34:35,497 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/
+2015-08-06 13:35:24,347 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:35:24,571 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:35:24,586 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:35:24,587 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:35:24,587 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:35:25,420 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:35:25,423 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:35:25,426 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:35:25,427 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:35:25,520 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:35:25,520 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:35:25,520 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:35:25,520 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:35:25,520 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:35:25,569 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:35:25,574 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:35:25,575 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:35:25,600 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:35:25,600 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:35:25,674 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:35:25,787 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:35:25,790 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:35:25,808 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /home/hwb/dfsNameDir/current/fsimage
+2015-08-06 13:35:25,809 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2015-08-06 13:35:25,812 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-08-06 13:35:25,812 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 109 bytes loaded in 0 seconds.
+2015-08-06 13:35:25,812 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /home/hwb/dfsNameDir/current/edits
+2015-08-06 13:35:25,833 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Invalid opcode, reached end of edit log Number of transactions found: 10.  Bytes read: 824
+2015-08-06 13:35:25,841 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/home/hwb/dfsNameDir/current/edits) ...
+2015-08-06 13:35:26,031 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/home/hwb/dfsNameDir/current/edits):
+2015-08-06 13:35:26,032 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = 824 (-1 means padding not found)
+2015-08-06 13:35:26,032 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 1048580
+2015-08-06 13:35:26,032 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 824
+2015-08-06 13:35:26,032 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2015-08-06 13:35:26,032 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2015-08-06 13:35:26,035 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=824 ----------|-- Corrupt=0 --|-- Pad=1047756 --|
+2015-08-06 13:35:26,038 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /home/hwb/dfsNameDir/current/edits of size 1048580 edits # 10 loaded in 0 seconds.
+2015-08-06 13:35:26,041 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 557 bytes saved in 0 seconds.
+2015-08-06 13:35:26,193 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:35:26,193 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:35:26,292 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-08-06 13:35:26,297 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 745 msecs
+2015-08-06 13:35:26,298 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2015-08-06 13:35:26,298 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2015-08-06 13:35:26,298 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2015-08-06 13:35:26,298 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 1 and thus the safe blocks: 1
+2015-08-06 13:35:26,299 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 1. Safe mode will be turned off automatically.
+2015-08-06 13:35:26,312 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-08-06 13:35:26,318 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-08-06 13:35:26,353 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9000 registered.
+2015-08-06 13:35:26,354 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9000 registered.
+2015-08-06 13:35:26,355 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: master/10.0.2.9:9000
+2015-08-06 13:35:26,353 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-08-06 13:35:26,675 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-06 13:35:26,887 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-06 13:35:26,929 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-08-06 13:35:26,968 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-08-06 13:35:26,972 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-08-06 13:35:26,972 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-08-06 13:35:26,972 INFO org.mortbay.log: jetty-6.1.26
+2015-08-06 13:35:29,000 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-08-06 13:35:29,000 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-08-06 13:35:29,002 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-08-06 13:35:29,003 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2015-08-06 13:35:29,004 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2015-08-06 13:35:29,017 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2015-08-06 13:35:29,065 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2015-08-06 13:35:29,065 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2015-08-06 13:35:29,065 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2015-08-06 13:35:29,083 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2015-08-06 13:35:29,083 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2015-08-06 13:35:29,083 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2015-08-06 13:35:29,093 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2015-08-06 13:35:29,151 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2015-08-06 13:35:30,183 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.10:50010 storage DS-954022423-10.0.2.10-50010-1438860701440
+2015-08-06 13:35:30,191 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.10:50010
+2015-08-06 13:35:30,207 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.10:50010 0 blocks
+2015-08-06 13:35:30,299 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 1 has reached the threshold 0.9990 of total blocks 1. Safe mode will be turned off automatically in 29 seconds.
+2015-08-06 13:35:30,310 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 1, processing time: 47 msecs
+2015-08-06 13:35:50,426 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks 1 has reached the threshold 0.9990 of total blocks 1. Safe mode will be turned off automatically in 9 seconds.
+2015-08-06 13:36:00,483 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 1
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 45 msec
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 34 secs
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
+2015-08-06 13:36:00,487 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2015-08-06 13:36:00,817 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-4095392074526035529 to 10.0.2.10:50010 
+2015-08-06 13:36:00,905 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-hwb/mapred/system/jobtracker.info. blk_-2160361230553659483_1002
+2015-08-06 13:36:00,932 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-2160361230553659483_1002 size 4
+2015-08-06 13:36:00,936 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /tmp/hadoop-hwb/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_1140040212_1
+2015-08-06 13:36:00,936 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-hwb/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_1140040212_1
+2015-08-06 13:36:02,338 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-08-06 13:36:02,338 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 13:36:02,338 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 10.0.2.10:50010 to delete  blk_-4095392074526035529_1001
+2015-08-06 13:36:02,338 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 1 blocks in 0 msec
+2015-08-06 13:36:02,338 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 1 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 13:40:35,757 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 10.0.2.9
+2015-08-06 13:40:35,757 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 8 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 32 
+2015-08-06 13:40:35,765 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=709, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:40:35,765 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 709, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:40:36,640 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50090/getimage?getimage=1
+2015-08-06 13:40:36,810 INFO org.apache.hadoop.hdfs.server.namenode.GetImageServlet: Downloaded new fsimage with checksum: 0be42947c9dce0d1bd17a06a3bdb5b4a
+2015-08-06 13:40:36,811 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 10.0.2.9
+2015-08-06 13:40:36,811 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 16 
+2015-08-06 13:40:36,814 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits.new
+2015-08-06 13:40:36,814 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits.new
+2015-08-06 13:43:23,630 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:43:23,857 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:43:23,872 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:43:23,873 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:43:23,873 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:43:24,925 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:43:24,941 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:43:24,966 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:43:24,991 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:43:25,018 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:43:25,018 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:43:25,018 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:43:25,018 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:43:25,018 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:43:25,064 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:43:25,064 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:43:25,064 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:43:25,089 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:43:25,089 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:43:25,231 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:43:25,393 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:43:25,393 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:43:25,400 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /home/hwb/dfsNameDir/current/fsimage
+2015-08-06 13:43:25,414 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 6
+2015-08-06 13:43:25,443 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-08-06 13:43:25,443 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 557 bytes loaded in 0 seconds.
+2015-08-06 13:43:25,443 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /home/hwb/dfsNameDir/current/edits
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /home/hwb/dfsNameDir/current/edits, reached end of edit log Number of transactions found: 0.  Bytes read: 4
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/home/hwb/dfsNameDir/current/edits) ...
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/home/hwb/dfsNameDir/current/edits):
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = -1 (-1 means padding not found)
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 4
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 4
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2015-08-06 13:43:25,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2015-08-06 13:43:25,446 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=4 ----------|-- Corrupt=0 --|-- Pad=0 --|
+2015-08-06 13:43:25,446 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /home/hwb/dfsNameDir/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2015-08-06 13:43:25,447 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 557 bytes saved in 0 seconds.
+2015-08-06 13:43:25,571 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:43:25,571 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:43:25,683 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-08-06 13:43:25,687 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 641 msecs
+2015-08-06 13:43:25,688 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2015-08-06 13:43:25,688 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2015-08-06 13:43:25,688 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2015-08-06 13:43:25,688 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 1 and thus the safe blocks: 1
+2015-08-06 13:43:25,689 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 1. Safe mode will be turned off automatically.
+2015-08-06 13:43:25,704 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-08-06 13:43:25,707 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-08-06 13:43:25,736 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9000 registered.
+2015-08-06 13:43:25,739 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9000 registered.
+2015-08-06 13:43:25,740 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: master/10.0.2.9:9000
+2015-08-06 13:43:25,738 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-08-06 13:43:26,130 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-06 13:43:26,338 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-06 13:43:26,349 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-08-06 13:43:26,402 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-08-06 13:43:26,412 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-08-06 13:43:26,412 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-08-06 13:43:26,412 INFO org.mortbay.log: jetty-6.1.26
+2015-08-06 13:43:29,039 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-08-06 13:43:29,040 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-08-06 13:43:29,068 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-08-06 13:43:29,069 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2015-08-06 13:43:29,071 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2015-08-06 13:43:29,072 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2015-08-06 13:43:29,072 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2015-08-06 13:43:29,114 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2015-08-06 13:43:29,103 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2015-08-06 13:43:29,090 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2015-08-06 13:43:29,089 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2015-08-06 13:43:29,089 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2015-08-06 13:43:29,089 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2015-08-06 13:43:29,088 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2015-08-06 13:43:29,230 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.10:50010 storage DS-954022423-10.0.2.10-50010-1438860701440
+2015-08-06 13:43:29,233 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.10:50010
+2015-08-06 13:43:29,303 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.10:50010 0 blocks
+2015-08-06 13:43:29,374 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 1 has reached the threshold 0.9990 of total blocks 1. Safe mode will be turned off automatically in 29 seconds.
+2015-08-06 13:43:29,378 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 1, processing time: 25 msecs
+2015-08-06 13:43:33,857 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.9:50010 storage DS-129019713-10.0.2.9-50010-1438861413837
+2015-08-06 13:43:33,857 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.9:50010
+2015-08-06 13:43:33,902 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.9:50010 0 blocks
+2015-08-06 13:43:34,050 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.9:50010, blocks: 0, processing time: 0 msecs
+2015-08-06 13:43:48,803 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/
+2015-08-06 13:44:16,416 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 13:44:16,627 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 13:44:16,642 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 13:44:16,642 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 13:44:16,642 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 13:44:17,753 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 13:44:17,788 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 13:44:17,811 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 13:44:17,812 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 13:44:17,854 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 13:44:17,860 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 13:44:17,861 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 13:44:17,861 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 13:44:17,861 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 13:44:17,919 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 13:44:17,919 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 13:44:17,919 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 13:44:17,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 13:44:17,951 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 13:44:18,088 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 13:44:18,227 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 13:44:18,227 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 13:44:18,251 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /home/hwb/dfsNameDir/current/fsimage
+2015-08-06 13:44:18,257 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 6
+2015-08-06 13:44:18,289 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 557 bytes loaded in 0 seconds.
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /home/hwb/dfsNameDir/current/edits
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /home/hwb/dfsNameDir/current/edits, reached end of edit log Number of transactions found: 0.  Bytes read: 4
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/home/hwb/dfsNameDir/current/edits) ...
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/home/hwb/dfsNameDir/current/edits):
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = -1 (-1 means padding not found)
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 4
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 4
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2015-08-06 13:44:18,298 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2015-08-06 13:44:18,300 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=4 ----------|-- Corrupt=0 --|-- Pad=0 --|
+2015-08-06 13:44:18,300 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /home/hwb/dfsNameDir/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2015-08-06 13:44:18,302 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 557 bytes saved in 0 seconds.
+2015-08-06 13:44:18,397 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:44:18,397 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:44:18,509 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-08-06 13:44:18,522 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 655 msecs
+2015-08-06 13:44:18,526 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2015-08-06 13:44:18,526 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2015-08-06 13:44:18,526 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2015-08-06 13:44:18,526 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 1 and thus the safe blocks: 1
+2015-08-06 13:44:18,527 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 1. Safe mode will be turned off automatically.
+2015-08-06 13:44:18,579 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-08-06 13:44:18,600 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-08-06 13:44:18,654 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9000 registered.
+2015-08-06 13:44:18,655 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9000 registered.
+2015-08-06 13:44:18,656 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: master/10.0.2.9:9000
+2015-08-06 13:44:18,672 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-08-06 13:44:19,172 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-06 13:44:19,385 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-06 13:44:19,422 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-08-06 13:44:19,458 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-08-06 13:44:19,467 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-08-06 13:44:19,467 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-08-06 13:44:19,467 INFO org.mortbay.log: jetty-6.1.26
+2015-08-06 13:44:22,051 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-08-06 13:44:22,051 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-08-06 13:44:22,074 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-08-06 13:44:22,075 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2015-08-06 13:44:22,085 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2015-08-06 13:44:22,086 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2015-08-06 13:44:22,086 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2015-08-06 13:44:22,088 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2015-08-06 13:44:22,090 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2015-08-06 13:44:22,110 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2015-08-06 13:44:22,116 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2015-08-06 13:44:22,116 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2015-08-06 13:44:22,145 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2015-08-06 13:44:22,264 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2015-08-06 13:44:23,786 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.10:50010 storage DS-954022423-10.0.2.10-50010-1438860701440
+2015-08-06 13:44:23,788 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.10:50010
+2015-08-06 13:44:23,811 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.10:50010 0 blocks
+2015-08-06 13:44:24,015 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 1 has reached the threshold 0.9990 of total blocks 1. Safe mode will be turned off automatically in 29 seconds.
+2015-08-06 13:44:24,056 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 1, processing time: 141 msecs
+2015-08-06 13:44:26,475 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.9:50010 storage DS-129019713-10.0.2.9-50010-1438861413837
+2015-08-06 13:44:26,475 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.9:50010
+2015-08-06 13:44:26,524 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.9:50010 0 blocks
+2015-08-06 13:44:26,745 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.9:50010, blocks: 0, processing time: 0 msecs
+2015-08-06 13:44:44,162 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks 1 has reached the threshold 0.9990 of total blocks 1. Safe mode will be turned off automatically in 9 seconds.
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 1
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 0
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 23 msec
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 36 secs
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 2 datanodes
+2015-08-06 13:44:54,196 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2015-08-06 13:44:54,626 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-08-06 13:44:54,628 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 13:44:54,628 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-08-06 13:44:54,628 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 13:44:54,917 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-2160361230553659483 to 10.0.2.10:50010 
+2015-08-06 13:44:54,973 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-hwb/mapred/system/jobtracker.info. blk_-413614113000840895_1003
+2015-08-06 13:44:55,104 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-413614113000840895_1003 size 4
+2015-08-06 13:44:55,110 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /tmp/hadoop-hwb/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_1789476951_1
+2015-08-06 13:44:55,110 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-hwb/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_1789476951_1
+2015-08-06 13:44:57,629 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 10.0.2.10:50010 to delete  blk_-2160361230553659483_1002
+2015-08-06 13:46:40,808 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 9 Total time for transactions(ms): 10 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 27 
+2015-08-06 13:46:41,309 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/.tmp/hbase.version. blk_3749794002433432415_1004
+2015-08-06 13:46:41,767 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_3749794002433432415_1004 size 7
+2015-08-06 13:46:41,770 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_3749794002433432415_1004 size 7
+2015-08-06 13:46:41,782 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/.tmp/hbase.version from client DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:41,876 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/.tmp/hbase.version is closed by DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:41,986 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/.tmp/hbase.id. blk_-6196516724207876517_1005
+2015-08-06 13:46:42,021 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-6196516724207876517_1005 size 42
+2015-08-06 13:46:42,022 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-6196516724207876517_1005 size 42
+2015-08-06 13:46:42,031 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/.tmp/hbase.id from client DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:42,031 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/.tmp/hbase.id is closed by DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:43,529 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/data/hbase/meta/1588230740/.regioninfo. blk_-319396402311359980_1006
+2015-08-06 13:46:43,544 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-319396402311359980_1006 size 30
+2015-08-06 13:46:43,544 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-319396402311359980_1006 size 30
+2015-08-06 13:46:43,549 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/data/hbase/meta/1588230740/.regioninfo from client DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:43,550 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/data/hbase/meta/1588230740/.regioninfo is closed by DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:43,659 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/data/hbase/meta/1588230740/WALs/hlog.1438861603614. blk_2274702582762850011_1007
+2015-08-06 13:46:43,697 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/data/hbase/meta/1588230740/WALs/hlog.1438861603614 for DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:44,084 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_2274702582762850011_1007 size 91
+2015-08-06 13:46:44,087 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/data/hbase/meta/1588230740/WALs/hlog.1438861603614 from client DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:44,087 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/data/hbase/meta/1588230740/WALs/hlog.1438861603614 is closed by DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:44,088 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_2274702582762850011_1007 size 91
+2015-08-06 13:46:44,166 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/data/hbase/meta/.tmp/.tableinfo.0000000001. blk_-1181489346888910796_1008
+2015-08-06 13:46:44,174 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-1181489346888910796_1008 size 372
+2015-08-06 13:46:44,176 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-1181489346888910796_1008 size 372
+2015-08-06 13:46:44,178 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/data/hbase/meta/.tmp/.tableinfo.0000000001 from client DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:44,180 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/data/hbase/meta/.tmp/.tableinfo.0000000001 is closed by DFSClient_NONMAPREDUCE_-1360264773_1
+2015-08-06 13:46:46,839 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/rs1,60020,1438861593505/rs1%2C60020%2C1438861593505.1438861606758. blk_-5285343672709305030_1009
+2015-08-06 13:46:46,896 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/rs1,60020,1438861593505/rs1%2C60020%2C1438861593505.1438861606758 for DFSClient_hb_rs_rs1,60020,1438861593505_2004418275_30
+2015-08-06 13:46:47,205 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861607121. blk_-8080270050671325442_1010
+2015-08-06 13:46:47,318 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861607121 for DFSClient_hb_rs_master,60020,1438861596446_1971328684_30
+2015-08-06 13:46:49,895 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861609834.meta. blk_-1676672323124929947_1011
+2015-08-06 13:46:49,922 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861609834.meta for DFSClient_hb_rs_master,60020,1438861596446_1971328684_30
+2015-08-06 13:49:29,072 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 10.0.2.9
+2015-08-06 13:49:29,075 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 64 Total time for transactions(ms): 13 Number of transactions batched in Syncs: 1 Number of syncs: 39 SyncTimes(ms): 162 
+2015-08-06 13:49:29,077 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=7118, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:49:29,078 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 7118, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 13:49:30,747 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50090/getimage?getimage=1
+2015-08-06 13:49:30,861 INFO org.apache.hadoop.hdfs.server.namenode.GetImageServlet: Downloaded new fsimage with checksum: 361a75041d5419786d0e84c3b9ad06c8
+2015-08-06 13:49:30,862 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 10.0.2.9
+2015-08-06 13:49:30,862 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 35 
+2015-08-06 13:49:30,864 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits.new
+2015-08-06 13:49:30,864 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits.new
+2015-08-06 13:51:53,900 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.9:50010, blocks: 6, processing time: 1 msecs
+2015-08-06 13:52:16,240 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-5285343672709305030_1009 size 91
+2015-08-06 13:52:16,243 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-5285343672709305030_1009 size 91
+2015-08-06 13:52:16,260 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/rs1,60020,1438861593505/rs1%2C60020%2C1438861593505.1438861606758 from client DFSClient_hb_rs_rs1,60020,1438861593505_2004418275_30
+2015-08-06 13:52:16,260 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/rs1,60020,1438861593505/rs1%2C60020%2C1438861593505.1438861606758 is closed by DFSClient_hb_rs_rs1,60020,1438861593505_2004418275_30
+2015-08-06 13:52:16,260 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 1 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-08-06 13:52:17,185 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-1676672323124929947_1011 size 91
+2015-08-06 13:52:17,186 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-1676672323124929947_1011 size 91
+2015-08-06 13:52:17,190 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861609834.meta from client DFSClient_hb_rs_master,60020,1438861596446_1971328684_30
+2015-08-06 13:52:17,191 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861609834.meta is closed by DFSClient_hb_rs_master,60020,1438861596446_1971328684_30
+2015-08-06 13:52:17,202 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-8080270050671325442_1010 size 91
+2015-08-06 13:52:17,208 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-8080270050671325442_1010 size 91
+2015-08-06 13:52:17,210 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861607121 from client DFSClient_hb_rs_master,60020,1438861596446_1971328684_30
+2015-08-06 13:52:17,213 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438861596446/master%2C60020%2C1438861596446.1438861607121 is closed by DFSClient_hb_rs_master,60020,1438861596446_1971328684_30
+2015-08-06 14:01:15,832 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 14:01:16,159 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 14:01:16,203 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 14:01:16,224 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 14:01:16,225 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 14:01:17,378 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 14:01:17,389 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 14:01:17,412 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 14:01:17,419 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 14:01:17,459 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 14:01:17,459 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 14:01:17,459 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 14:01:17,459 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 14:01:17,459 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 14:01:17,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 14:01:17,502 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 14:01:17,503 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 14:01:17,521 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 14:01:17,521 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 14:01:17,658 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 14:01:17,840 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 14:01:17,843 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 14:01:17,901 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /home/hwb/dfsNameDir/current/fsimage
+2015-08-06 14:01:17,902 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 28
+2015-08-06 14:01:17,925 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 3
+2015-08-06 14:01:17,998 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 3488 bytes loaded in 0 seconds.
+2015-08-06 14:01:17,998 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /home/hwb/dfsNameDir/current/edits
+2015-08-06 14:01:18,017 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Invalid opcode, reached end of edit log Number of transactions found: 3.  Bytes read: 538
+2015-08-06 14:01:18,017 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/home/hwb/dfsNameDir/current/edits) ...
+2015-08-06 14:01:18,232 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/home/hwb/dfsNameDir/current/edits):
+2015-08-06 14:01:18,235 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = 538 (-1 means padding not found)
+2015-08-06 14:01:18,235 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 1048580
+2015-08-06 14:01:18,235 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 538
+2015-08-06 14:01:18,235 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2015-08-06 14:01:18,235 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2015-08-06 14:01:18,237 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=538 ----------|-- Corrupt=0 --|-- Pad=1048042 --|
+2015-08-06 14:01:18,237 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /home/hwb/dfsNameDir/current/edits of size 1048580 edits # 3 loaded in 0 seconds.
+2015-08-06 14:01:18,247 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 2831 bytes saved in 0 seconds.
+2015-08-06 14:01:18,338 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 14:01:18,338 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 14:01:18,438 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-08-06 14:01:18,438 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 958 msecs
+2015-08-06 14:01:18,439 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2015-08-06 14:01:18,439 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2015-08-06 14:01:18,439 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2015-08-06 14:01:18,439 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 9 and thus the safe blocks: 9
+2015-08-06 14:01:18,440 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 9. Safe mode will be turned off automatically.
+2015-08-06 14:01:18,467 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-08-06 14:01:18,491 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-08-06 14:01:18,552 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9000 registered.
+2015-08-06 14:01:18,552 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9000 registered.
+2015-08-06 14:01:18,564 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-08-06 14:01:18,564 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: master/10.0.2.9:9000
+2015-08-06 14:01:19,019 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-06 14:01:19,201 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-06 14:01:19,235 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-08-06 14:01:19,254 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-08-06 14:01:19,260 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-08-06 14:01:19,260 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-08-06 14:01:19,260 INFO org.mortbay.log: jetty-6.1.26
+2015-08-06 14:01:22,355 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-08-06 14:01:22,355 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-08-06 14:01:22,361 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-08-06 14:01:22,368 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2015-08-06 14:01:22,376 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2015-08-06 14:01:22,378 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2015-08-06 14:01:22,386 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2015-08-06 14:01:22,394 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2015-08-06 14:01:22,398 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2015-08-06 14:01:22,423 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2015-08-06 14:01:22,423 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2015-08-06 14:01:22,423 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2015-08-06 14:01:22,423 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2015-08-06 14:01:22,448 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2015-08-06 14:01:23,756 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.10:50010 storage DS-954022423-10.0.2.10-50010-1438860701440
+2015-08-06 14:01:23,761 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.10:50010
+2015-08-06 14:01:23,822 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.10:50010 0 blocks
+2015-08-06 14:01:23,889 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 8, processing time: 2 msecs
+2015-08-06 14:01:26,953 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.9:50010 storage DS-129019713-10.0.2.9-50010-1438861413837
+2015-08-06 14:01:26,954 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.9:50010
+2015-08-06 14:01:26,964 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.9:50010 0 blocks
+2015-08-06 14:01:27,126 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 9 has reached the threshold 0.9990 of total blocks 9. Safe mode will be turned off automatically in 29 seconds.
+2015-08-06 14:01:27,127 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.9:50010, blocks: 9, processing time: 62 msecs
+2015-08-06 14:01:47,178 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks 9 has reached the threshold 0.9990 of total blocks 9. Safe mode will be turned off automatically in 9 seconds.
+2015-08-06 14:01:57,201 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 9
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 8
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 20 msec
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 39 secs
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 2 datanodes
+2015-08-06 14:01:57,202 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 8 blocks
+2015-08-06 14:01:57,492 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 2 msec
+2015-08-06 14:01:57,492 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+2015-08-06 14:01:57,492 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 14:01:58,219 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-413614113000840895 to 10.0.2.9:50010 
+2015-08-06 14:01:58,291 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-hwb/mapred/system/jobtracker.info. blk_-1636489304282760959_1012
+2015-08-06 14:01:58,335 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-1636489304282760959_1012 size 4
+2015-08-06 14:01:58,339 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /tmp/hadoop-hwb/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_-1640370330_1
+2015-08-06 14:01:58,339 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-hwb/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_-1640370330_1
+2015-08-06 14:02:00,493 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 10.0.2.9:50010 to delete  blk_-413614113000840895_1003
+2015-08-06 14:02:26,907 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 9 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 33 
+2015-08-06 14:02:31,519 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/rs1,60020,1438862535794/rs1%2C60020%2C1438862535794.1438862551301. blk_-5748564316782949931_1013
+2015-08-06 14:02:31,605 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/rs1,60020,1438862535794/rs1%2C60020%2C1438862535794.1438862551301 for DFSClient_hb_rs_rs1,60020,1438862535794_-2142038178_30
+2015-08-06 14:02:32,035 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862551948. blk_3404794503392150675_1014
+2015-08-06 14:02:32,215 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862551948 for DFSClient_hb_rs_master,60020,1438862539517_-202236753_30
+2015-08-06 14:02:33,538 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:hwb cause:java.io.IOException: /hbase/WALs/master,60020,1438861596446-splitting is non empty
+2015-08-06 14:02:33,693 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000, call delete(/hbase/WALs/master,60020,1438861596446-splitting, false) from 10.0.2.9:52470: error: java.io.IOException: /hbase/WALs/master,60020,1438861596446-splitting is non empty
+java.io.IOException: /hbase/WALs/master,60020,1438861596446-splitting is non empty
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:2365)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:886)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2015-08-06 14:02:34,105 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:hwb cause:java.io.IOException: /hbase/WALs/master,60020,1438861596446-splitting is non empty
+2015-08-06 14:02:34,105 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000, call delete(/hbase/WALs/master,60020,1438861596446-splitting, false) from 10.0.2.9:52470: error: java.io.IOException: /hbase/WALs/master,60020,1438861596446-splitting is non empty
+java.io.IOException: /hbase/WALs/master,60020,1438861596446-splitting is non empty
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:2365)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:886)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:587)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1432)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1428)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1426)
+2015-08-06 14:02:34,450 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862554427.meta. blk_-5817995264209845062_1015
+2015-08-06 14:02:34,475 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862554427.meta for DFSClient_hb_rs_master,60020,1438862539517_-202236753_30
+2015-08-06 14:06:17,957 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 8, processing time: 1 msecs
+2015-08-06 14:06:29,051 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 10.0.2.9
+2015-08-06 14:06:29,058 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 34 Total time for transactions(ms): 2 Number of transactions batched in Syncs: 6 Number of syncs: 23 SyncTimes(ms): 101 
+2015-08-06 14:06:29,060 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4339, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 14:06:29,060 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4339, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 14:06:30,466 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50090/getimage?getimage=1
+2015-08-06 14:06:30,675 INFO org.apache.hadoop.hdfs.server.namenode.GetImageServlet: Downloaded new fsimage with checksum: e7b65e48346b39af9a27cc47db860004
+2015-08-06 14:06:30,676 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 10.0.2.9
+2015-08-06 14:06:30,677 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 1 SyncTimes(ms): 21 
+2015-08-06 14:06:30,691 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits.new
+2015-08-06 14:06:30,694 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits.new
+2015-08-06 14:07:02,103 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-5748564316782949931_1013 size 91
+2015-08-06 14:07:02,106 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/rs1,60020,1438862535794/rs1%2C60020%2C1438862535794.1438862551301 from client DFSClient_hb_rs_rs1,60020,1438862535794_-2142038178_30
+2015-08-06 14:07:02,106 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/rs1,60020,1438862535794/rs1%2C60020%2C1438862535794.1438862551301 is closed by DFSClient_hb_rs_rs1,60020,1438862535794_-2142038178_30
+2015-08-06 14:07:02,108 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-5748564316782949931_1013 size 91
+2015-08-06 14:07:09,434 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-5817995264209845062_1015 size 91
+2015-08-06 14:07:09,436 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-5817995264209845062_1015 size 91
+2015-08-06 14:07:09,440 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862554427.meta from client DFSClient_hb_rs_master,60020,1438862539517_-202236753_30
+2015-08-06 14:07:09,440 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862554427.meta is closed by DFSClient_hb_rs_master,60020,1438862539517_-202236753_30
+2015-08-06 14:07:09,447 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_3404794503392150675_1014 size 91
+2015-08-06 14:07:09,451 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_3404794503392150675_1014 size 91
+2015-08-06 14:07:09,453 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862551948 from client DFSClient_hb_rs_master,60020,1438862539517_-202236753_30
+2015-08-06 14:07:09,453 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438862539517/master%2C60020%2C1438862539517.1438862551948 is closed by DFSClient_hb_rs_master,60020,1438862539517_-202236753_30
+2015-08-06 14:11:13,774 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-08-06 14:11:14,163 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-08-06 14:11:14,187 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-06 14:11:14,187 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-06 14:11:14,188 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2015-08-06 14:11:15,513 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-06 14:11:15,551 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-06 14:11:15,580 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-06 14:11:15,583 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source NameNode registered.
+2015-08-06 14:11:15,705 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-08-06 14:11:15,711 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-08-06 14:11:15,711 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-08-06 14:11:15,712 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-08-06 14:11:15,712 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-08-06 14:11:15,781 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-08-06 14:11:15,783 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-08-06 14:11:15,784 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-08-06 14:11:15,836 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-08-06 14:11:15,836 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-08-06 14:11:15,995 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+2015-08-06 14:11:16,180 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+2015-08-06 14:11:16,195 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-08-06 14:11:16,225 INFO org.apache.hadoop.hdfs.server.common.Storage: Start loading image file /home/hwb/dfsNameDir/current/fsimage
+2015-08-06 14:11:16,228 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 33
+2015-08-06 14:11:16,299 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 3
+2015-08-06 14:11:16,303 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 4079 bytes loaded in 0 seconds.
+2015-08-06 14:11:16,304 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /home/hwb/dfsNameDir/current/edits
+2015-08-06 14:11:16,307 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Invalid opcode, reached end of edit log Number of transactions found: 11.  Bytes read: 1480
+2015-08-06 14:11:16,307 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start checking end of edit log (/home/hwb/dfsNameDir/current/edits) ...
+2015-08-06 14:11:16,533 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Checked the bytes after the end of edit log (/home/hwb/dfsNameDir/current/edits):
+2015-08-06 14:11:16,533 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Padding position  = 1480 (-1 means padding not found)
+2015-08-06 14:11:16,534 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Edit log length   = 1048580
+2015-08-06 14:11:16,534 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Read length       = 1480
+2015-08-06 14:11:16,534 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Corruption length = 0
+2015-08-06 14:11:16,536 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog:   Toleration length = 0 (= dfs.namenode.edits.toleration.length)
+2015-08-06 14:11:16,549 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Summary: |---------- Read=1480 ----------|-- Corrupt=0 --|-- Pad=1047100 --|
+2015-08-06 14:11:16,549 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /home/hwb/dfsNameDir/current/edits of size 1048580 edits # 11 loaded in 0 seconds.
+2015-08-06 14:11:16,551 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /home/hwb/dfsNameDir/current/fsimage of size 3149 bytes saved in 0 seconds.
+2015-08-06 14:11:16,691 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 14:11:16,692 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/home/hwb/dfsNameDir/current/edits
+2015-08-06 14:11:16,771 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2015-08-06 14:11:16,772 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 1043 msecs
+2015-08-06 14:11:16,773 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.threshold.pct          = 0.9990000128746033
+2015-08-06 14:11:16,773 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2015-08-06 14:11:16,773 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.safemode.extension              = 30000
+2015-08-06 14:11:16,773 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of blocks excluded by safe block count: 0 total blocks: 12 and thus the safe blocks: 12
+2015-08-06 14:11:16,778 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks is only 0 but the threshold is 0.9990 and the total blocks 12. Safe mode will be turned off automatically.
+2015-08-06 14:11:16,797 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2015-08-06 14:11:16,801 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source FSNamesystemMetrics registered.
+2015-08-06 14:11:16,865 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9000 registered.
+2015-08-06 14:11:16,870 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-08-06 14:11:16,871 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9000 registered.
+2015-08-06 14:11:16,873 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Namenode up at: master/10.0.2.9:9000
+2015-08-06 14:11:17,299 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-06 14:11:17,532 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-06 14:11:17,607 INFO org.apache.hadoop.http.HttpServer: dfs.webhdfs.enabled = false
+2015-08-06 14:11:17,640 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50070
+2015-08-06 14:11:17,656 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50070 webServer.getConnectors()[0].getLocalPort() returned 50070
+2015-08-06 14:11:17,656 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50070
+2015-08-06 14:11:17,656 INFO org.mortbay.log: jetty-6.1.26
+2015-08-06 14:11:21,319 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50070
+2015-08-06 14:11:21,319 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Web-server up at: 0.0.0.0:50070
+2015-08-06 14:11:21,319 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-08-06 14:11:21,348 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2015-08-06 14:11:21,351 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2015-08-06 14:11:21,358 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2015-08-06 14:11:21,358 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2015-08-06 14:11:21,358 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2015-08-06 14:11:21,376 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2015-08-06 14:11:21,418 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2015-08-06 14:11:21,418 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2015-08-06 14:11:21,418 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2015-08-06 14:11:21,428 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2015-08-06 14:11:21,470 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2015-08-06 14:11:22,491 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.10:50010 storage DS-954022423-10.0.2.10-50010-1438860701440
+2015-08-06 14:11:22,584 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.10:50010
+2015-08-06 14:11:22,627 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.10:50010 0 blocks
+2015-08-06 14:11:22,673 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.10:50010, blocks: 11, processing time: 12 msecs
+2015-08-06 14:11:25,914 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* registerDatanode: node registration from 10.0.2.9:50010 storage DS-129019713-10.0.2.9-50010-1438861413837
+2015-08-06 14:11:25,914 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/10.0.2.9:50010
+2015-08-06 14:11:25,943 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 10.0.2.9:50010 0 blocks
+2015-08-06 14:11:26,103 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode extension entered 
+The reported blocks 12 has reached the threshold 0.9990 of total blocks 12. Safe mode will be turned off automatically in 29 seconds.
+2015-08-06 14:11:26,107 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 10.0.2.9:50010, blocks: 12, processing time: 63 msecs
+2015-08-06 14:11:46,170 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode ON 
+The reported blocks 12 has reached the threshold 0.9990 of total blocks 12. Safe mode will be turned off automatically in 9 seconds.
+2015-08-06 14:11:56,348 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Total number of blocks = 12
+2015-08-06 14:11:56,360 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of invalid blocks = 0
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of under-replicated blocks = 11
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Number of  over-replicated blocks = 0
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 168 msec
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.StateChange: STATE* Leaving safe mode after 40 secs
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 2 datanodes
+2015-08-06 14:11:56,365 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 11 blocks
+2015-08-06 14:11:57,282 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-1636489304282760959 to 10.0.2.9:50010 
+2015-08-06 14:11:57,584 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /tmp/hadoop-hwb/mapred/system/jobtracker.info. blk_3825452350022361963_1016
+2015-08-06 14:11:57,850 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_3825452350022361963_1016 size 4
+2015-08-06 14:11:57,854 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /tmp/hadoop-hwb/mapred/system/jobtracker.info from client DFSClient_NONMAPREDUCE_-963717198_1
+2015-08-06 14:11:57,854 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /tmp/hadoop-hwb/mapred/system/jobtracker.info is closed by DFSClient_NONMAPREDUCE_-963717198_1
+2015-08-06 14:11:58,847 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 1 msec
+2015-08-06 14:11:58,850 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 10.0.2.9:50010 to delete  blk_-1636489304282760959_1012
+2015-08-06 14:11:58,850 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 1 blocks in 0 msec
+2015-08-06 14:11:58,851 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 1 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+2015-08-06 14:12:09,109 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863129039. blk_-5955794986007808638_1017
+2015-08-06 14:12:09,193 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863129039 for DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:12:09,971 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863129904. blk_4207697416447993266_1018
+2015-08-06 14:12:10,065 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863129904 for DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:12,196 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863132147.meta. blk_3216709077944313176_1019
+2015-08-06 14:12:12,220 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863132147.meta for DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:13,564 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/.tmp/data/hbase/namespace/.tmp/.tableinfo.0000000001. blk_-9094511200128948681_1020
+2015-08-06 14:12:13,586 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-9094511200128948681_1020 size 286
+2015-08-06 14:12:13,596 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-9094511200128948681_1020 size 286
+2015-08-06 14:12:13,598 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/.tmp/data/hbase/namespace/.tmp/.tableinfo.0000000001 from client DFSClient_NONMAPREDUCE_-1912849175_1
+2015-08-06 14:12:13,598 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/.tmp/data/hbase/namespace/.tmp/.tableinfo.0000000001 is closed by DFSClient_NONMAPREDUCE_-1912849175_1
+2015-08-06 14:12:13,632 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/.tmp/data/hbase/namespace/68a470d2b1b1656ee793c3979c7763df/.regioninfo. blk_9203014156920601086_1021
+2015-08-06 14:12:13,642 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_9203014156920601086_1021 size 40
+2015-08-06 14:12:13,645 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_9203014156920601086_1021 size 40
+2015-08-06 14:12:13,648 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/.tmp/data/hbase/namespace/68a470d2b1b1656ee793c3979c7763df/.regioninfo from client DFSClient_NONMAPREDUCE_-1912849175_1
+2015-08-06 14:12:13,648 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/.tmp/data/hbase/namespace/68a470d2b1b1656ee793c3979c7763df/.regioninfo is closed by DFSClient_NONMAPREDUCE_-1912849175_1
+2015-08-06 14:12:13,812 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863133787.meta. blk_6747798819526219114_1022
+2015-08-06 14:12:13,827 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863133787.meta for DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:13,839 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_3216709077944313176_1019 size 268
+2015-08-06 14:12:13,839 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863132147.meta from client DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:13,840 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863132147.meta is closed by DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:13,840 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_3216709077944313176_1019 size 268
+2015-08-06 14:12:14,368 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863134360.meta. blk_-1510364842218129560_1023
+2015-08-06 14:12:14,394 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863134360.meta for DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:14,408 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_6747798819526219114_1022 size 465
+2015-08-06 14:12:14,409 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863133787.meta from client DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:14,409 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863133787.meta is closed by DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:12:14,409 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_6747798819526219114_1022 size 465
+2015-08-06 14:12:14,638 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863134629. blk_5228338855163929008_1024
+2015-08-06 14:12:14,653 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* fsync: /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863134629 for DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:12:14,684 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-5955794986007808638_1017 size 303
+2015-08-06 14:12:14,688 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-5955794986007808638_1017 size 303
+2015-08-06 14:12:14,693 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863129039 from client DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:12:14,694 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863129039 is closed by DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:13:06,537 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 59 Total time for transactions(ms): 9 Number of transactions batched in Syncs: 2 Number of syncs: 36 SyncTimes(ms): 216 
+2015-08-06 14:13:06,539 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-8080270050671325442 to 10.0.2.10:50010 10.0.2.9:50010 
+2015-08-06 14:13:06,541 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-1676672323124929947 to 10.0.2.10:50010 10.0.2.9:50010 
+2015-08-06 14:13:06,543 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addToInvalidates: blk_-5285343672709305030 to 10.0.2.10:50010 10.0.2.9:50010 
+2015-08-06 14:13:07,890 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 10.0.2.10:50010 to delete  blk_-8080270050671325442_1010 blk_-5285343672709305030_1009 blk_-1676672323124929947_1011
+2015-08-06 14:13:10,891 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* ask 10.0.2.9:50010 to delete  blk_-8080270050671325442_1010 blk_-5285343672709305030_1009 blk_-1676672323124929947_1011
+2015-08-06 14:14:42,642 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 62 Total time for transactions(ms): 9 Number of transactions batched in Syncs: 2 Number of syncs: 39 SyncTimes(ms): 220 
+2015-08-06 14:14:42,704 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/data/hbase/namespace/68a470d2b1b1656ee793c3979c7763df/.tmp/355871f4b8884eb1b46e9e1e7f253dd5. blk_1615531539138699171_1025
+2015-08-06 14:14:42,721 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_1615531539138699171_1025 size 1045
+2015-08-06 14:14:42,724 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_1615531539138699171_1025 size 1045
+2015-08-06 14:14:42,727 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/data/hbase/namespace/68a470d2b1b1656ee793c3979c7763df/.tmp/355871f4b8884eb1b46e9e1e7f253dd5 from client DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:14:42,727 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/data/hbase/namespace/68a470d2b1b1656ee793c3979c7763df/.tmp/355871f4b8884eb1b46e9e1e7f253dd5 is closed by DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:14:45,668 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_5228338855163929008_1024 size 91
+2015-08-06 14:14:45,671 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_5228338855163929008_1024 size 91
+2015-08-06 14:14:45,674 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863134629 from client DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:14:45,674 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/rs1,60020,1438863117080/rs1%2C60020%2C1438863117080.1438863134629 is closed by DFSClient_hb_rs_rs1,60020,1438863117080_-961565441_30
+2015-08-06 14:14:46,661 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /hbase/data/hbase/meta/1588230740/.tmp/e9fea2c458d246f28c856cdc60eaf799. blk_8340029013070289273_1026
+2015-08-06 14:14:46,680 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_8340029013070289273_1026 size 1330
+2015-08-06 14:14:46,683 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/data/hbase/meta/1588230740/.tmp/e9fea2c458d246f28c856cdc60eaf799 from client DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:14:46,683 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/data/hbase/meta/1588230740/.tmp/e9fea2c458d246f28c856cdc60eaf799 is closed by DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:14:46,690 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_8340029013070289273_1026 size 1330
+2015-08-06 14:14:46,978 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_-1510364842218129560_1023 size 91
+2015-08-06 14:14:46,980 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_-1510364842218129560_1023 size 91
+2015-08-06 14:14:46,988 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863134360.meta from client DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:14:46,988 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863134360.meta is closed by DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:14:46,995 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.10:50010 is added to blk_4207697416447993266_1018 size 91
+2015-08-06 14:14:46,996 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 10.0.2.9:50010 is added to blk_4207697416447993266_1018 size 91
+2015-08-06 14:14:46,998 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863129904 from client DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:14:46,999 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /hbase/WALs/master,60020,1438863120511/master%2C60020%2C1438863120511.1438863129904 is closed by DFSClient_hb_rs_master,60020,1438863120511_957783325_30
+2015-08-06 14:15:27,397 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at master/10.0.2.9
+************************************************************/

@@ -1,0 +1,375 @@
+2015-05-02 17:10:39,076 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-02 17:10:39,303 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-02 17:10:39,317 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-02 17:10:39,318 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-02 17:10:39,318 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-02 17:10:39,767 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-02 17:10:39,792 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-02 17:10:39,872 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-05-02 17:10:40,056 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /tmp/hadoop-hwb/dfs/data is not formatted
+2015-05-02 17:10:40,056 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2015-05-02 17:10:40,118 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2015-05-02 17:10:40,134 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened data transfer server at 50010
+2015-05-02 17:10:40,141 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2015-05-02 17:10:40,229 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-02 17:10:40,326 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-02 17:10:40,339 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2015-05-02 17:10:40,339 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2015-05-02 17:10:40,340 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2015-05-02 17:10:40,340 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2015-05-02 17:10:40,340 INFO org.mortbay.log: jetty-6.1.26
+2015-05-02 17:10:41,086 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2015-05-02 17:10:41,089 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-02 17:10:41,090 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2015-05-02 17:10:41,293 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2015-05-02 17:10:41,293 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2015-05-02 17:10:41,295 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(hwb-VirtualBox:50010, storageID=, infoPort=50075, ipcPort=50020)
+2015-05-02 17:10:41,296 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-02 17:10:41,332 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-968557232-127.0.1.1-50010-1430579441315 is assigned to data-node 127.0.0.1:50010
+2015-05-02 17:10:41,332 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished generating blocks being written report for 1 volumes in 0 seconds
+2015-05-02 17:10:41,336 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 1ms
+2015-05-02 17:10:41,336 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-968557232-127.0.1.1-50010-1430579441315, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-hwb/dfs/data/current'}
+2015-05-02 17:10:41,336 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-02 17:10:41,337 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2015-05-02 17:10:41,337 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2015-05-02 17:10:41,337 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2015-05-02 17:10:41,337 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2015-05-02 17:10:41,345 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2015-05-02 17:10:41,349 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 11 msecs for RPC and NN processing
+2015-05-02 17:10:41,350 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner
+2015-05-02 17:10:41,351 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 1 ms
+2015-05-02 17:10:50,603 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving blk_2146115774273189261_1001 src: /127.0.0.1:42454 dest: /127.0.0.1:50010
+2015-05-02 17:10:50,686 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:42454, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_1235377181_1, offset: 0, srvID: DS-968557232-127.0.1.1-50010-1430579441315, blockid: blk_2146115774273189261_1001, duration: 16657772
+2015-05-02 17:10:50,691 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for blk_2146115774273189261_1001 terminating
+2015-05-02 17:12:44,594 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to localhost/127.0.0.1:9000 failed on local exception: java.io.IOException: Connection reset by peer
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy3.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:1031)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1588)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:55)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:364)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2015-05-02 17:12:48,424 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 17:12:49,425 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 17:12:49,478 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/
+2015-05-02 17:13:21,778 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-02 17:13:22,333 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-02 17:13:22,369 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-02 17:13:22,370 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-02 17:13:22,370 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-02 17:13:23,279 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-02 17:13:23,292 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-02 17:13:26,550 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2015-05-02 17:13:26,608 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened data transfer server at 50010
+2015-05-02 17:13:26,644 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2015-05-02 17:13:26,688 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-05-02 17:13:27,071 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-02 17:13:27,268 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-02 17:13:27,318 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2015-05-02 17:13:27,318 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2015-05-02 17:13:27,318 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2015-05-02 17:13:27,318 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2015-05-02 17:13:27,318 INFO org.mortbay.log: jetty-6.1.26
+2015-05-02 17:13:30,201 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2015-05-02 17:13:30,204 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-02 17:13:30,205 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2015-05-02 17:13:30,494 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2015-05-02 17:13:30,495 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2015-05-02 17:13:30,496 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(hwb-VirtualBox:50010, storageID=DS-968557232-127.0.1.1-50010-1430579441315, infoPort=50075, ipcPort=50020)
+2015-05-02 17:13:30,508 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-02 17:13:30,613 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished generating blocks being written report for 1 volumes in 0 seconds
+2015-05-02 17:13:30,646 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 5ms
+2015-05-02 17:13:30,661 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-968557232-127.0.1.1-50010-1430579441315, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-hwb/dfs/data/current'}
+2015-05-02 17:13:30,674 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-02 17:13:30,675 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2015-05-02 17:13:30,675 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2015-05-02 17:13:30,676 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2015-05-02 17:13:30,676 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2015-05-02 17:13:30,691 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2015-05-02 17:13:30,815 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 1 blocks took 1 msec to generate and 68 msecs for RPC and NN processing
+2015-05-02 17:13:30,816 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner
+2015-05-02 17:13:30,855 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 0 ms
+2015-05-02 17:13:31,889 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded blk_2146115774273189261_1001
+2015-05-02 17:14:01,816 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving blk_9071054462373776309_1002 src: /127.0.0.1:42545 dest: /127.0.0.1:50010
+2015-05-02 17:14:01,831 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:42545, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-558070041_1, offset: 0, srvID: DS-968557232-127.0.1.1-50010-1430579441315, blockid: blk_9071054462373776309_1002, duration: 2941979
+2015-05-02 17:14:01,831 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for blk_9071054462373776309_1002 terminating
+2015-05-02 17:14:03,698 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling blk_2146115774273189261_1001 file /tmp/hadoop-hwb/dfs/data/current/blk_2146115774273189261 for deletion
+2015-05-02 17:14:03,700 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted blk_2146115774273189261_1001 at file /tmp/hadoop-hwb/dfs/data/current/blk_2146115774273189261
+2015-05-02 17:14:21,705 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to localhost/127.0.0.1:9000 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy3.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:1031)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1588)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2015-05-02 17:14:25,706 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 17:14:25,841 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/
+2015-05-02 17:37:53,051 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-02 17:37:53,801 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-02 17:37:53,853 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-02 17:37:53,854 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-02 17:37:53,854 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-02 17:37:54,752 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-02 17:37:54,811 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-02 17:37:55,041 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-05-02 17:37:55,731 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /tmp/hadoop-hwb/dfs/data is not formatted
+2015-05-02 17:37:55,731 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2015-05-02 17:37:55,858 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2015-05-02 17:37:55,954 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened data transfer server at 50010
+2015-05-02 17:37:55,989 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2015-05-02 17:37:56,326 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-02 17:37:56,553 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-02 17:37:56,621 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2015-05-02 17:37:56,621 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2015-05-02 17:37:56,621 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2015-05-02 17:37:56,621 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2015-05-02 17:37:56,621 INFO org.mortbay.log: jetty-6.1.26
+2015-05-02 17:37:59,071 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2015-05-02 17:37:59,087 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-02 17:37:59,087 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2015-05-02 17:37:59,276 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2015-05-02 17:37:59,277 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2015-05-02 17:37:59,278 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(hwb-VirtualBox:50010, storageID=, infoPort=50075, ipcPort=50020)
+2015-05-02 17:37:59,307 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-02 17:37:59,536 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-534192095-127.0.1.1-50010-1430581079416 is assigned to data-node 127.0.0.1:50010
+2015-05-02 17:37:59,536 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished generating blocks being written report for 1 volumes in 0 seconds
+2015-05-02 17:37:59,547 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 0ms
+2015-05-02 17:37:59,548 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(127.0.0.1:50010, storageID=DS-534192095-127.0.1.1-50010-1430581079416, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-hwb/dfs/data/current'}
+2015-05-02 17:37:59,559 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-02 17:37:59,560 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2015-05-02 17:37:59,560 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2015-05-02 17:37:59,560 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2015-05-02 17:37:59,561 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2015-05-02 17:37:59,598 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2015-05-02 17:37:59,620 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 3 msecs for RPC and NN processing
+2015-05-02 17:37:59,620 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner
+2015-05-02 17:37:59,621 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 1 ms
+2015-05-02 17:38:03,594 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving blk_-8634866625776651293_1001 src: /127.0.0.1:58335 dest: /127.0.0.1:50010
+2015-05-02 17:38:03,697 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:58335, dest: /127.0.0.1:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-906057327_1, offset: 0, srvID: DS-534192095-127.0.1.1-50010-1430581079416, blockid: blk_-8634866625776651293_1001, duration: 18725883
+2015-05-02 17:38:03,700 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for blk_-8634866625776651293_1001 terminating
+2015-05-02 17:38:38,628 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to localhost/127.0.0.1:9000 failed on local exception: java.io.IOException: Connection reset by peer
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy3.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:1031)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1588)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:55)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:364)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2015-05-02 17:38:42,581 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 17:38:43,523 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/
+2015-05-02 18:59:55,697 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-02 18:59:56,314 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-02 18:59:56,347 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-02 18:59:56,356 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-02 18:59:56,356 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-02 18:59:57,125 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-02 18:59:57,129 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-02 18:59:57,307 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-05-02 18:59:58,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 18:59:59,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:00,744 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:01,744 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:02,745 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:03,746 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:04,747 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:05,749 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:06,751 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:07,753 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:07,755 INFO org.apache.hadoop.ipc.RPC: Server at master/10.0.2.9:54310 not available yet, Zzzzz...
+2015-05-02 19:00:09,757 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:10,758 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:11,760 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:12,761 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:13,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:14,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:15,763 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:16,764 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:17,765 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:18,767 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:18,768 INFO org.apache.hadoop.ipc.RPC: Server at master/10.0.2.9:54310 not available yet, Zzzzz...
+2015-05-02 19:00:20,771 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:21,772 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:22,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:23,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:24,775 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:25,777 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:26,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:27,779 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:28,780 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:29,781 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:29,781 INFO org.apache.hadoop.ipc.RPC: Server at master/10.0.2.9:54310 not available yet, Zzzzz...
+2015-05-02 19:00:31,784 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:32,784 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:33,787 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:34,787 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:35,789 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:36,791 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:37,792 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:38,793 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:00:39,134 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/
+2015-05-02 19:00:59,497 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-02 19:00:59,733 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-02 19:00:59,745 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-02 19:00:59,746 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-02 19:00:59,746 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-02 19:01:00,501 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-02 19:01:00,538 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-02 19:01:02,053 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:03,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:04,055 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:05,057 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:06,058 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:07,059 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:08,061 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:09,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:10,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:11,064 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:11,066 INFO org.apache.hadoop.ipc.RPC: Server at master/10.0.2.9:54310 not available yet, Zzzzz...
+2015-05-02 19:01:13,068 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:14,069 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-02 19:01:15,040 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/
+2015-05-02 19:01:49,326 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-02 19:01:50,015 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-02 19:01:50,035 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-02 19:01:50,051 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-02 19:01:50,052 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-02 19:01:51,062 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-02 19:01:51,103 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-02 19:01:51,924 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /tmp/hadoop-hwb/dfs/data is not formatted
+2015-05-02 19:01:51,924 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2015-05-02 19:01:52,035 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2015-05-02 19:01:52,073 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened data transfer server at 50010
+2015-05-02 19:01:52,074 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2015-05-02 19:01:52,084 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-05-02 19:01:52,242 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-02 19:01:52,371 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-02 19:01:52,401 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2015-05-02 19:01:52,401 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2015-05-02 19:01:52,401 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2015-05-02 19:01:52,402 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2015-05-02 19:01:52,402 INFO org.mortbay.log: jetty-6.1.26
+2015-05-02 19:01:53,623 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2015-05-02 19:01:53,626 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-02 19:01:53,655 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2015-05-02 19:01:53,788 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2015-05-02 19:01:53,788 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2015-05-02 19:01:53,789 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(hwb-VirtualBox:50010, storageID=, infoPort=50075, ipcPort=50020)
+2015-05-02 19:01:53,797 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-02 19:01:53,975 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-1027390362-127.0.1.1-50010-1430586113904 is assigned to data-node 10.0.2.9:50010
+2015-05-02 19:01:53,975 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished generating blocks being written report for 1 volumes in 0 seconds
+2015-05-02 19:01:54,003 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 0ms
+2015-05-02 19:01:54,025 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(10.0.2.9:50010, storageID=DS-1027390362-127.0.1.1-50010-1430586113904, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-hwb/dfs/data/current'}
+2015-05-02 19:01:54,045 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-02 19:01:54,046 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2015-05-02 19:01:54,046 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2015-05-02 19:01:54,049 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2015-05-02 19:01:54,049 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2015-05-02 19:01:54,061 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2015-05-02 19:01:54,083 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 22 msecs for RPC and NN processing
+2015-05-02 19:01:54,089 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner
+2015-05-02 19:01:54,097 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 0 ms

@@ -1,0 +1,84 @@
+2015-05-03 11:15:03,334 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2015-05-03 11:15:03,336 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished generating blocks being written report for 1 volumes in 0 seconds
+2015-05-03 11:15:03,338 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 0ms
+2015-05-03 11:15:06,335 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 1 msecs for RPC and NN processing
+2015-05-03 11:15:57,353 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to master/10.0.2.9:54310 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy3.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:1031)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1588)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2015-05-03 11:16:00,918 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/
+2015-05-03 11:19:20,210 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = hwb-VirtualBox/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-03 11:19:20,947 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-05-03 11:19:21,003 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-05-03 11:19:21,004 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-05-03 11:19:21,004 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DataNode metrics system started
+2015-05-03 11:19:22,087 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-05-03 11:19:22,124 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-05-03 11:19:23,236 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2015-05-03 11:19:23,280 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened data transfer server at 50010
+2015-05-03 11:19:23,298 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2015-05-03 11:19:23,325 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-05-03 11:19:23,579 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-03 11:19:23,855 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-03 11:19:23,891 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dfs.webhdfs.enabled = false
+2015-05-03 11:19:23,891 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2015-05-03 11:19:23,892 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2015-05-03 11:19:23,892 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2015-05-03 11:19:23,892 INFO org.mortbay.log: jetty-6.1.26
+2015-05-03 11:19:25,719 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2015-05-03 11:19:25,722 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-05-03 11:19:25,723 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source DataNode registered.
+2015-05-03 11:19:25,868 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort50020 registered.
+2015-05-03 11:19:25,872 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2015-05-03 11:19:25,880 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort50020 registered.
+2015-05-03 11:19:25,881 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(hwb-VirtualBox:50010, storageID=DS-1027390362-127.0.1.1-50010-1430586113904, infoPort=50075, ipcPort=50020)
+2015-05-03 11:19:25,894 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished generating blocks being written report for 1 volumes in 0 seconds
+2015-05-03 11:19:25,905 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 0ms
+2015-05-03 11:19:25,905 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(10.0.2.9:50010, storageID=DS-1027390362-127.0.1.1-50010-1430586113904, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/tmp/hadoop-hwb/dfs/data/current'}
+2015-05-03 11:19:25,916 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-05-03 11:19:25,941 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2015-05-03 11:19:25,941 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2015-05-03 11:19:25,949 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2015-05-03 11:19:25,949 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2015-05-03 11:19:25,989 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2015-05-03 11:19:25,990 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 1 msecs for RPC and NN processing
+2015-05-03 11:19:25,991 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner
+2015-05-03 11:19:25,992 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Generated rough (lockless) block report in 1 ms
+2015-05-03 11:20:13,969 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to master/10.0.2.9:54310 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy3.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:1031)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1588)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2015-05-03 11:20:17,971 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/10.0.2.9:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-03 11:20:18,468 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at hwb-VirtualBox/127.0.1.1
+************************************************************/

@@ -1,0 +1,407 @@
+2015-05-06 11:40:42,036 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 11:40:42,669 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 11:40:46,365 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:47,366 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:48,373 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:49,378 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:50,380 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:51,381 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:52,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:53,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:54,383 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:55,385 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:55,386 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:40:57,388 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:58,389 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:40:59,390 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:00,391 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:01,393 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:02,394 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:03,395 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:04,397 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:05,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:06,399 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:06,400 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:41:08,401 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:09,402 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:10,403 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:11,404 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:12,404 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:13,405 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:14,406 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:15,407 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:16,407 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:17,419 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:17,420 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:41:19,422 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:20,422 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:21,423 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:22,425 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:23,426 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:24,427 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:25,428 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:26,429 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:27,430 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:28,431 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:28,431 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:41:30,432 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:31,433 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:32,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:33,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:34,435 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:35,436 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:36,440 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:37,440 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:38,441 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:39,442 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:39,443 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:41:41,444 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:42,446 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:43,447 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:44,448 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:45,449 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:46,451 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:47,452 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:48,453 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:49,453 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:50,455 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:50,456 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:41:52,457 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:53,458 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:54,459 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:55,460 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:56,461 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:57,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:58,464 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:41:59,465 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:00,466 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:01,467 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:01,467 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:42:03,469 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:04,471 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:05,472 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:06,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:07,475 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:08,476 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:09,477 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:10,479 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:11,479 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:12,481 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:12,481 INFO org.apache.hadoop.ipc.RPC: Server at master/127.0.1.1:54310 not available yet, Zzzzz...
+2015-05-06 11:42:14,483 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:15,485 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/127.0.1.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-05-06 11:42:16,149 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/127.0.1.1
+************************************************************/
+2015-05-06 11:43:31,207 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 11:43:31,597 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 11:43:35,458 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-06 11:43:36,042 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-06 11:43:36,083 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-05-06 11:43:36,084 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-05-06 11:43:36,084 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-05-06 11:43:36,085 INFO org.mortbay.log: jetty-6.1.26
+2015-05-06 11:43:38,401 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-05-06 11:43:38,401 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-05-06 11:43:38,401 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-05-06 11:43:38,401 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-05-06 11:43:38,401 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-05-06 11:47:30,216 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/127.0.1.1
+************************************************************/
+2015-05-06 11:49:49,304 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 11:49:49,687 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 11:49:54,350 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-06 11:49:54,684 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-06 11:49:54,710 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-05-06 11:49:54,711 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-05-06 11:49:54,711 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-05-06 11:49:54,711 INFO org.mortbay.log: jetty-6.1.26
+2015-05-06 11:49:56,928 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-05-06 11:49:56,928 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-05-06 11:49:56,928 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-05-06 11:49:56,929 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-05-06 11:49:56,929 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-05-06 11:54:57,073 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2015-05-06 11:54:57,256 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 557 bytes.
+2015-05-06 11:54:57,256 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2015-05-06 11:54:57,258 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 713 bytes.
+2015-05-06 11:54:57,261 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-05-06 11:54:57,261 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-05-06 11:54:57,262 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-05-06 11:54:57,262 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-05-06 11:54:57,262 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-05-06 11:54:57,357 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-05-06 11:54:57,358 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-05-06 11:54:57,358 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-05-06 11:54:57,377 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-05-06 11:54:57,377 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-05-06 11:54:57,386 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2015-05-06 11:54:57,386 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-05-06 11:54:57,592 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 6
+2015-05-06 11:54:57,599 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-05-06 11:54:57,600 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 11:54:57,617 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /tmp/hadoop-hwb/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 8.  Bytes read: 713
+2015-05-06 11:54:57,617 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits of size 713 edits # 8 loaded in 0 seconds.
+2015-05-06 11:54:57,618 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-05-06 11:54:57,627 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=713, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 11:54:57,628 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 713, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 11:54:57,629 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /tmp/hadoop-hwb/dfs/namesecondary/current/fsimage of size 557 bytes saved in 0 seconds.
+2015-05-06 11:54:57,640 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 11:54:57,641 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 11:54:57,797 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:45376983:0:1430906097000:1430905783338&newChecksum=053b159c702941d2c269913ae346a718
+2015-05-06 11:54:57,797 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:45376983:0:1430906097000:1430905783338&newChecksum=053b159c702941d2c269913ae346a718
+2015-05-06 11:54:57,918 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 557
+2015-05-06 11:57:36,947 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/127.0.1.1
+************************************************************/
+2015-05-06 11:59:10,410 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 11:59:10,851 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 11:59:15,547 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-06 11:59:16,139 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-06 11:59:16,196 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-05-06 11:59:16,198 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-05-06 11:59:16,198 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-05-06 11:59:16,198 INFO org.mortbay.log: jetty-6.1.26
+2015-05-06 11:59:18,780 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-05-06 11:59:18,780 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-05-06 11:59:18,780 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-05-06 11:59:18,780 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-05-06 11:59:18,781 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-05-06 12:00:49,809 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/10.0.2.9
+************************************************************/
+2015-05-06 13:10:54,581 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 13:10:55,152 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 13:11:00,493 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-06 13:11:00,937 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-06 13:11:00,940 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-05-06 13:11:00,941 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-05-06 13:11:00,941 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-05-06 13:11:00,941 INFO org.mortbay.log: jetty-6.1.26
+2015-05-06 13:11:04,243 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-05-06 13:11:04,243 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-05-06 13:11:04,243 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-05-06 13:11:04,243 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-05-06 13:11:04,243 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-05-06 13:16:04,533 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2015-05-06 13:16:04,721 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 557 bytes.
+2015-05-06 13:16:04,721 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2015-05-06 13:16:04,730 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 707 bytes.
+2015-05-06 13:16:04,738 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-05-06 13:16:04,738 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-05-06 13:16:04,738 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-05-06 13:16:04,738 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-05-06 13:16:04,738 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-05-06 13:16:04,864 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-05-06 13:16:04,864 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-05-06 13:16:04,864 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-05-06 13:16:04,875 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-05-06 13:16:04,875 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-05-06 13:16:04,885 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2015-05-06 13:16:04,885 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-05-06 13:16:05,042 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 6
+2015-05-06 13:16:05,068 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-05-06 13:16:05,072 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:16:05,107 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /tmp/hadoop-hwb/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 8.  Bytes read: 707
+2015-05-06 13:16:05,107 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits of size 707 edits # 8 loaded in 0 seconds.
+2015-05-06 13:16:05,107 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-05-06 13:16:05,126 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=707, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:16:05,126 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 707, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:16:05,127 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /tmp/hadoop-hwb/dfs/namesecondary/current/fsimage of size 557 bytes saved in 0 seconds.
+2015-05-06 13:16:05,150 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:16:05,151 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:16:05,228 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:45376983:0:1430910964000:1430910651791&newChecksum=162ca5754416ef4feb31be122539fd0a
+2015-05-06 13:16:05,228 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:45376983:0:1430910964000:1430910651791&newChecksum=162ca5754416ef4feb31be122539fd0a
+2015-05-06 13:16:05,574 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 557
+2015-05-06 13:19:30,048 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/10.0.2.9
+************************************************************/
+2015-05-06 13:20:35,422 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 13:20:36,065 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 13:20:42,511 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-06 13:20:43,060 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-06 13:20:43,163 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-05-06 13:20:43,198 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-05-06 13:20:43,198 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-05-06 13:20:43,198 INFO org.mortbay.log: jetty-6.1.26
+2015-05-06 13:20:47,727 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-05-06 13:20:47,744 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-05-06 13:20:47,744 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-05-06 13:20:47,744 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-05-06 13:20:47,744 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-05-06 13:25:47,992 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2015-05-06 13:25:48,151 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 109 bytes.
+2015-05-06 13:25:48,152 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2015-05-06 13:25:48,153 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 827 bytes.
+2015-05-06 13:25:48,160 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-05-06 13:25:48,160 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-05-06 13:25:48,160 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-05-06 13:25:48,160 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-05-06 13:25:48,160 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-05-06 13:25:48,257 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-05-06 13:25:48,257 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-05-06 13:25:48,257 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-05-06 13:25:48,270 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-05-06 13:25:48,270 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-05-06 13:25:48,281 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2015-05-06 13:25:48,281 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-05-06 13:25:48,419 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2015-05-06 13:25:48,419 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-05-06 13:25:48,419 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:25:48,428 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /tmp/hadoop-hwb/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 10.  Bytes read: 827
+2015-05-06 13:25:48,429 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits of size 827 edits # 10 loaded in 0 seconds.
+2015-05-06 13:25:48,429 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-05-06 13:25:48,435 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=827, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:25:48,435 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 827, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:25:48,436 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /tmp/hadoop-hwb/dfs/namesecondary/current/fsimage of size 557 bytes saved in 0 seconds.
+2015-05-06 13:25:48,444 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:25:48,445 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:25:48,506 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:703140773:0:1430911547000:1430911232483&newChecksum=72e54fb2c624610480ac642332046700
+2015-05-06 13:25:48,506 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:703140773:0:1430911547000:1430911232483&newChecksum=72e54fb2c624610480ac642332046700
+2015-05-06 13:25:48,757 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 557
+2015-05-06 13:27:57,971 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/10.0.2.9
+************************************************************/
+2015-05-06 13:38:51,197 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = master/10.0.2.9
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-05-06 13:38:51,610 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: dfs.namenode.edits.toleration.length is set to 0.  Override it with -1, i.e. disable it.
+2015-05-06 13:38:55,013 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-05-06 13:38:55,265 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-05-06 13:38:55,293 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2015-05-06 13:38:55,294 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2015-05-06 13:38:55,294 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2015-05-06 13:38:55,294 INFO org.mortbay.log: jetty-6.1.26
+2015-05-06 13:38:57,746 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2015-05-06 13:38:57,746 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2015-05-06 13:38:57,746 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2015-05-06 13:38:57,746 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2015-05-06 13:38:57,746 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :67108864 bytes (65536 KB)
+2015-05-06 13:43:58,600 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2015-05-06 13:43:58,838 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 109 bytes.
+2015-05-06 13:43:58,838 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2015-05-06 13:43:58,841 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 7213 bytes.
+2015-05-06 13:43:58,856 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-05-06 13:43:58,856 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-05-06 13:43:58,857 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-05-06 13:43:58,857 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-05-06 13:43:58,857 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-05-06 13:43:59,029 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-05-06 13:43:59,029 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-05-06 13:43:59,029 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-05-06 13:43:59,053 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-05-06 13:43:59,053 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-05-06 13:43:59,103 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2015-05-06 13:43:59,103 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-05-06 13:43:59,408 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 1
+2015-05-06 13:43:59,409 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2015-05-06 13:43:59,409 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:43:59,431 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /tmp/hadoop-hwb/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 66.  Bytes read: 7213
+2015-05-06 13:43:59,431 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits of size 7213 edits # 66 loaded in 0 seconds.
+2015-05-06 13:43:59,432 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-05-06 13:43:59,436 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=7213, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:43:59,436 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 7213, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:43:59,438 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /tmp/hadoop-hwb/dfs/namesecondary/current/fsimage of size 3475 bytes saved in 0 seconds.
+2015-05-06 13:43:59,448 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:43:59,448 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 13:43:59,507 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:806621259:0:1430912637000:1430912329765&newChecksum=fd9ffa30d112d083904f280c38b88314
+2015-05-06 13:43:59,507 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:806621259:0:1430912637000:1430912329765&newChecksum=fd9ffa30d112d083904f280c38b88314
+2015-05-06 13:43:59,695 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3475
+2015-05-06 14:43:59,841 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-05-06 14:43:59,845 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:43:59,846 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:43:59,902 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getimage=1
+2015-05-06 14:43:59,916 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 3475 bytes.
+2015-05-06 14:43:59,917 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?getedit=1
+2015-05-06 14:43:59,921 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 11608 bytes.
+2015-05-06 14:43:59,921 INFO org.apache.hadoop.hdfs.util.GSet: Computing capacity for map BlocksMap
+2015-05-06 14:43:59,921 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2015-05-06 14:43:59,921 INFO org.apache.hadoop.hdfs.util.GSet: 2.0% max memory = 1013645312
+2015-05-06 14:43:59,921 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2015-05-06 14:43:59,924 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2015-05-06 14:44:00,580 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=hwb
+2015-05-06 14:44:00,581 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2015-05-06 14:44:00,581 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2015-05-06 14:44:00,581 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.block.invalidate.limit=100
+2015-05-06 14:44:00,581 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+2015-05-06 14:44:00,581 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: dfs.namenode.edits.toleration.length = -1
+2015-05-06 14:44:00,581 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2015-05-06 14:44:00,604 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 28
+2015-05-06 14:44:00,607 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 3
+2015-05-06 14:44:00,609 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Start loading edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:44:00,646 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: EOF of /tmp/hadoop-hwb/dfs/namesecondary/current/edits, reached end of edit log Number of transactions found: 88.  Bytes read: 11608
+2015-05-06 14:44:00,647 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edits file /tmp/hadoop-hwb/dfs/namesecondary/current/edits of size 11608 edits # 88 loaded in 0 seconds.
+2015-05-06 14:44:00,647 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2015-05-06 14:44:00,651 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=11608, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:44:00,651 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 11608, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:44:00,654 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file /tmp/hadoop-hwb/dfs/namesecondary/current/fsimage of size 5419 bytes saved in 0 seconds.
+2015-05-06 14:44:00,705 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: closing edit log: position=4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:44:00,705 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: close success: truncate to 4, editlog=/tmp/hadoop-hwb/dfs/namesecondary/current/edits
+2015-05-06 14:44:00,737 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=0.0.0.0&token=-41:806621259:0:1430916239000:1430912639668&newChecksum=2f5f1fbeece81b5915785c00d3668fcf
+2015-05-06 14:44:00,737 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://0.0.0.0:50070/getimage?putimage=1&port=50090&machine=0.0.0.0&token=-41:806621259:0:1430916239000:1430912639668&newChecksum=2f5f1fbeece81b5915785c00d3668fcf
+2015-05-06 14:44:00,806 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 5419
+2015-05-06 15:17:17,006 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at master/10.0.2.9
+************************************************************/
