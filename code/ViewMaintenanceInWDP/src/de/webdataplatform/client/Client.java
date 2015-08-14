@@ -197,11 +197,12 @@ public class Client {
 			
 			HTableDescriptor desc = new HTableDescriptor(Bytes.toBytes(tableName));
 			
-			
-			for (String colFam : getColumnFamilies(tableDefinition)) {
-				
-				HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
-				desc.addFamily(coldef);
+			if (getColumnFamilies(tableDefinition) != null) {
+				for (String colFam : getColumnFamilies(tableDefinition)) {
+					
+					HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
+					desc.addFamily(coldef);
+				}
 			}
 			HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes("sigfam1"));
 			desc.addFamily(coldef);
@@ -356,7 +357,7 @@ public class Client {
 	public void queueFinishMarkers(String tableName, int regCount)throws Exception{
 	
 	
-		HTable baseTable = new HTable(conf, tableName);
+		HTable baseTable = new HTable(conf, "finish_markers");
 		
 		byte[][] regions = createRegionArray(tableName, regCount);
 		
