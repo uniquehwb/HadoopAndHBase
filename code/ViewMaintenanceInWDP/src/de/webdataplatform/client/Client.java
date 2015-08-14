@@ -197,7 +197,7 @@ public class Client {
 			
 			HTableDescriptor desc = new HTableDescriptor(Bytes.toBytes(tableName));
 			
-			if (getColumnFamilies(tableDefinition) != null) {
+			if (tableDefinition != null && getColumnFamilies(tableDefinition) != null) {
 				for (String colFam : getColumnFamilies(tableDefinition)) {
 					
 					HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
@@ -289,7 +289,7 @@ public class Client {
 		
 		TableDefinition tableDefinition = DatabaseConfig.getTableDefinition(tableName);
 		
-		if (getColumnFamilies(tableDefinition) != null) {
+		if (tableDefinition != null && getColumnFamilies(tableDefinition) != null) {
 			for (String colFam : getColumnFamilies(tableDefinition)) {
 				
 				HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
