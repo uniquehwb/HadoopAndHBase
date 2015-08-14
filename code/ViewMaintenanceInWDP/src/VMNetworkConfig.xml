@@ -4,22 +4,22 @@
   <networkconfig>  
 	  
       <zookeeper>
-		  		<quorum>deltaserver1</quorum>
+		  		<quorum>master</quorum>
 <!-- 		  		<clientPort>2222</clientPort>     -->
 	  </zookeeper>
 	  
       <master>
-          <address>deltaserver1</address>
+          <address>master</address>
 <!-- 		  <hbasePort>60100</hbasePort> -->
 		  <vmPort>4004</vmPort>
 	  </master>
 	  
-	  <hdfs>hdfs://deltaserver1</hdfs>
+	  <hdfs>hdfs://master:9000/hbase</hdfs>
 	  	  
 	  <client>
 	      	<nodes>
-				<node>deltaserver1</node>
-				<node>storageserver1</node>
+				<node>master</node>
+				<node>rs1</node>
 			</nodes>	      
 	  </client>
 	  
@@ -27,8 +27,8 @@
 	  
 	  <regionServer>
 	      <nodes>
-				<node>deltaserver1</node>
-				<node>storageserver1</node> 
+				<node>master</node>
+				<node>rs1</node> 
 		  </nodes>	
 		  <messagePort>4133</messagePort>   
 	 </regionServer>
@@ -39,8 +39,8 @@
 	      	<messagePort>4130</messagePort>
 	        <updatePort>4230</updatePort>
 	      	<nodes>
-				<node>deltaserver1</node>
-				<node>storageserver1</node>
+				<node>master</node>
+				<node>rs1</node>
 			</nodes>	
 	  </viewManager>
 	  
