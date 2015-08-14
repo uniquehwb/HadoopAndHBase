@@ -289,10 +289,12 @@ public class Client {
 		
 		TableDefinition tableDefinition = DatabaseConfig.getTableDefinition(tableName);
 		
-		for (String colFam : getColumnFamilies(tableDefinition)) {
-			
-			HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
-			desc.addFamily(coldef);
+		if (getColumnFamilies(tableDefinition) != null) {
+			for (String colFam : getColumnFamilies(tableDefinition)) {
+				
+				HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
+				desc.addFamily(coldef);
+			}
 		}
 		HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes("sigfam1"));
 		desc.addFamily(coldef);

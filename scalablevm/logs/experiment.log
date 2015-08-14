@@ -1,0 +1,606 @@
+de.webdataplatform.test.SVMSystem: configuring and starting database
+de.webdataplatform.test.SVMHBase: killing all processes
+de.webdataplatform.test.SVMHBase: killing node: master
+de.webdataplatform.test.SVMHBase: killing node: rs1
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: configuring hadoop
+de.webdataplatform.test.SVMHBase: region server nodes: 2
+de.webdataplatform.test.SVMHBase: setting config in directory: /home/hwb/Documents/hadoop-1.2.1/conf
+de.webdataplatform.test.SVMHBase: on node: SSHConnection [address=master, port=22, user=hwb, password=123321]
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: configuring hbase
+de.webdataplatform.test.SVMHBase: region server nodes: 2
+de.webdataplatform.test.SVMHBase: setting config in directory: /home/hwb/Documents/hbase-0.98.12-hadoop1/conf
+de.webdataplatform.test.SVMHBase: on node: SSHConnection [address=master, port=22, user=hwb, password=123321]
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: cleaning zookeeper:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: cleaning hadoop
+de.webdataplatform.test.SVMHBase: cleaning node: master
+de.webdataplatform.test.SVMHBase: cleaning node: rs1
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: formating hadoop
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: starting hadoop:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.test.SVMHBase: starting hbase:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMHBase: 
+
+de.webdataplatform.settings.NetworkConfig: Loading network config:
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.ZOOKEEPER_QUORUM:master
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.ZOOKEEPER_CLIENTPORT:0
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.HBASE_MASTER:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.VM_MASTER:Node [ipAddress=master, messagePort=4004, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.CLIENTS:[Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.REGIONSERVERS:[Node [ipAddress=master, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.VIEWMANAGERS:[Node [ipAddress=master, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.HDFS:hdfs://master:9000/hbase
+de.webdataplatform.settings.NetworkConfig: --------------------------------------------------------------
+de.webdataplatform.settings.EvaluationConfig: Loading evaluation config:
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.UPDATEPROCESSTIMEOUT:1800000
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.REGIONSERVER_UPDATESTIMEOUT:2000
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.REGIONSERVER_OVERALLTIMEOUT:300000
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.REGIONSERVER_READWALDELAY:10000
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.CLIENT_FILLTABLESTIMEOUT:1800000
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.CLIENT_CREATECONTROLTABLES:true
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.CLIENT_RECREATETABLES:true
+de.webdataplatform.settings.SystemConfig: EvaluationConfig.VIEWMANAGER_KILLDELAY:10000
+de.webdataplatform.settings.EvaluationConfig: 2 basetables found
+de.webdataplatform.settings.EvaluationConfig: 2 delta views found
+de.webdataplatform.settings.EvaluationConfig: 5 aggregation views found
+de.webdataplatform.settings.EvaluationConfig: 1 selection views found
+de.webdataplatform.settings.EvaluationConfig: 1 index views found
+de.webdataplatform.settings.EvaluationConfig: 1 reverse join views found
+de.webdataplatform.settings.EvaluationConfig: 1 join views found
+de.webdataplatform.settings.EvaluationConfig: CreateBaseTable [name=bt1, distribution=uniform, numOfOperations=101, numOfRegions=5, useUpdates=false, useDeletes=false]
+de.webdataplatform.settings.EvaluationConfig: CreateBaseTable [name=bt2, distribution=uniform, numOfOperations=100, numOfRegions=5, useUpdates=false, useDeletes=false]
+de.webdataplatform.settings.EvaluationConfig: CreateDeltaView [name=delta1, type=delta, basetable=bt1, columns=[colAggKey, colAggVal], numOfRegions=2, controlTable=null]
+de.webdataplatform.settings.EvaluationConfig: CreateDeltaView [name=delta2, type=delta, basetable=bt2, columns=[colAggKey, colAggVal], numOfRegions=2, controlTable=null]
+de.webdataplatform.settings.EvaluationConfig: CreateAggregationView [name=count1, type=count, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1]
+de.webdataplatform.settings.EvaluationConfig: CreateAggregationView [name=sum1, type=sum, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1]
+de.webdataplatform.settings.EvaluationConfig: CreateAggregationView [name=sum2, type=sum, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1]
+de.webdataplatform.settings.EvaluationConfig: CreateAggregationView [name=min1, type=min, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1]
+de.webdataplatform.settings.EvaluationConfig: CreateAggregationView [name=max1, type=max, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1]
+de.webdataplatform.settings.EvaluationConfig: CreateSelectionView [name=selection1, basetable=delta1, selectionColumn=colAggVal, selectionOperation=>, selectionValue=10, numOfRegions=2, controlTable=bt1]
+de.webdataplatform.settings.EvaluationConfig: CreateIndexView [name=index1, basetable=delta1, indexKey=colAggKey]
+de.webdataplatform.settings.EvaluationConfig: CreateReverseJoinView [name=joinpair1, joinTables=[JoinTable [tableName=delta1, joinKey=colAggKey], JoinTable [tableName=delta2, joinKey=colAggKey], JoinTable [tableName=delta3, joinKey=colAggKey]], numOfRegions=10, controlTable=true, useIndex=]
+de.webdataplatform.settings.EvaluationConfig: CreateJoinView [name=join1, joinPairView=joinpair1, compositeKey=[delta1fam1, delta2fam1], numOfRegions=2, controlTable=null]
+de.webdataplatform.settings.EvaluationConfig: EvaluationSet [evaluationParams=EvaluationParams [iterations=1, variableParams=[VariableParam [variableParameter=numOfViewManagers, startValue=2, endValue=10, stepWidth=1], VariableParam [variableParameter=numOfClients, startValue=2, endValue=10, stepWidth=1]]], experiment=Experiment [numOfRegionServers=2, numOfViewManagers=2, numOfKilledViewManagers=0, createdTables=[CreateBaseTable [name=bt1, distribution=uniform, numOfOperations=101, numOfRegions=5, useUpdates=false, useDeletes=false], CreateBaseTable [name=bt2, distribution=uniform, numOfOperations=100, numOfRegions=5, useUpdates=false, useDeletes=false], CreateDeltaView [name=delta1, type=delta, basetable=bt1, columns=[colAggKey, colAggVal], numOfRegions=2, controlTable=null], CreateDeltaView [name=delta2, type=delta, basetable=bt2, columns=[colAggKey, colAggVal], numOfRegions=2, controlTable=null], CreateAggregationView [name=count1, type=count, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=sum1, type=sum, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=sum2, type=sum, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=min1, type=min, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=max1, type=max, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateSelectionView [name=selection1, basetable=delta1, selectionColumn=colAggVal, selectionOperation=>, selectionValue=10, numOfRegions=2, controlTable=bt1], CreateIndexView [name=index1, basetable=delta1, indexKey=colAggKey], CreateReverseJoinView [name=joinpair1, joinTables=[JoinTable [tableName=delta1, joinKey=colAggKey], JoinTable [tableName=delta2, joinKey=colAggKey], JoinTable [tableName=delta3, joinKey=colAggKey]], numOfRegions=10, controlTable=true, useIndex=], CreateJoinView [name=join1, joinPairView=joinpair1, compositeKey=[delta1fam1, delta2fam1], numOfRegions=2, controlTable=null]]]]
+de.webdataplatform.settings.EvaluationConfig: 1 experiments found
+de.webdataplatform.settings.EvaluationConfig: --------------------------------------------------------------
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client: delete table viewdefinitions
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: org.apache.hadoop.hbase.TableNotFoundException: viewdefinitions
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:-2)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.ipc.RemoteException.instantiateException(RemoteException.java:95)
+	at org.apache.hadoop.ipc.RemoteException.unwrapRemoteException(RemoteException.java:79)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.translateException(RpcRetryingCaller.java:209)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.translateException(RpcRetryingCaller.java:223)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:121)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:90)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.executeCallable(HBaseAdmin.java:3347)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTableAsync(HBaseAdmin.java:914)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTable(HBaseAdmin.java:946)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTable(HBaseAdmin.java:976)
+	at de.webdataplatform.client.Client.deleteTable(Client.java:88)
+	at de.webdataplatform.client.Client.recreateSimpleTable(Client.java:131)
+	at de.webdataplatform.view.ViewDefinitions.generateTable(ViewDefinitions.java:82)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:120)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.client.Client///////////////////////////////////////////////////////
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client: create table viewdefinitions
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client: Table available: true
+de.webdataplatform.client.Client: Table enabled: true
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client: delete table finish_markers
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: org.apache.hadoop.hbase.TableNotFoundException: finish_markers
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:-2)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.ipc.RemoteException.instantiateException(RemoteException.java:95)
+	at org.apache.hadoop.ipc.RemoteException.unwrapRemoteException(RemoteException.java:79)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.translateException(RpcRetryingCaller.java:209)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.translateException(RpcRetryingCaller.java:223)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:121)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:90)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.executeCallable(HBaseAdmin.java:3347)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTableAsync(HBaseAdmin.java:914)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTable(HBaseAdmin.java:946)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTable(HBaseAdmin.java:976)
+	at de.webdataplatform.client.Client.deleteTable(Client.java:88)
+	at de.webdataplatform.client.Client.recreateSimpleTable(Client.java:131)
+	at de.webdataplatform.view.ViewDefinitions.generateTable(ViewDefinitions.java:84)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:120)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.client.Client///////////////////////////////////////////////////////
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client: create table finish_markers
+de.webdataplatform.client.Client: -----------------------
+de.webdataplatform.client.Client: Table available: true
+de.webdataplatform.client.Client: Table enabled: true
+de.webdataplatform.view.ViewDefinitions: -----------------------
+de.webdataplatform.view.ViewDefinitions: fill view definition table
+de.webdataplatform.view.ViewDefinitions: -----------------------
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.view.ViewDefinitions: creating view definitions
+de.webdataplatform.view.ViewDefinitions: connecting to zookeeper on address: master:0
+de.webdataplatform.view.ViewDefinitions:  scanning table 
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.view.ViewDefinitions:  view definitions {join1=JOIN,join1,joinpair1,delta1fam1:delta2fam1,2,null, max1=AGGREGATION_MAX,max1,colAggKey,colAggVal,2,bt1, min1=AGGREGATION_MIN,min1,colAggKey,colAggVal,2,bt1, joinpair1=REVERSE_JOIN,joinpair1,10,true,delta1:colAggKey,delta2:colAggKey,delta3:colAggKey,, sum2=AGGREGATION_SUM,sum2,colAggKey,colAggVal,2,bt1, index1=INDEX,delta1,colAggKey, sum1=AGGREGATION_SUM,sum1,colAggKey,colAggVal,2,bt1, count1=AGGREGATION_COUNT,count1,colAggKey,colAggVal,2,bt1, delta1=DELTA,delta1,colAggKey:colAggVal,2,null, delta2=DELTA,delta2,colAggKey:colAggVal,2,null, zfinish_marker=zfinish_marker, selection1=SELECTION,colAggVal,>,10}
+de.webdataplatform.view.ViewDefinitions:  view assignments {bt1=[delta1], joinpair1=[join1], bt2=[delta2], delta1=[count1, index1, joinpair1, max1, min1, selection1, sum1, sum2, zfinish_marker], delta2=[joinpair1, zfinish_marker], delta3=[joinpair1, zfinish_marker], delta4=[zfinish_marker]}
+de.webdataplatform.test.SVMSystem: creating view tables, setting process flag....
+de.webdataplatform.test.SVMSystem: view tables [CreateDeltaView [name=delta1, type=delta, basetable=bt1, columns=[colAggKey, colAggVal], numOfRegions=2, controlTable=null], CreateDeltaView [name=delta2, type=delta, basetable=bt2, columns=[colAggKey, colAggVal], numOfRegions=2, controlTable=null], CreateAggregationView [name=count1, type=count, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=sum1, type=sum, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=sum2, type=sum, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=min1, type=min, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateAggregationView [name=max1, type=max, basetable=delta1, aggregationKey=colAggKey, aggregationValue=colAggVal, numOfRegions=2, controlTable=bt1], CreateSelectionView [name=selection1, basetable=delta1, selectionColumn=colAggVal, selectionOperation=>, selectionValue=10, numOfRegions=2, controlTable=bt1], CreateIndexView [name=index1, basetable=delta1, indexKey=colAggKey], CreateReverseJoinView [name=joinpair1, joinTables=[JoinTable [tableName=delta1, joinKey=colAggKey], JoinTable [tableName=delta2, joinKey=colAggKey], JoinTable [tableName=delta3, joinKey=colAggKey]], numOfRegions=10, controlTable=true, useIndex=], CreateJoinView [name=join1, joinPairView=joinpair1, compositeKey=[delta1fam1, delta2fam1], numOfRegions=2, controlTable=null]]
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: delta1
+de.webdataplatform.test.SVMSystem: type: delta
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: delta2
+de.webdataplatform.test.SVMSystem: type: delta
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: count1
+de.webdataplatform.test.SVMSystem: type: count
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: sum1
+de.webdataplatform.test.SVMSystem: type: sum
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: sum2
+de.webdataplatform.test.SVMSystem: type: sum
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: min1
+de.webdataplatform.test.SVMSystem: type: min
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: max1
+de.webdataplatform.test.SVMSystem: type: max
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: selection1
+de.webdataplatform.test.SVMSystem: type: selection
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: index1
+de.webdataplatform.test.SVMSystem: type: null
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: joinpair1
+de.webdataplatform.test.SVMSystem: type: join
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: join1
+de.webdataplatform.test.SVMSystem: type: join
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.TestClient: creating base tables, setting process flag....
+de.webdataplatform.test.TestClient: base tables [CreateBaseTable [name=bt1, distribution=uniform, numOfOperations=101, numOfRegions=5, useUpdates=false, useDeletes=false], CreateBaseTable [name=bt2, distribution=uniform, numOfOperations=100, numOfRegions=5, useUpdates=false, useDeletes=false]]
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: bt1
+de.webdataplatform.test.SVMSystem: type: basetable
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: client nodes: 2
+de.webdataplatform.test.SVMSystem: creating table
+de.webdataplatform.test.SVMSystem: name: bt2
+de.webdataplatform.test.SVMSystem: type: basetable
+de.webdataplatform.test.SVMSystem: create split table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: starting components....
+de.webdataplatform.test.SVMSystem: starting master:Node [ipAddress=master, messagePort=4004, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: region server nodes: 2
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: starting region server:Node [ipAddress=master, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: starting region server:Node [ipAddress=rs1, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: viewManagerInstances: 2
+de.webdataplatform.test.SVMSystem: instancesPerNode: 2
+de.webdataplatform.test.SVMSystem: 
+de.webdataplatform.test.SVMSystem: starting viewmanager vm1 on node: master udpatePort:4230, messagePort:4130
+de.webdataplatform.test.SVMSystem: starting viewmanager vm2 on node: rs1 udpatePort:4230, messagePort:4130
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.TestClient: filling base tables....
+de.webdataplatform.test.TestClient: base tables [CreateBaseTable [name=bt1, distribution=uniform, numOfOperations=101, numOfRegions=5, useUpdates=false, useDeletes=false], CreateBaseTable [name=bt2, distribution=uniform, numOfOperations=100, numOfRegions=5, useUpdates=false, useDeletes=false]]
+de.webdataplatform.test.SVMSystem: filling base table CreateBaseTable [name=bt1, distribution=uniform, numOfOperations=101, numOfRegions=5, useUpdates=false, useDeletes=false]
+de.webdataplatform.test.SVMSystem: using  2 client
+de.webdataplatform.test.SVMSystem: 50 operations per client
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: filling base table CreateBaseTable [name=bt2, distribution=uniform, numOfOperations=100, numOfRegions=5, useUpdates=false, useDeletes=false]
+de.webdataplatform.test.SVMSystem: using  2 client
+de.webdataplatform.test.SVMSystem: 50 operations per client
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: clients started in 586 ms
+de.webdataplatform.test.SVMSystem: checking if base table filled....
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: c1:false
+de.webdataplatform.test.SVMSystem: base table filled in 32489 ms
+de.webdataplatform.test.SVMSystem: queue markers to base table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: queue markers to base table
+de.webdataplatform.test.SVMSystem: starting client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: checking if update process is finished....
+de.webdataplatform.client.Client: checking base table: bt1
+de.webdataplatform.client.Client: checking finish marker: k0000_finishmarker
+de.webdataplatform.test.SVMSystem: k0000_finishmarker:false
+de.webdataplatform.client.Client: checking base table: bt1
+de.webdataplatform.client.Client: checking finish marker: k0000_finishmarker
+de.webdataplatform.test.SVMSystem: k0000_finishmarker:false
+de.webdataplatform.client.Client: checking base table: bt1
+de.webdataplatform.client.Client: checking finish marker: k0000_finishmarker
+de.webdataplatform.client.Client: checking finish marker: k0200_finishmarker
+de.webdataplatform.client.Client: checking finish marker: k0400_finishmarker
+de.webdataplatform.client.Client: checking finish marker: k0600_finishmarker
+de.webdataplatform.client.Client: checking finish marker: k0800_finishmarker
+de.webdataplatform.client.Client: checking base table: bt2
+de.webdataplatform.client.Client: checking finish marker: x00_finishmarker
+de.webdataplatform.client.Client: checking finish marker: x19_finishmarker
+de.webdataplatform.client.Client: checking finish marker: x38_finishmarker
+de.webdataplatform.client.Client: checking finish marker: x57_finishmarker
+de.webdataplatform.client.Client: checking finish marker: x76_finishmarker
+de.webdataplatform.test.SVMSystem: view table filled in 10093 ms
+de.webdataplatform.test.SVMSystem: update process is finished, cleaning up....
+de.webdataplatform.test.SVMSystem: stopping system....
+de.webdataplatform.test.SVMSystem: stopping client:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: stopping client:Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: stopping master:
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: stopping region server:Node [ipAddress=master, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: stopping region server:Node [ipAddress=rs1, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: stopping view manager:Node [ipAddress=master, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: stopping view manager:Node [ipAddress=rs1, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: checking view tables....
+de.webdataplatform.test.SVMSystem: checking view table:delta1, basetable: null
+de.webdataplatform.test.SVMSystem: checking view table:delta2, basetable: null
+de.webdataplatform.test.SVMSystem: checking view table:count1, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: count1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: count1
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: AGGREGATION_COUNT
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: scan executed in :125 ms
+de.webdataplatform.settings.ViewTester: calculated view: {x082=[2], x081=[2], x068=[1], x067=[1], x084=[2], x066=[1], x085=[1], x064=[2], x088=[1], x062=[1], x061=[1], x041=[2], x020=[2], x021=[1], x003=[1], x022=[3], x006=[2], x007=[1], x033=[1], x059=[1], x071=[1], x036=[2], x097=[1], x038=[1], x037=[1], x075=[1], x058=[1], x008=[2], x039=[1], x054=[2], x030=[1], x099=[2], x010=[1], x017=[2], x016=[1]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: count1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:134)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:sum1, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: sum1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: sum1
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: AGGREGATION_SUM
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: scan executed in :130 ms
+de.webdataplatform.settings.ViewTester: calculated view: {x082=[123], x081=[32], x068=[55], x067=[68], x084=[103], x066=[41], x085=[33], x064=[103], x088=[36], x062=[65], x061=[15], x041=[152], x020=[80], x021=[6], x003=[5], x022=[133], x006=[130], x007=[43], x033=[52], x059=[44], x071=[89], x036=[125], x097=[47], x038=[52], x037=[20], x075=[50], x058=[23], x008=[78], x039=[90], x054=[41], x030=[99], x099=[147], x010=[32], x017=[139], x016=[83]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: sum1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:134)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:sum2, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: sum2
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: sum2
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: AGGREGATION_SUM
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: scan executed in :79 ms
+de.webdataplatform.settings.ViewTester: calculated view: {x082=[123], x081=[32], x068=[55], x067=[68], x084=[103], x066=[41], x085=[33], x064=[103], x088=[36], x062=[65], x061=[15], x041=[152], x020=[80], x021=[6], x003=[5], x022=[133], x006=[130], x007=[43], x033=[52], x059=[44], x071=[89], x036=[125], x097=[47], x038=[52], x037=[20], x075=[50], x058=[23], x008=[78], x039=[90], x054=[41], x030=[99], x099=[147], x010=[32], x017=[139], x016=[83]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: sum2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:134)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:min1, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: min1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: min1
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: AGGREGATION_MIN
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: scan executed in :85 ms
+de.webdataplatform.settings.ViewTester: calculated view: {x082=[35], x081=[7], x068=[55], x067=[68], x084=[19], x066=[41], x085=[33], x064=[21], x088=[36], x062=[65], x061=[15], x041=[58], x020=[29], x021=[6], x003=[5], x022=[19], x006=[31], x007=[43], x033=[52], x059=[44], x071=[89], x036=[58], x097=[47], x038=[52], x037=[20], x075=[50], x058=[23], x008=[12], x039=[90], x054=[11], x030=[99], x099=[73], x010=[32], x017=[57], x016=[83]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: min1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:134)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:max1, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: max1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: max1
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: AGGREGATION_MAX
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: scan executed in :101 ms
+de.webdataplatform.settings.ViewTester: calculated view: {x082=[88], x081=[25], x068=[55], x067=[68], x084=[84], x066=[41], x085=[33], x064=[82], x088=[36], x062=[65], x061=[15], x041=[94], x020=[51], x021=[6], x003=[5], x022=[79], x006=[99], x007=[43], x033=[52], x059=[44], x071=[89], x036=[67], x097=[47], x038=[52], x037=[20], x075=[50], x058=[23], x008=[66], x039=[90], x054=[30], x030=[99], x099=[74], x010=[32], x017=[82], x016=[83]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: max1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:134)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:selection1, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: selection1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: selection1
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: SELECTION
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: Average access time to base table:3
+de.webdataplatform.settings.ViewTester: scan executed in :246 ms
+de.webdataplatform.settings.ViewTester: calculated view: {k0452=[36], k0332=[11], k0853=[68], k0548=[99], k0254=[65], k0178=[90], k0353=[33], k0922=[35], k0857=[84], k0088=[52], k0965=[25], k0377=[52], k0989=[32], k0611=[79], k0584=[89], k0789=[66], k0583=[55], k0317=[57], k0686=[41], k0456=[82], k0845=[94], k0128=[99], k0204=[83], k0183=[15], k0577=[19], k0107=[19], k0106=[35], k0142=[30], k0556=[43], k0727=[29], k0829=[31], k0267=[58], k0287=[23], k0882=[12], k0387=[21], k0501=[47], k0099=[20], k0368=[67], k0552=[73], k0382=[51], k0761=[88], k0012=[74], k0973=[82], k0469=[58], k0092=[50], k0468=[44]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: selection1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:161)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:index1, basetable: bt1
+de.webdataplatform.test.SVMSystem: checking table: index1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: index1
+de.webdataplatform.settings.ViewTester: on baseTable: bt1
+de.webdataplatform.settings.ViewTester: viewMode: INDEX
+de.webdataplatform.settings.ViewTester: start scan
+de.webdataplatform.settings.ViewTester: scan executed in :168 ms
+de.webdataplatform.settings.ViewTester: calculated view: {x082=[k0761, k0922], x081=[k0495, k0965], x068=[k0583], x067=[k0853], x084=[k0577, k0857], x066=[k0686], x085=[k0353], x064=[k0387, k0973], x088=[k0452], x062=[k0254], x061=[k0183], x041=[k0469, k0845], x020=[k0382, k0727], x021=[k0571], x003=[k0029], x022=[k0106, k0107, k0611], x006=[k0128, k0829], x007=[k0556], x033=[k0088], x059=[k0468], x071=[k0584], x036=[k0267, k0368], x097=[k0501], x038=[k0377], x037=[k0099], x075=[k0092], x058=[k0287], x008=[k0789, k0882], x039=[k0178], x054=[k0142, k0332], x030=[k0548], x099=[k0012, k0552], x010=[k0989], x017=[k0317, k0456], x016=[k0204]}
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: index1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.settings.ViewTester.compareViews(ViewTester.java:188)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:75)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:joinpair1, basetable: true
+de.webdataplatform.test.SVMSystem: checking table: joinpair1
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.settings.ViewTester: checking view: joinpair1
+de.webdataplatform.settings.ViewTester: on baseTable: true
+de.webdataplatform.settings.ViewTester: viewMode: REVERSE_JOIN
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: true
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.ScannerCallable.prepare(ScannerCallable.java:125)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:90)
+	at org.apache.hadoop.hbase.client.ClientScanner.nextScanner(ClientScanner.java:283)
+	at org.apache.hadoop.hbase.client.ClientScanner.initializeScannerInConstruction(ClientScanner.java:188)
+	at org.apache.hadoop.hbase.client.ClientScanner.<init>(ClientScanner.java:183)
+	at org.apache.hadoop.hbase.client.ClientScanner.<init>(ClientScanner.java:110)
+	at org.apache.hadoop.hbase.client.HTable.getScanner(HTable.java:738)
+	at de.webdataplatform.settings.ViewTester.calculateView(ViewTester.java:253)
+	at de.webdataplatform.settings.ViewTester.check(ViewTester.java:66)
+	at de.webdataplatform.test.SVMSystem.completeTestRun(SVMSystem.java:292)
+	at de.webdataplatform.test.TestSetup.main(TestSetup.java:96)
+de.webdataplatform.settings.ViewTester///////////////////////////////////////////////////////
+de.webdataplatform.test.SVMSystem: checking view table:join1, basetable: null
+de.webdataplatform.test.SVMSystem: collecting statistics....
+de.webdataplatform.test.SVMSystem: reading statistics log of master on node: Node [ipAddress=master, messagePort=4004, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: reading statistics log of region server rs1 on node: Node [ipAddress=master, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: reading statistics log of region server rs2 on node: Node [ipAddress=rs1, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: reading statistics log of viewmanager vm1 on node: Node [ipAddress=master, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: reading statistics log of viewmanager vm2 on node: Node [ipAddress=rs1, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: 
+
+de.webdataplatform.test.SVMSystem: reading statistics log of client c1-filltable-bt1 on node: Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: reading statistics log of client c2-filltable-bt1 on node: Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: reading statistics log of client c1-filltable-bt2 on node: Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: reading statistics log of client c2-filltable-bt2 on node: Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMSystem: exiting....
+de.webdataplatform.test.SVMSystem: stopping database....
+de.webdataplatform.test.SVMHBase: stopping hbase:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.test.SVMHBase: 
+

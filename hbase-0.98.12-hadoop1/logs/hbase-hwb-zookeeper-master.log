@@ -561,3 +561,605 @@ EndOfStreamException: Unable to read additional data from client sessionid 0x14f
 2015-08-14 15:02:18,001 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x14f2c4b96ad0016, timeout of 30000ms exceeded
 2015-08-14 15:02:18,001 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c4b96ad0016
 Fr 14. Aug 15:02:19 CEST 2015 Terminating zookeeper
+Fr 14. Aug 15:35:50 CEST 2015 Starting zookeeper on master
+/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/hbase-daemon.sh: line 207: core: command not found
+2015-08-14 15:35:50,896 ERROR [main] quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-08-14 15:35:50,942 INFO  [main] server.ZooKeeperServerMain: Starting server
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:host.name=master
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.version=1.7.0_79
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.class.path=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../conf:/usr/lib/tools.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/activation-1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/asm-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-1.7.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-core-1.8.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-cli-1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-codec-1.7.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-collections-3.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-configuration-1.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-digester-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-el-1.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-httpclient-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-io-2.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-lang-2.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-logging-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-math-2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-net-1.4.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/findbugs-annotations-1.3.9-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/guava-12.0.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hadoop-core-1.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hamcrest-core-1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-annotations-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-checkstyle-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-client-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-examples-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop1-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-prefix-tree-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-protocol-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-rest-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-shell-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-testing-util-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-thrift-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/high-scale-lib-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/htrace-core-2.04.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpclient-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpcore-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-core-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-jaxrs-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-mapper-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-xc-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jamon-runtime-2.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-compiler-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-runtime-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-api-2.2.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-impl-2.2.3-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jcodings-1.0.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-client-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-core-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-json-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-server-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jettison-1.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-sslengine-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-util-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/joni-2.1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jruby-complete-1.6.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-api-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsr305-1.3.9.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/junit-4.11.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/libthrift-0.9.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/log4j-1.2.17.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/metrics-core-2.2.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/netty-3.6.6.Final.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/protobuf-java-2.5.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/servlet-api-2.5-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-api-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-log4j12-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/xmlenc-0.52.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/zookeeper-3.4.6.jar:
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:os.name=Linux
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:os.arch=amd64
+2015-08-14 15:35:50,974 INFO  [main] server.ZooKeeperServer: Server environment:os.version=3.16.0-30-generic
+2015-08-14 15:35:50,975 INFO  [main] server.ZooKeeperServer: Server environment:user.name=hwb
+2015-08-14 15:35:50,975 INFO  [main] server.ZooKeeperServer: Server environment:user.home=/home/hwb
+2015-08-14 15:35:50,975 INFO  [main] server.ZooKeeperServer: Server environment:user.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1
+2015-08-14 15:35:50,991 INFO  [main] server.ZooKeeperServer: tickTime set to 3000
+2015-08-14 15:35:50,991 INFO  [main] server.ZooKeeperServer: minSessionTimeout set to -1
+2015-08-14 15:35:50,991 INFO  [main] server.ZooKeeperServer: maxSessionTimeout set to 90000
+2015-08-14 15:35:51,013 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2015-08-14 15:35:55,623 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43857
+2015-08-14 15:35:55,658 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43857
+2015-08-14 15:35:55,663 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.1
+2015-08-14 15:35:55,727 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0000 with negotiated timeout 90000 for client /10.0.2.10:43857
+2015-08-14 15:35:56,335 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37159
+2015-08-14 15:35:56,343 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37159
+2015-08-14 15:35:56,355 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0001 with negotiated timeout 90000 for client /10.0.2.9:37159
+2015-08-14 15:35:59,185 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37161
+2015-08-14 15:35:59,299 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37161
+2015-08-14 15:35:59,303 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0002 with negotiated timeout 90000 for client /10.0.2.9:37161
+2015-08-14 15:36:00,400 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37172
+2015-08-14 15:36:00,401 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37172
+2015-08-14 15:36:00,412 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0003 with negotiated timeout 90000 for client /10.0.2.9:37172
+2015-08-14 15:36:00,664 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43858
+2015-08-14 15:36:00,664 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43858
+2015-08-14 15:36:00,667 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0004 with negotiated timeout 90000 for client /10.0.2.10:43858
+2015-08-14 15:36:00,703 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37173
+2015-08-14 15:36:00,704 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37173
+2015-08-14 15:36:00,707 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0005 with negotiated timeout 90000 for client /10.0.2.9:37173
+2015-08-14 15:36:00,760 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x27 zxid:0x13 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NoNode for /hbase/online-snapshot
+2015-08-14 15:36:00,898 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37174
+2015-08-14 15:36:00,898 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37174
+2015-08-14 15:36:00,903 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0006 with negotiated timeout 90000 for client /10.0.2.9:37174
+2015-08-14 15:36:00,929 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0006 type:create cxid:0x1 zxid:0x19 txntype:-1 reqpath:n/a Error Path:/hbase/replication Error:KeeperErrorCode = NoNode for /hbase/replication
+2015-08-14 15:36:01,368 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0000 type:create cxid:0x8 zxid:0x1c txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+2015-08-14 15:36:01,543 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0002 type:create cxid:0x8 zxid:0x1d txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+2015-08-14 15:36:02,667 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43862
+2015-08-14 15:36:02,668 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43862
+2015-08-14 15:36:02,672 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0007 with negotiated timeout 90000 for client /10.0.2.10:43862
+2015-08-14 15:36:02,734 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43863
+2015-08-14 15:36:02,738 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43863
+2015-08-14 15:36:02,742 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0008 with negotiated timeout 90000 for client /10.0.2.10:43863
+2015-08-14 15:36:02,749 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37178
+2015-08-14 15:36:02,754 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37178
+2015-08-14 15:36:02,758 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0009 with negotiated timeout 90000 for client /10.0.2.9:37178
+2015-08-14 15:36:02,838 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37179
+2015-08-14 15:36:02,838 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37179
+2015-08-14 15:36:02,840 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa000a with negotiated timeout 90000 for client /10.0.2.9:37179
+2015-08-14 15:36:06,299 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:delete cxid:0x46 zxid:0x27 txntype:-1 reqpath:n/a Error Path:/hbase/meta-region-server Error:KeeperErrorCode = NoNode for /hbase/meta-region-server
+2015-08-14 15:36:06,988 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x246 zxid:0x2f txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/hbase:namespace Error:KeeperErrorCode = NoNode for /hbase/table-lock/hbase:namespace
+2015-08-14 15:36:07,704 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x268 zxid:0x3f txntype:-1 reqpath:n/a Error Path:/hbase/namespace/default Error:KeeperErrorCode = NodeExists for /hbase/namespace/default
+2015-08-14 15:36:07,710 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x26b zxid:0x41 txntype:-1 reqpath:n/a Error Path:/hbase/namespace/hbase Error:KeeperErrorCode = NodeExists for /hbase/namespace/hbase
+2015-08-14 15:36:24,968 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37187
+2015-08-14 15:36:24,989 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37187
+2015-08-14 15:36:24,998 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa000b with negotiated timeout 90000 for client /10.0.2.9:37187
+2015-08-14 15:36:25,540 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x26e zxid:0x44 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/viewdefinitions Error:KeeperErrorCode = NoNode for /hbase/table-lock/viewdefinitions
+2015-08-14 15:36:25,596 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa000b
+2015-08-14 15:36:25,602 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37187 which had sessionid 0x14f2c6c7afa000b
+2015-08-14 15:36:25,681 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37190
+2015-08-14 15:36:25,682 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37190
+2015-08-14 15:36:25,687 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa000c with negotiated timeout 90000 for client /10.0.2.9:37190
+2015-08-14 15:36:27,090 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37203
+2015-08-14 15:36:27,091 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37203
+2015-08-14 15:36:27,096 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa000d with negotiated timeout 90000 for client /10.0.2.9:37203
+2015-08-14 15:36:27,141 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa000d
+2015-08-14 15:36:27,147 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37203 which had sessionid 0x14f2c6c7afa000d
+2015-08-14 15:36:27,178 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37204
+2015-08-14 15:36:27,179 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37204
+2015-08-14 15:36:27,181 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa000e with negotiated timeout 90000 for client /10.0.2.9:37204
+2015-08-14 15:36:27,204 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa000e
+2015-08-14 15:36:27,208 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37204 which had sessionid 0x14f2c6c7afa000e
+2015-08-14 15:36:27,210 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa000c
+2015-08-14 15:36:27,215 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37190 which had sessionid 0x14f2c6c7afa000c
+2015-08-14 15:36:27,367 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37205
+2015-08-14 15:36:27,367 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37205
+2015-08-14 15:36:27,370 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa000f with negotiated timeout 90000 for client /10.0.2.9:37205
+2015-08-14 15:36:27,383 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x28b zxid:0x59 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/finish_markers Error:KeeperErrorCode = NoNode for /hbase/table-lock/finish_markers
+2015-08-14 15:36:27,414 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa000f
+2015-08-14 15:36:27,416 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37205 which had sessionid 0x14f2c6c7afa000f
+2015-08-14 15:36:27,530 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37207
+2015-08-14 15:36:27,531 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37207
+2015-08-14 15:36:27,534 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0010 with negotiated timeout 90000 for client /10.0.2.9:37207
+2015-08-14 15:36:27,988 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37216
+2015-08-14 15:36:27,989 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37216
+2015-08-14 15:36:27,992 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0011 with negotiated timeout 90000 for client /10.0.2.9:37216
+2015-08-14 15:36:28,014 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0011
+2015-08-14 15:36:28,027 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37216 which had sessionid 0x14f2c6c7afa0011
+2015-08-14 15:36:28,059 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37217
+2015-08-14 15:36:28,060 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37217
+2015-08-14 15:36:28,064 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0012 with negotiated timeout 90000 for client /10.0.2.9:37217
+2015-08-14 15:36:28,089 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0012
+2015-08-14 15:36:28,095 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37217 which had sessionid 0x14f2c6c7afa0012
+2015-08-14 15:36:28,097 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0010
+2015-08-14 15:36:28,103 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37207 which had sessionid 0x14f2c6c7afa0010
+2015-08-14 15:36:28,125 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37218
+2015-08-14 15:36:28,128 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37218
+2015-08-14 15:36:28,129 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0013 with negotiated timeout 90000 for client /10.0.2.9:37218
+2015-08-14 15:36:28,829 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0013
+2015-08-14 15:36:28,831 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37218 which had sessionid 0x14f2c6c7afa0013
+2015-08-14 15:36:28,946 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37231
+2015-08-14 15:36:28,947 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37231
+2015-08-14 15:36:28,951 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0014 with negotiated timeout 90000 for client /10.0.2.9:37231
+2015-08-14 15:36:29,090 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0014
+2015-08-14 15:36:29,094 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37231 which had sessionid 0x14f2c6c7afa0014
+2015-08-14 15:36:51,407 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43883
+2015-08-14 15:36:51,477 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43883
+2015-08-14 15:36:51,636 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0015 with negotiated timeout 90000 for client /10.0.2.10:43883
+2015-08-14 15:36:51,814 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37234
+2015-08-14 15:36:51,993 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37234
+2015-08-14 15:36:52,073 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0016 with negotiated timeout 30000 for client /10.0.2.9:37234
+2015-08-14 15:36:53,856 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0015
+2015-08-14 15:36:53,868 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43883 which had sessionid 0x14f2c6c7afa0015
+2015-08-14 15:36:54,007 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43886
+2015-08-14 15:36:54,008 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43886
+2015-08-14 15:36:54,061 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0017 with negotiated timeout 30000 for client /10.0.2.10:43886
+2015-08-14 15:36:56,473 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43892
+2015-08-14 15:36:56,496 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43892
+2015-08-14 15:36:56,528 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0018 with negotiated timeout 90000 for client /10.0.2.10:43892
+2015-08-14 15:36:57,141 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37235
+2015-08-14 15:36:57,241 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37235
+2015-08-14 15:36:57,259 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0019 with negotiated timeout 90000 for client /10.0.2.9:37235
+2015-08-14 15:36:57,306 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37236
+2015-08-14 15:36:57,363 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37237
+2015-08-14 15:36:57,419 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37236
+2015-08-14 15:36:57,426 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa001a with negotiated timeout 90000 for client /10.0.2.9:37236
+2015-08-14 15:36:57,471 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37238
+2015-08-14 15:36:57,478 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37237
+2015-08-14 15:36:57,506 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa001b with negotiated timeout 90000 for client /10.0.2.9:37237
+2015-08-14 15:36:57,618 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37238
+2015-08-14 15:36:57,671 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa001c with negotiated timeout 90000 for client /10.0.2.9:37238
+2015-08-14 15:36:57,734 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37239
+2015-08-14 15:36:57,755 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37240
+2015-08-14 15:36:57,782 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37241
+2015-08-14 15:36:57,831 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37242
+2015-08-14 15:36:57,848 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37239
+2015-08-14 15:36:57,910 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37240
+2015-08-14 15:36:57,955 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37243
+2015-08-14 15:36:57,960 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa001d with negotiated timeout 90000 for client /10.0.2.9:37239
+2015-08-14 15:36:57,980 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37241
+2015-08-14 15:36:57,996 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37242
+2015-08-14 15:36:58,006 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37244
+2015-08-14 15:36:58,013 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37243
+2015-08-14 15:36:58,027 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa001e with negotiated timeout 90000 for client /10.0.2.9:37240
+2015-08-14 15:36:58,046 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0018
+2015-08-14 15:36:58,092 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa001f with negotiated timeout 90000 for client /10.0.2.9:37241
+2015-08-14 15:36:58,098 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37244
+2015-08-14 15:36:58,113 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0020 with negotiated timeout 90000 for client /10.0.2.9:37242
+2015-08-14 15:36:58,121 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37245
+2015-08-14 15:36:58,190 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0021 with negotiated timeout 90000 for client /10.0.2.9:37243
+2015-08-14 15:36:58,194 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37246
+2015-08-14 15:36:58,194 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37245
+2015-08-14 15:36:58,596 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37246
+2015-08-14 15:36:58,602 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37247
+2015-08-14 15:36:58,603 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37247
+2015-08-14 15:36:58,663 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0022 with negotiated timeout 90000 for client /10.0.2.9:37244
+2015-08-14 15:36:58,778 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0023 with negotiated timeout 90000 for client /10.0.2.9:37245
+2015-08-14 15:36:58,783 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0024 with negotiated timeout 90000 for client /10.0.2.9:37246
+2015-08-14 15:36:58,811 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0025 with negotiated timeout 90000 for client /10.0.2.9:37247
+2015-08-14 15:36:59,328 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0018, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:36:59,478 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43892 which had sessionid 0x14f2c6c7afa0018
+2015-08-14 15:36:59,479 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43901
+2015-08-14 15:36:59,503 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43901
+2015-08-14 15:36:59,562 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0026 with negotiated timeout 30000 for client /10.0.2.10:43901
+2015-08-14 15:37:10,039 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2a9 zxid:0x8b txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/max1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/max1
+2015-08-14 15:37:10,048 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2aa zxid:0x8c txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/join1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/join1
+2015-08-14 15:37:10,950 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2b3 zxid:0x91 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/selection1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/selection1
+2015-08-14 15:37:12,404 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37260
+2015-08-14 15:37:12,532 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37260
+2015-08-14 15:37:12,555 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0027 with negotiated timeout 90000 for client /10.0.2.9:37260
+2015-08-14 15:37:12,622 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2ba zxid:0x96 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/bt1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/bt1
+2015-08-14 15:37:12,716 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43939
+2015-08-14 15:37:12,756 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43939
+2015-08-14 15:37:12,765 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0028 with negotiated timeout 90000 for client /10.0.2.10:43939
+2015-08-14 15:37:12,793 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43940
+2015-08-14 15:37:12,857 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43940
+2015-08-14 15:37:12,875 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0029 with negotiated timeout 90000 for client /10.0.2.10:43940
+2015-08-14 15:37:13,020 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2be zxid:0x9b txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/count1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/count1
+2015-08-14 15:37:13,345 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0019
+2015-08-14 15:37:13,390 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37235 which had sessionid 0x14f2c6c7afa0019
+2015-08-14 15:37:13,785 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2c4 zxid:0x9f txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/joinpair1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/joinpair1
+2015-08-14 15:37:13,975 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2cb zxid:0xa4 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/bt2 Error:KeeperErrorCode = NoNode for /hbase/table-lock/bt2
+2015-08-14 15:37:14,044 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2cd zxid:0xa6 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/min1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/min1
+2015-08-14 15:37:14,164 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2cf zxid:0xa7 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/sum1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/sum1
+2015-08-14 15:37:14,173 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2d0 zxid:0xa8 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/sum2 Error:KeeperErrorCode = NoNode for /hbase/table-lock/sum2
+2015-08-14 15:37:14,401 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa001b
+2015-08-14 15:37:14,429 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2da zxid:0xb1 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/index1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/index1
+2015-08-14 15:37:14,446 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0024
+2015-08-14 15:37:14,469 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa001c
+2015-08-14 15:37:14,491 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa001b, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:14,616 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37237 which had sessionid 0x14f2c6c7afa001b
+2015-08-14 15:37:14,647 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0024, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:14,719 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37246 which had sessionid 0x14f2c6c7afa0024
+2015-08-14 15:37:14,724 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2e0 zxid:0xb5 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/delta2 Error:KeeperErrorCode = NoNode for /hbase/table-lock/delta2
+2015-08-14 15:37:14,743 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37238 which had sessionid 0x14f2c6c7afa001c
+2015-08-14 15:37:15,031 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa001a
+2015-08-14 15:37:15,116 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0023
+2015-08-14 15:37:15,152 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa001a, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:15,216 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37236 which had sessionid 0x14f2c6c7afa001a
+2015-08-14 15:37:15,216 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0023, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:15,244 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37245 which had sessionid 0x14f2c6c7afa0023
+2015-08-14 15:37:15,331 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x14f2c6c7afa0001 type:create cxid:0x2f2 zxid:0xbf txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/delta1 Error:KeeperErrorCode = NoNode for /hbase/table-lock/delta1
+2015-08-14 15:37:15,435 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0022
+2015-08-14 15:37:15,450 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37267
+2015-08-14 15:37:15,494 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37267
+2015-08-14 15:37:15,514 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0022, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:15,560 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa002a with negotiated timeout 90000 for client /10.0.2.9:37267
+2015-08-14 15:37:15,624 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37244 which had sessionid 0x14f2c6c7afa0022
+2015-08-14 15:37:15,756 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37268
+2015-08-14 15:37:15,833 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37268
+2015-08-14 15:37:15,995 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0021
+2015-08-14 15:37:16,100 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa002b with negotiated timeout 90000 for client /10.0.2.9:37268
+2015-08-14 15:37:16,120 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37269
+2015-08-14 15:37:16,123 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37269
+2015-08-14 15:37:16,155 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37270
+2015-08-14 15:37:16,158 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37270
+2015-08-14 15:37:16,172 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0021, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:16,224 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37243 which had sessionid 0x14f2c6c7afa0021
+2015-08-14 15:37:16,323 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37271
+2015-08-14 15:37:16,323 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa002c with negotiated timeout 90000 for client /10.0.2.9:37269
+2015-08-14 15:37:16,330 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37271
+2015-08-14 15:37:16,374 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa001f
+2015-08-14 15:37:16,382 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa002d with negotiated timeout 90000 for client /10.0.2.9:37270
+2015-08-14 15:37:16,450 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa001d
+2015-08-14 15:37:16,533 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa002e with negotiated timeout 90000 for client /10.0.2.9:37271
+2015-08-14 15:37:16,567 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37241 which had sessionid 0x14f2c6c7afa001f
+2015-08-14 15:37:16,567 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37272
+2015-08-14 15:37:16,614 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37272
+2015-08-14 15:37:16,660 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa001d, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:16,707 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37239 which had sessionid 0x14f2c6c7afa001d
+2015-08-14 15:37:16,729 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0020
+2015-08-14 15:37:16,785 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa002f with negotiated timeout 90000 for client /10.0.2.9:37272
+2015-08-14 15:37:16,842 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0025
+2015-08-14 15:37:16,862 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37273
+2015-08-14 15:37:16,873 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37273
+2015-08-14 15:37:16,926 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0020, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:16,979 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37242 which had sessionid 0x14f2c6c7afa0020
+2015-08-14 15:37:16,994 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0025, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:17,047 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0030 with negotiated timeout 90000 for client /10.0.2.9:37273
+2015-08-14 15:37:17,057 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37247 which had sessionid 0x14f2c6c7afa0025
+2015-08-14 15:37:17,566 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa001e
+2015-08-14 15:37:17,643 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37240 which had sessionid 0x14f2c6c7afa001e
+2015-08-14 15:37:18,132 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37274
+2015-08-14 15:37:18,208 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37274
+2015-08-14 15:37:18,274 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0031 with negotiated timeout 90000 for client /10.0.2.9:37274
+2015-08-14 15:37:19,229 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37275
+2015-08-14 15:37:19,265 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37275
+2015-08-14 15:37:19,286 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37276
+2015-08-14 15:37:19,352 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37276
+2015-08-14 15:37:19,382 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0032 with negotiated timeout 90000 for client /10.0.2.9:37275
+2015-08-14 15:37:19,524 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0033 with negotiated timeout 90000 for client /10.0.2.9:37276
+2015-08-14 15:37:19,774 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37277
+2015-08-14 15:37:19,805 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37278
+2015-08-14 15:37:19,821 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37277
+2015-08-14 15:37:19,839 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37279
+2015-08-14 15:37:19,901 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37278
+2015-08-14 15:37:19,928 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37279
+2015-08-14 15:37:20,020 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0034 with negotiated timeout 90000 for client /10.0.2.9:37277
+2015-08-14 15:37:20,074 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0035 with negotiated timeout 90000 for client /10.0.2.9:37278
+2015-08-14 15:37:20,110 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0036 with negotiated timeout 90000 for client /10.0.2.9:37279
+2015-08-14 15:37:22,224 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0028
+2015-08-14 15:37:22,276 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43939 which had sessionid 0x14f2c6c7afa0028
+2015-08-14 15:37:22,307 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43969
+2015-08-14 15:37:22,332 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43969
+2015-08-14 15:37:22,514 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0037 with negotiated timeout 90000 for client /10.0.2.10:43969
+2015-08-14 15:37:22,686 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0029
+2015-08-14 15:37:22,950 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0029, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:23,177 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43940 which had sessionid 0x14f2c6c7afa0029
+2015-08-14 15:37:23,188 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:43970
+2015-08-14 15:37:23,204 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:43970
+2015-08-14 15:37:23,332 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0038 with negotiated timeout 90000 for client /10.0.2.10:43970
+2015-08-14 15:37:23,834 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa002d, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:23,914 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37270 which had sessionid 0x14f2c6c7afa002d
+2015-08-14 15:37:23,932 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0038
+2015-08-14 15:37:23,953 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0037
+2015-08-14 15:37:24,077 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa002a, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:24,237 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37267 which had sessionid 0x14f2c6c7afa002a
+2015-08-14 15:37:24,246 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0038, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:24,369 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43970 which had sessionid 0x14f2c6c7afa0038
+2015-08-14 15:37:24,392 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0037, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:24,506 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43969 which had sessionid 0x14f2c6c7afa0037
+2015-08-14 15:37:24,543 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa002e, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:24,602 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37271 which had sessionid 0x14f2c6c7afa002e
+2015-08-14 15:37:24,602 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa002c, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:24,647 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37269 which had sessionid 0x14f2c6c7afa002c
+2015-08-14 15:37:25,135 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0030, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:25,137 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37273 which had sessionid 0x14f2c6c7afa0030
+2015-08-14 15:37:25,692 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0031, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:25,697 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37274 which had sessionid 0x14f2c6c7afa0031
+2015-08-14 15:37:26,989 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0032, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:26,997 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37275 which had sessionid 0x14f2c6c7afa0032
+2015-08-14 15:37:27,212 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0034, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:27,219 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37277 which had sessionid 0x14f2c6c7afa0034
+2015-08-14 15:37:27,424 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0035, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:27,431 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37278 which had sessionid 0x14f2c6c7afa0035
+2015-08-14 15:37:27,836 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0033, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:27,840 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37276 which had sessionid 0x14f2c6c7afa0033
+2015-08-14 15:37:28,335 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0036, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:28,337 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37279 which had sessionid 0x14f2c6c7afa0036
+2015-08-14 15:37:30,604 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37302
+2015-08-14 15:37:30,668 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37302
+2015-08-14 15:37:30,693 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0039 with negotiated timeout 90000 for client /10.0.2.9:37302
+2015-08-14 15:37:30,911 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37304
+2015-08-14 15:37:30,989 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37304
+2015-08-14 15:37:31,001 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa003a with negotiated timeout 90000 for client /10.0.2.9:37304
+2015-08-14 15:37:34,561 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37327
+2015-08-14 15:37:34,644 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37327
+2015-08-14 15:37:34,652 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37328
+2015-08-14 15:37:34,652 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37328
+2015-08-14 15:37:34,668 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa003b with negotiated timeout 90000 for client /10.0.2.9:37327
+2015-08-14 15:37:34,683 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa003c with negotiated timeout 90000 for client /10.0.2.9:37328
+2015-08-14 15:37:34,753 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa003c
+2015-08-14 15:37:34,757 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37328 which had sessionid 0x14f2c6c7afa003c
+2015-08-14 15:37:34,801 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa003a
+2015-08-14 15:37:34,809 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37304 which had sessionid 0x14f2c6c7afa003a
+2015-08-14 15:37:34,897 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37329
+2015-08-14 15:37:34,898 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37329
+2015-08-14 15:37:34,900 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa003d with negotiated timeout 30000 for client /10.0.2.9:37329
+2015-08-14 15:37:34,906 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37330
+2015-08-14 15:37:34,943 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37330
+2015-08-14 15:37:34,950 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa003e with negotiated timeout 90000 for client /10.0.2.9:37330
+2015-08-14 15:37:35,132 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0039
+2015-08-14 15:37:35,139 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0039, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:35,142 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37302 which had sessionid 0x14f2c6c7afa0039
+2015-08-14 15:37:35,252 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37332
+2015-08-14 15:37:35,253 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37332
+2015-08-14 15:37:35,295 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa003f with negotiated timeout 30000 for client /10.0.2.9:37332
+2015-08-14 15:37:35,510 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa002f, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:35,511 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37272 which had sessionid 0x14f2c6c7afa002f
+2015-08-14 15:37:37,536 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37338
+2015-08-14 15:37:37,539 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37338
+2015-08-14 15:37:37,545 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0040 with negotiated timeout 90000 for client /10.0.2.9:37338
+2015-08-14 15:37:37,656 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0040
+2015-08-14 15:37:37,658 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37338 which had sessionid 0x14f2c6c7afa0040
+2015-08-14 15:37:38,327 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa002b, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:38,327 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37268 which had sessionid 0x14f2c6c7afa002b
+2015-08-14 15:37:38,561 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa003e
+2015-08-14 15:37:38,564 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37330 which had sessionid 0x14f2c6c7afa003e
+2015-08-14 15:37:38,600 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37340
+2015-08-14 15:37:38,600 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37340
+2015-08-14 15:37:38,603 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0041 with negotiated timeout 90000 for client /10.0.2.9:37340
+2015-08-14 15:37:38,697 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0041
+2015-08-14 15:37:38,702 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0041, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:38,703 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37340 which had sessionid 0x14f2c6c7afa0041
+2015-08-14 15:37:38,773 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.10:44044
+2015-08-14 15:37:38,781 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.10:44044
+2015-08-14 15:37:38,784 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0042 with negotiated timeout 90000 for client /10.0.2.10:44044
+2015-08-14 15:37:38,888 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37343
+2015-08-14 15:37:38,894 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37343
+2015-08-14 15:37:38,896 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0043 with negotiated timeout 90000 for client /10.0.2.9:37343
+2015-08-14 15:37:41,302 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa003b
+2015-08-14 15:37:41,309 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37327 which had sessionid 0x14f2c6c7afa003b
+2015-08-14 15:37:41,360 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37355
+2015-08-14 15:37:41,361 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37355
+2015-08-14 15:37:41,366 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0044 with negotiated timeout 90000 for client /10.0.2.9:37355
+2015-08-14 15:37:41,461 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0044
+2015-08-14 15:37:41,471 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0044, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:41,471 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37355 which had sessionid 0x14f2c6c7afa0044
+2015-08-14 15:37:46,268 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37374
+2015-08-14 15:37:46,354 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37374
+2015-08-14 15:37:46,365 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0045 with negotiated timeout 90000 for client /10.0.2.9:37374
+2015-08-14 15:37:46,382 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37375
+2015-08-14 15:37:46,444 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37375
+2015-08-14 15:37:46,450 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0046 with negotiated timeout 90000 for client /10.0.2.9:37375
+2015-08-14 15:37:48,792 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0045
+2015-08-14 15:37:48,798 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37374 which had sessionid 0x14f2c6c7afa0045
+2015-08-14 15:37:48,884 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0046
+2015-08-14 15:37:48,888 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37375 which had sessionid 0x14f2c6c7afa0046
+2015-08-14 15:37:49,468 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0027
+2015-08-14 15:37:49,471 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37260 which had sessionid 0x14f2c6c7afa0027
+2015-08-14 15:37:49,767 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0017, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,768 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43886 which had sessionid 0x14f2c6c7afa0017
+2015-08-14 15:37:49,786 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0016, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,786 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37234 which had sessionid 0x14f2c6c7afa0016
+2015-08-14 15:37:49,798 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0026, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,798 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43901 which had sessionid 0x14f2c6c7afa0026
+2015-08-14 15:37:49,798 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0042, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,800 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:44044 which had sessionid 0x14f2c6c7afa0042
+2015-08-14 15:37:49,815 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa003d, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,816 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37329 which had sessionid 0x14f2c6c7afa003d
+2015-08-14 15:37:49,823 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0043, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,823 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37343 which had sessionid 0x14f2c6c7afa0043
+2015-08-14 15:37:49,833 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa003f, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:37:49,834 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37332 which had sessionid 0x14f2c6c7afa003f
+2015-08-14 15:37:50,476 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37387
+2015-08-14 15:37:50,479 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37387
+2015-08-14 15:37:50,482 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0047 with negotiated timeout 90000 for client /10.0.2.9:37387
+2015-08-14 15:37:50,748 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0047
+2015-08-14 15:37:50,751 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37387 which had sessionid 0x14f2c6c7afa0047
+2015-08-14 15:37:50,827 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37390
+2015-08-14 15:37:50,842 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37390
+2015-08-14 15:37:50,846 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0048 with negotiated timeout 90000 for client /10.0.2.9:37390
+2015-08-14 15:38:09,797 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /10.0.2.9:37408
+2015-08-14 15:38:09,811 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /10.0.2.9:37408
+2015-08-14 15:38:09,816 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x14f2c6c7afa0049 with negotiated timeout 90000 for client /10.0.2.9:37408
+2015-08-14 15:38:11,141 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0049, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:38:11,141 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37408 which had sessionid 0x14f2c6c7afa0049
+2015-08-14 15:38:15,009 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x14f2c6c7afa003d, timeout of 30000ms exceeded
+2015-08-14 15:38:15,009 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x14f2c6c7afa0017, timeout of 30000ms exceeded
+2015-08-14 15:38:15,016 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa003d
+2015-08-14 15:38:15,016 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0017
+2015-08-14 15:38:16,350 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0005
+2015-08-14 15:38:16,353 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37173 which had sessionid 0x14f2c6c7afa0005
+2015-08-14 15:38:18,000 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x14f2c6c7afa003f, timeout of 30000ms exceeded
+2015-08-14 15:38:18,000 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x14f2c6c7afa0016, timeout of 30000ms exceeded
+2015-08-14 15:38:18,003 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa003f
+2015-08-14 15:38:18,003 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0016
+2015-08-14 15:38:18,643 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0004
+2015-08-14 15:38:18,646 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43858 which had sessionid 0x14f2c6c7afa0004
+2015-08-14 15:38:21,001 INFO  [SessionTracker] server.ZooKeeperServer: Expiring session 0x14f2c6c7afa0026, timeout of 30000ms exceeded
+2015-08-14 15:38:21,010 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0026
+2015-08-14 15:38:22,583 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0007
+2015-08-14 15:38:22,585 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43862 which had sessionid 0x14f2c6c7afa0007
+2015-08-14 15:38:22,594 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0000
+2015-08-14 15:38:22,597 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43857 which had sessionid 0x14f2c6c7afa0000
+2015-08-14 15:38:22,932 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0008, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:38:22,933 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.10:43863 which had sessionid 0x14f2c6c7afa0008
+2015-08-14 15:38:23,722 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0009
+2015-08-14 15:38:23,724 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37178 which had sessionid 0x14f2c6c7afa0009
+2015-08-14 15:38:23,735 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0002
+2015-08-14 15:38:23,739 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37161 which had sessionid 0x14f2c6c7afa0002
+2015-08-14 15:38:23,760 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0006
+2015-08-14 15:38:23,762 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37174 which had sessionid 0x14f2c6c7afa0006
+2015-08-14 15:38:23,853 INFO  [ProcessThread(sid:0 cport:-1):] server.PrepRequestProcessor: Processed session termination for sessionid: 0x14f2c6c7afa0001
+2015-08-14 15:38:23,855 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37159 which had sessionid 0x14f2c6c7afa0001
+2015-08-14 15:38:24,111 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa000a, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:38:24,112 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37179 which had sessionid 0x14f2c6c7afa000a
+2015-08-14 15:38:24,234 WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x14f2c6c7afa0003, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-14 15:38:24,234 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Closed socket connection for client /10.0.2.9:37172 which had sessionid 0x14f2c6c7afa0003
+Fr 14. Aug 15:38:25 CEST 2015 Terminating zookeeper

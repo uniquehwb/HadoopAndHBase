@@ -1,0 +1,135 @@
+de.webdataplatform.settings.SystemConfig: Loading system config:
+de.webdataplatform.settings.SystemConfig: SystemConfig.HDFS_USERNAME:hwb
+de.webdataplatform.settings.SystemConfig: SystemConfig.HDFS_PASSWORD:
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_USERNAME:hwb
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_PASSWORD:123321
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_PASSWORDLESSLOGIN:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_PRIVATEKEY:/home/hwb/.ssh/id_dsa
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_KNOWNHOSTS:/home/hwb/.ssh/known_hosts
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_HDFS:/home/hwb/Documents/hadoop-1.2.1/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_HDFSSTORAGE:/home/hwb/dfsDataDir/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_HBASE:/home/hwb/Documents/hbase-0.98.12-hadoop1/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_VMSYSTEM:/home/hwb/Documents/scalablevm/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_ZOOKEEPERSTORAGE:/home/hwb/Documents/zookeeper/
+de.webdataplatform.settings.SystemConfig: SystemConfig.MASTER_ZOOKEEPERPATH:/hbase/vmaster
+de.webdataplatform.settings.SystemConfig: SystemConfig.MASTER_LOADBALANCINGINTERVAL:
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_ZOOKEEPERPATH:/hbase/vm
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_HDFSPATH:/viewmanager/
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_STATUSINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_CALCSTATUSINTERVAL:1000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_DISPLAYINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_CRUDOPERATIONSALARMTHRESHOLD:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_UPDATEPOLLINGINTERVAL:2
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_LOGUPDATES:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_LOGPERFORMANCE:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_ZOOKEEPERPATH:/hbase/rstest
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_STATUSINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_CALCSTATUSINTERVAL:1000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_DISPLAYINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_WALPOLLINGINTERVAL:1000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_MAXREPLICASHASHRING:500
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_LOGWAL:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.CLIENT_LOGINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_STARTSEQUENCE:<
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_ENDSEQUENCE:>
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_SPLITSEQUENCE:;
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_SPLITCONTENTSEQUENCE::
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_SPLITIDSEQUENCE:,
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_MARKERPREFIX:marker:
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_POLLINGINTERVAL:100
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_LENGTH:250
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_RETRYINTERVAL:3000
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_NUMOFRETRIES:3
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_CONSOLE:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_FILE:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_STATISTICS:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_LOGUPDATES:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.FAULTTOLERANCE_SIGNATURES:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.FAULTTOLERANCE_COMMITLOG:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.FAULTTOLERANCE_TESTANDSET:true
+de.webdataplatform.settings.SystemConfig: --------------------------------------------------------------
+de.webdataplatform.settings.NetworkConfig: Loading network config:
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.ZOOKEEPER_QUORUM:master
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.ZOOKEEPER_CLIENTPORT:0
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.HBASE_MASTER:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.VM_MASTER:Node [ipAddress=master, messagePort=4004, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.CLIENTS:[Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.REGIONSERVERS:[Node [ipAddress=master, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.VIEWMANAGERS:[Node [ipAddress=master, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.HDFS:hdfs://master:9000/hbase
+de.webdataplatform.settings.NetworkConfig: --------------------------------------------------------------
+de.webdataplatform.master.Master: name: master1
+de.webdataplatform.master.Master: address: master
+de.webdataplatform.master.Master: port: 4004
+de.webdataplatform.master.Master: message polling interval: 100
+de.webdataplatform.master.MasterController: connecting to zookeeper on address: master:0
+de.webdataplatform.zookeeper.ZookeeperService: zookeeper event: WatchedEvent state:SyncConnected type:None path:null
+de.webdataplatform.zookeeper.ZookeeperService: triggers: [/hbase/rstest, /hbase/vm]
+de.webdataplatform.master.EventProcessor: children: null
+de.webdataplatform.master.MasterController: creating new master node
+de.webdataplatform.master.EventProcessor: children: null
+de.webdataplatform.master.MasterController: creating session node
+de.webdataplatform.master.MasterController: creating new region server
+de.webdataplatform.master.EventProcessor: children: []
+de.webdataplatform.master.MasterController: creating new view manager node
+de.webdataplatform.master.MasterController: ip address of master: master
+de.webdataplatform.master.MasterController: starting message server on port: 4004
+de.webdataplatform.master.EventProcessor: children: []
+de.webdataplatform.master.MasterController: starting component controller
+de.webdataplatform.master.MasterController: starting load balancer
+de.webdataplatform.master.MasterController: starting recovery manager
+de.webdataplatform.zookeeper.ZookeeperService: zookeeper event: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/hbase/rstest
+de.webdataplatform.zookeeper.ZookeeperService: triggers: [/hbase/rstest, /hbase/vm]
+de.webdataplatform.master.EventProcessor: children: [rs2,rs1,4133]
+de.webdataplatform.master.EventProcessor: region server has been added: rs2,rs1,4133
+de.webdataplatform.master.EventProcessor: children: []
+de.webdataplatform.master.LoadBalancer: received event: rsAdded
+de.webdataplatform.master.LoadBalancer: region server added 
+de.webdataplatform.zookeeper.ZookeeperService: zookeeper event: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/hbase/vm
+de.webdataplatform.zookeeper.ZookeeperService: triggers: [/hbase/rstest, /hbase/vm]
+de.webdataplatform.master.EventProcessor: children: [rs2,rs1,4133]
+de.webdataplatform.master.EventProcessor: children: [vm2,rs1,4130,4230]
+de.webdataplatform.master.EventProcessor: view manager has been added: vm2,rs1,4130,4230
+de.webdataplatform.master.LoadBalancer: received event: vmAdded
+de.webdataplatform.master.LoadBalancer: view manager added vm2,rs1,4130,4230
+de.webdataplatform.master.LoadBalancer: rs2,rs1,4133: loadPerViewManager: 0.0
+de.webdataplatform.master.LoadBalancer: rs2,rs1,4133: loadPerViewManager: 0.0
+de.webdataplatform.master.LoadBalancer: rs2,rs1,4133: vmPerViewManager: 0.0
+de.webdataplatform.master.LoadBalancer: view manager:vm2,rs1,4130,4230 should be assigned to : rs2,rs1,4133
+de.webdataplatform.master.ComponentController: executing command callCommandCall [commandCaller=LoadBalancer [], command=Command [type=assignVm, viewManager=vm2,rs1,4130,4230, regionServer=rs2,rs1,4133]] 
+de.webdataplatform.master.ComponentController: assign view manager:vm2,rs1,4130,4230 to:rs2,rs1,4133
+de.webdataplatform.master.ComponentController: received message: Message [component=viewManager, name=vm2,rs1,4130,4230, operation=vmAssigned, content=rs2,rs1,4133]
+de.webdataplatform.master.ComponentController: view manager has been assigned: vm2,rs1,4130,4230
+de.webdataplatform.master.ComponentController: assigned managers: {rs2,rs1,4133=[vm2,rs1,4130,4230]}
+de.webdataplatform.master.ComponentController: command found: Command [type=assignVm, viewManager=vm2,rs1,4130,4230, regionServer=rs2,rs1,4133], calling back
+de.webdataplatform.master.LoadBalancer: command has been executed
+de.webdataplatform.master.ComponentController: received message: Message [component=regionServer, name=rs2,rs1,4133, operation=statusReportRs, content=0]
+de.webdataplatform.master.ComponentController: received message: Message [component=regionServer, name=rs2,rs1,4133, operation=statusReportRs, content=0]
+de.webdataplatform.master.ComponentController: received message: Message [component=regionServer, name=rs2,rs1,4133, operation=statusReportRs, content=0]
+de.webdataplatform.master.ComponentController: received message: Message [component=regionServer, name=rs2,rs1,4133, operation=statusReportRs, content=0]
+de.webdataplatform.zookeeper.ZookeeperService: zookeeper event: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/hbase/vm
+de.webdataplatform.zookeeper.ZookeeperService: triggers: [/hbase/rstest, /hbase/vm]
+de.webdataplatform.master.EventProcessor: children: [rs2,rs1,4133]
+de.webdataplatform.master.EventProcessor: children: [vm2,rs1,4130,4230, vm1,master,4130,4230]
+de.webdataplatform.master.EventProcessor: view manager has been added: vm1,master,4130,4230
+de.webdataplatform.master.LoadBalancer: received event: vmAdded
+de.webdataplatform.master.LoadBalancer: view manager added vm1,master,4130,4230
+de.webdataplatform.master.LoadBalancer: rs2,rs1,4133: loadPerViewManager: 0.0
+de.webdataplatform.master.LoadBalancer: rs2,rs1,4133: vmPerViewManager: 1.0
+de.webdataplatform.master.LoadBalancer: view manager:vm1,master,4130,4230 should be assigned to : rs2,rs1,4133
+de.webdataplatform.master.ComponentController: executing command callCommandCall [commandCaller=LoadBalancer [], command=Command [type=assignVm, viewManager=vm1,master,4130,4230, regionServer=rs2,rs1,4133]] 
+de.webdataplatform.master.ComponentController: assign view manager:vm1,master,4130,4230 to:rs2,rs1,4133
+de.webdataplatform.zookeeper.ZookeeperService: zookeeper event: WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/hbase/rstest
+de.webdataplatform.zookeeper.ZookeeperService: triggers: [/hbase/rstest, /hbase/vm]
+de.webdataplatform.master.EventProcessor: children: [rs1,master,4133, rs2,rs1,4133]
+de.webdataplatform.master.EventProcessor: region server has been added: rs1,master,4133
+de.webdataplatform.master.EventProcessor: children: [vm2,rs1,4130,4230, vm1,master,4130,4230]
+de.webdataplatform.master.ComponentController: received message: Message [component=viewManager, name=vm1,master,4130,4230, operation=vmAssigned, content=rs2,rs1,4133]
+de.webdataplatform.master.ComponentController: view manager has been assigned: vm1,master,4130,4230
+de.webdataplatform.master.ComponentController: assigned managers: {rs2,rs1,4133=[vm2,rs1,4130,4230, vm1,master,4130,4230]}
+de.webdataplatform.master.ComponentController: command found: Command [type=assignVm, viewManager=vm1,master,4130,4230, regionServer=rs2,rs1,4133], calling back
+de.webdataplatform.master.LoadBalancer: command has been executed
+de.webdataplatform.master.LoadBalancer: received event: rsAdded
+de.webdataplatform.master.LoadBalancer: region server added 
+de.webdataplatform.master.ComponentController: received message: Message [component=regionServer, name=rs2,rs1,4133, operation=statusReportRs, content=77]
+de.webdataplatform.master.ComponentController: received message: Message [component=regionServer, name=rs1,master,4133, operation=statusReportRs, content=23]

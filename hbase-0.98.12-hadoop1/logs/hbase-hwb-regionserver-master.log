@@ -475,3 +475,468 @@ Fr 14. Aug 14:59:57 CEST 2015 Starting regionserver on master
 2015-08-14 15:02:16,599 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=Thread[Thread-8,5,main]
 2015-08-14 15:02:16,599 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Starting fs shutdown hook thread.
 2015-08-14 15:02:16,604 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Shutdown hook finished.
+Fr 14. Aug 15:35:52 CEST 2015 Starting regionserver on master
+/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/hbase-daemon.sh: line 207: core: command not found
+2015-08-14 15:35:53,999 INFO  [main] util.VersionInfo: HBase 0.98.12-hadoop1
+2015-08-14 15:35:54,000 INFO  [main] util.VersionInfo: Subversion git://aspire/home/apurtell/src/hbase -r bbf8bf4362e858bd9bd0511c9289c31b09b7a927
+2015-08-14 15:35:54,000 INFO  [main] util.VersionInfo: Compiled by apurtell on Thu Apr  9 18:55:45 PDT 2015
+2015-08-14 15:35:54,646 INFO  [main] util.ServerCommandLine: env:LC_TELEPHONE=de_DE.UTF-8
+2015-08-14 15:35:54,646 INFO  [main] util.ServerCommandLine: env:JAVA_HOME=/usr
+2015-08-14 15:35:54,646 INFO  [main] util.ServerCommandLine: env:SHLVL=3
+2015-08-14 15:35:54,646 INFO  [main] util.ServerCommandLine: env:HBASE_LOG_DIR=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../logs
+2015-08-14 15:35:54,646 INFO  [main] util.ServerCommandLine: env:HBASE_HOME=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:HBASE_OPTS=-XX:+UseConcMarkSweepGC   -Dhbase.log.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../logs -Dhbase.log.file=hbase-hwb-regionserver-master.log -Dhbase.home.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/.. -Dhbase.id.str=hwb -Dhbase.root.logger=INFO,RFA -Dhbase.security.logger=INFO,RFAS
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:HBASE_ENV_INIT=true
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:SSH_CLIENT=10.0.2.9 40472 22
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:LC_NUMERIC=de_DE.UTF-8
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:LC_NAME=de_DE.UTF-8
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:MAIL=/var/mail/hwb
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:HBASE_ZNODE_FILE=/tmp/hbase-hwb-regionserver.znode
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:PWD=/home/hwb/Documents/hbase-0.98.12-hadoop1
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:LC_PAPER=de_DE.UTF-8
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:LOGNAME=hwb
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:LC_IDENTIFICATION=de_DE.UTF-8
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:HBASE_NICENESS=0
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:HBASE_REST_OPTS=
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:MALLOC_ARENA_MAX=4
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:SSH_CONNECTION=10.0.2.9 40472 10.0.2.9 22
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:LC_ADDRESS=de_DE.UTF-8
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:SHELL=/bin/bash
+2015-08-14 15:35:54,647 INFO  [main] util.ServerCommandLine: env:HBASE_ROOT_LOGGER=INFO,RFA
+2015-08-14 15:35:54,650 INFO  [main] util.ServerCommandLine: env:CLASSPATH=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../conf:/usr/lib/tools.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/activation-1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/asm-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-1.7.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-core-1.8.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-cli-1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-codec-1.7.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-collections-3.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-configuration-1.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-digester-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-el-1.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-httpclient-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-io-2.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-lang-2.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-logging-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-math-2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-net-1.4.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/findbugs-annotations-1.3.9-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/guava-12.0.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hadoop-core-1.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hamcrest-core-1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-annotations-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-checkstyle-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-client-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-examples-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop1-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-prefix-tree-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-protocol-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-rest-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-shell-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-testing-util-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-thrift-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/high-scale-lib-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/htrace-core-2.04.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpclient-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpcore-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-core-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-jaxrs-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-mapper-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-xc-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jamon-runtime-2.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-compiler-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-runtime-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-api-2.2.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-impl-2.2.3-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jcodings-1.0.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-client-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-core-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-json-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-server-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jettison-1.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-sslengine-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-util-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/joni-2.1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jruby-complete-1.6.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-api-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsr305-1.3.9.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/junit-4.11.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/libthrift-0.9.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/log4j-1.2.17.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/metrics-core-2.2.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/netty-3.6.6.Final.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/protobuf-java-2.5.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/servlet-api-2.5-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-api-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-log4j12-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/xmlenc-0.52.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/zookeeper-3.4.6.jar:
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:HBASE_THRIFT_OPTS=
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:LC_MONETARY=de_DE.UTF-8
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:USER=hwb
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:HBASE_SECURITY_LOGGER=INFO,RFAS
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:HOME=/home/hwb
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:HBASE_START_FILE=/tmp/hbase-hwb-regionserver.autorestart
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:XDG_SESSION_ID=81
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:LC_MEASUREMENT=de_DE.UTF-8
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:LC_TIME=de_DE.UTF-8
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:HBASE_LOGFILE=hbase-hwb-regionserver-master.log
+2015-08-14 15:35:54,651 INFO  [main] util.ServerCommandLine: env:XDG_RUNTIME_DIR=/run/user/1000
+2015-08-14 15:35:54,677 INFO  [main] util.ServerCommandLine: env:LANG=en_US.UTF-8
+2015-08-14 15:35:54,677 INFO  [main] util.ServerCommandLine: env:HBASE_LOG_PREFIX=hbase-hwb-regionserver-master
+2015-08-14 15:35:54,677 INFO  [main] util.ServerCommandLine: env:HBASE_IDENT_STRING=hwb
+2015-08-14 15:35:54,678 INFO  [main] util.ServerCommandLine: vmName=OpenJDK 64-Bit Server VM, vmVendor=Oracle Corporation, vmVersion=24.79-b02
+2015-08-14 15:35:54,679 INFO  [main] util.ServerCommandLine: vmInputArguments=[-Dproc_regionserver, -XX:OnOutOfMemoryError=kill -9 %p, -Xmx1000m, -XX:+UseConcMarkSweepGC, -Dhbase.log.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../logs, -Dhbase.log.file=hbase-hwb-regionserver-master.log, -Dhbase.home.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/.., -Dhbase.id.str=hwb, -Dhbase.root.logger=INFO,RFA, -Dhbase.security.logger=INFO,RFAS]
+2015-08-14 15:35:55,441 DEBUG [main] regionserver.HRegionServer: regionserver/master/10.0.2.9:60020 HConnection server-to-server retries=350
+2015-08-14 15:35:56,443 INFO  [main] ipc.SimpleRpcScheduler: Using default user call queue, count=3
+2015-08-14 15:35:56,520 INFO  [main] ipc.RpcServer: regionserver/master/10.0.2.9:60020: started 10 reader(s).
+2015-08-14 15:35:56,667 INFO  [main] impl.MetricsConfig: loaded properties from hadoop-metrics2-hbase.properties
+2015-08-14 15:35:56,744 INFO  [main] impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2015-08-14 15:35:56,745 INFO  [main] impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-08-14 15:35:56,745 INFO  [main] impl.MetricsSystemImpl: HBase metrics system started
+2015-08-14 15:35:56,753 INFO  [main] impl.MetricsSourceAdapter: MBean for source jvm registered.
+2015-08-14 15:35:56,771 INFO  [main] impl.MetricsSourceAdapter: MBean for source IPC,sub=IPC registered.
+2015-08-14 15:35:57,052 INFO  [main] impl.MetricsSourceAdapter: MBean for source ugi registered.
+2015-08-14 15:35:57,052 WARN  [main] impl.MetricsSystemImpl: Source name ugi already exists!
+2015-08-14 15:35:57,066 INFO  [main] hfile.CacheConfig: Allocating LruBlockCache with maximum size 396.7m
+2015-08-14 15:35:57,202 INFO  [main] mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-08-14 15:35:57,309 INFO  [main] http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2015-08-14 15:35:57,328 INFO  [main] http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 60030
+2015-08-14 15:35:57,329 INFO  [main] http.HttpServer: listener.getLocalPort() returned 60030 webServer.getConnectors()[0].getLocalPort() returned 60030
+2015-08-14 15:35:57,329 INFO  [main] http.HttpServer: Jetty bound to port 60030
+2015-08-14 15:35:57,330 INFO  [main] mortbay.log: jetty-6.1.26
+2015-08-14 15:35:58,729 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:60030
+2015-08-14 15:35:58,960 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Process identifier=regionserver:60020 connecting to ZooKeeper ensemble=master:2181
+2015-08-14 15:35:59,074 INFO  [main] regionserver.ShutdownHook: Installed shutdown hook thread: Shutdownhook:regionserver60020
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:host.name=master
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.version=1.7.0_79
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.class.path=/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../conf:/usr/lib/tools.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/..:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/activation-1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/asm-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-1.7.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-beanutils-core-1.8.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-cli-1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-codec-1.7.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-collections-3.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-configuration-1.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-digester-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-el-1.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-httpclient-3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-io-2.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-lang-2.6.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-logging-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-math-2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/commons-net-1.4.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/findbugs-annotations-1.3.9-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/guava-12.0.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hadoop-core-1.2.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hamcrest-core-1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-annotations-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-checkstyle-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-client-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-common-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-examples-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop1-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-hadoop-compat-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-it-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-prefix-tree-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-protocol-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-rest-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-server-0.98.12-hadoop1-tests.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-shell-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-testing-util-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/hbase-thrift-0.98.12-hadoop1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/high-scale-lib-1.1.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/htrace-core-2.04.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpclient-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/httpcore-4.1.3.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-core-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-jaxrs-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-mapper-asl-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jackson-xc-1.8.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jamon-runtime-2.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-compiler-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jasper-runtime-5.5.23.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-api-2.2.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jaxb-impl-2.2.3-1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jcodings-1.0.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-client-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-core-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-json-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jersey-server-1.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jettison-1.3.1.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-sslengine-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jetty-util-6.1.26.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/joni-2.1.2.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jruby-complete-1.6.8.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsp-api-2.1-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/jsr305-1.3.9.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/junit-4.11.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/libthrift-0.9.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/log4j-1.2.17.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/metrics-core-2.2.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/netty-3.6.6.Final.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/protobuf-java-2.5.0.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/servlet-api-2.5-6.1.14.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-api-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/slf4j-log4j12-1.6.4.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/xmlenc-0.52.jar:/home/hwb/Documents/hbase-0.98.12-hadoop1/bin/../lib/zookeeper-3.4.6.jar:
+2015-08-14 15:35:59,079 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:os.version=3.16.0-30-generic
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:user.name=hwb
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:user.home=/home/hwb
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Client environment:user.dir=/home/hwb/Documents/hbase-0.98.12-hadoop1
+2015-08-14 15:35:59,080 INFO  [regionserver60020] zookeeper.ZooKeeper: Initiating client connection, connectString=master:2181 sessionTimeout=90000 watcher=regionserver:600200x0, quorum=master:2181, baseZNode=/hbase
+2015-08-14 15:35:59,182 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-08-14 15:35:59,198 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-08-14 15:35:59,319 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x14f2c6c7afa0002, negotiated timeout = 90000
+2015-08-14 15:36:00,686 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x2b7dc185 connecting to ZooKeeper ensemble=master:2181
+2015-08-14 15:36:00,686 INFO  [regionserver60020] zookeeper.ZooKeeper: Initiating client connection, connectString=master:2181 sessionTimeout=90000 watcher=hconnection-0x2b7dc1850x0, quorum=master:2181, baseZNode=/hbase
+2015-08-14 15:36:00,688 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-08-14 15:36:00,704 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-08-14 15:36:00,707 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x14f2c6c7afa0005, negotiated timeout = 90000
+2015-08-14 15:36:01,497 DEBUG [regionserver60020] catalog.CatalogTracker: Starting catalog tracker org.apache.hadoop.hbase.catalog.CatalogTracker@3e0f07bc
+2015-08-14 15:36:01,510 INFO  [regionserver60020] regionserver.HRegionServer: ClusterId : 3511a2f7-dd40-447c-84bf-04ab8fa2b862
+2015-08-14 15:36:01,524 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is initializing
+2015-08-14 15:36:01,565 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/acquired already exists and this is not a retry
+2015-08-14 15:36:01,620 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is initialized
+2015-08-14 15:36:01,634 INFO  [regionserver60020] regionserver.MemStoreFlusher: globalMemStoreLimit=396.7m, globalMemStoreLimitLowMark=376.8m, maxHeap=991.7m
+2015-08-14 15:36:01,663 INFO  [regionserver60020] regionserver.HRegionServer: CompactionChecker runs every 10sec
+2015-08-14 15:36:01,733 INFO  [regionserver60020] regionserver.HRegionServer: reportForDuty to master=master,60000,1439559354199 with port=60020, startcode=1439559356821
+2015-08-14 15:36:02,133 DEBUG [regionserver60020] regionserver.HRegionServer: Config from master: hbase.rootdir=hdfs://master:9000/hbase
+2015-08-14 15:36:02,133 DEBUG [regionserver60020] regionserver.HRegionServer: Config from master: fs.default.name=hdfs://master:9000
+2015-08-14 15:36:02,133 DEBUG [regionserver60020] regionserver.HRegionServer: Config from master: hbase.master.info.port=60010
+2015-08-14 15:36:02,172 INFO  [regionserver60020] fs.HFileSystem: Added intercepting call to namenode#getBlockLocations so can do block reordering using class class org.apache.hadoop.hbase.fs.HFileSystem$ReorderWALBlocks
+2015-08-14 15:36:02,335 DEBUG [regionserver60020] regionserver.HRegionServer: logdir=hdfs://master:9000/hbase/WALs/master,60020,1439559356821
+2015-08-14 15:36:02,396 DEBUG [regionserver60020] regionserver.Replication: ReplicationStatisticsThread 300
+2015-08-14 15:36:02,418 INFO  [regionserver60020] wal.FSHLog: WAL/HLog configuration: blocksize=64 MB, rollsize=60.8 MB, enabled=true
+2015-08-14 15:36:02,594 INFO  [regionserver60020] wal.FSHLog: New WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559362435
+2015-08-14 15:36:02,608 INFO  [regionserver60020] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=WAL registered.
+2015-08-14 15:36:02,613 INFO  [regionserver60020] regionserver.MetricsRegionServerWrapperImpl: Computing regionserver metrics every 5000 milliseconds
+2015-08-14 15:36:02,619 INFO  [regionserver60020] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=Server registered.
+2015-08-14 15:36:02,624 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_OPEN_REGION-master:60020, corePoolSize=3, maxPoolSize=3
+2015-08-14 15:36:02,624 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_OPEN_META-master:60020, corePoolSize=1, maxPoolSize=1
+2015-08-14 15:36:02,624 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_CLOSE_REGION-master:60020, corePoolSize=3, maxPoolSize=3
+2015-08-14 15:36:02,624 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_CLOSE_META-master:60020, corePoolSize=1, maxPoolSize=1
+2015-08-14 15:36:02,624 DEBUG [regionserver60020] executor.ExecutorService: Starting executor service name=RS_LOG_REPLAY_OPS-master:60020, corePoolSize=2, maxPoolSize=2
+2015-08-14 15:36:02,635 INFO  [regionserver60020] regionserver.ReplicationSourceManager: Current list of replicators: [rs1,60020,1439559354689, master,60020,1439559356821] other RSs: [rs1,60020,1439559354689, master,60020,1439559356821]
+2015-08-14 15:36:02,731 INFO  [regionserver60020] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=Replication registered.
+2015-08-14 15:36:02,745 INFO  [regionserver60020] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x715ef489 connecting to ZooKeeper ensemble=master:2181
+2015-08-14 15:36:02,746 INFO  [regionserver60020] zookeeper.ZooKeeper: Initiating client connection, connectString=master:2181 sessionTimeout=90000 watcher=hconnection-0x715ef4890x0, quorum=master:2181, baseZNode=/hbase
+2015-08-14 15:36:02,749 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-08-14 15:36:02,751 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-08-14 15:36:02,759 INFO  [regionserver60020-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x14f2c6c7afa0009, negotiated timeout = 90000
+2015-08-14 15:36:02,778 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: starting
+2015-08-14 15:36:02,781 INFO  [RpcServer.listener,port=60020] ipc.RpcServer: RpcServer.listener,port=60020: starting
+2015-08-14 15:36:02,781 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=0 queue=0
+2015-08-14 15:36:02,784 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=1 queue=1
+2015-08-14 15:36:02,785 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=2 queue=2
+2015-08-14 15:36:02,785 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=3 queue=0
+2015-08-14 15:36:02,785 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=4 queue=1
+2015-08-14 15:36:02,785 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=5 queue=2
+2015-08-14 15:36:02,785 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=6 queue=0
+2015-08-14 15:36:02,786 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=7 queue=1
+2015-08-14 15:36:02,787 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=8 queue=2
+2015-08-14 15:36:02,787 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=9 queue=0
+2015-08-14 15:36:02,791 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=10 queue=1
+2015-08-14 15:36:02,791 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=11 queue=2
+2015-08-14 15:36:02,792 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=12 queue=0
+2015-08-14 15:36:02,792 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=13 queue=1
+2015-08-14 15:36:02,792 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=14 queue=2
+2015-08-14 15:36:02,792 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=15 queue=0
+2015-08-14 15:36:02,793 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=16 queue=1
+2015-08-14 15:36:02,793 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=17 queue=2
+2015-08-14 15:36:02,793 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=18 queue=0
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=19 queue=1
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=20 queue=2
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=21 queue=0
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=22 queue=1
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=23 queue=2
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=24 queue=0
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=25 queue=1
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=26 queue=2
+2015-08-14 15:36:02,794 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=27 queue=0
+2015-08-14 15:36:02,795 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=28 queue=1
+2015-08-14 15:36:02,795 DEBUG [regionserver60020] ipc.RpcExecutor: B.Default Start Handler index=29 queue=2
+2015-08-14 15:36:02,796 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=0 queue=0
+2015-08-14 15:36:02,796 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=1 queue=0
+2015-08-14 15:36:02,796 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=2 queue=0
+2015-08-14 15:36:02,796 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=3 queue=0
+2015-08-14 15:36:02,797 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=4 queue=0
+2015-08-14 15:36:02,797 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=5 queue=0
+2015-08-14 15:36:02,797 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=6 queue=0
+2015-08-14 15:36:02,797 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=7 queue=0
+2015-08-14 15:36:02,797 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=8 queue=0
+2015-08-14 15:36:02,797 DEBUG [regionserver60020] ipc.RpcExecutor: Priority Start Handler index=9 queue=0
+2015-08-14 15:36:02,798 DEBUG [regionserver60020] ipc.RpcExecutor: Replication Start Handler index=0 queue=0
+2015-08-14 15:36:02,798 DEBUG [regionserver60020] ipc.RpcExecutor: Replication Start Handler index=1 queue=0
+2015-08-14 15:36:02,798 DEBUG [regionserver60020] ipc.RpcExecutor: Replication Start Handler index=2 queue=0
+2015-08-14 15:36:02,831 INFO  [SplitLogWorker-master,60020,1439559356821] regionserver.SplitLogWorker: SplitLogWorker master,60020,1439559356821 starting
+2015-08-14 15:36:02,831 INFO  [regionserver60020] regionserver.HRegionServer: Serving as master,60020,1439559356821, RpcServer on master/10.0.2.9:60020, sessionid=0x14f2c6c7afa0002
+2015-08-14 15:36:02,836 INFO  [SplitLogWorker-master,60020,1439559356821] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x63c0ab09 connecting to ZooKeeper ensemble=master:2181
+2015-08-14 15:36:02,837 INFO  [SplitLogWorker-master,60020,1439559356821] zookeeper.ZooKeeper: Initiating client connection, connectString=master:2181 sessionTimeout=90000 watcher=hconnection-0x63c0ab090x0, quorum=master:2181, baseZNode=/hbase
+2015-08-14 15:36:02,837 INFO  [SplitLogWorker-master,60020,1439559356821-SendThread(master:2181)] zookeeper.ClientCnxn: Opening socket connection to server master/10.0.2.9:2181. Will not attempt to authenticate using SASL (unknown error)
+2015-08-14 15:36:02,838 INFO  [SplitLogWorker-master,60020,1439559356821-SendThread(master:2181)] zookeeper.ClientCnxn: Socket connection established to master/10.0.2.9:2181, initiating session
+2015-08-14 15:36:02,844 INFO  [SplitLogWorker-master,60020,1439559356821-SendThread(master:2181)] zookeeper.ClientCnxn: Session establishment complete on server master/10.0.2.9:2181, sessionid = 0x14f2c6c7afa000a, negotiated timeout = 90000
+2015-08-14 15:36:02,848 INFO  [regionserver60020] regionserver.RegionServerCoprocessorHost: System coprocessor loading is enabled
+2015-08-14 15:36:02,848 INFO  [regionserver60020] regionserver.RegionServerCoprocessorHost: Table coprocessor loading is enabled
+2015-08-14 15:36:02,848 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is starting
+2015-08-14 15:36:02,848 DEBUG [regionserver60020] snapshot.RegionServerSnapshotManager: Start Snapshot Manager master,60020,1439559356821
+2015-08-14 15:36:02,851 DEBUG [regionserver60020] procedure.ZKProcedureMemberRpcs: Starting procedure member 'master,60020,1439559356821'
+2015-08-14 15:36:02,851 DEBUG [regionserver60020] procedure.ZKProcedureMemberRpcs: Checking for aborted procedures on node: '/hbase/online-snapshot/abort'
+2015-08-14 15:36:02,853 DEBUG [regionserver60020] procedure.ZKProcedureMemberRpcs: Looking for new procedures under znode:'/hbase/online-snapshot/acquired'
+2015-08-14 15:36:02,853 INFO  [regionserver60020] procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is started
+2015-08-14 15:36:26,463 INFO  [PriorityRpcServer.handler=0,queue=0,port=60020] regionserver.HRegionServer: Open viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:36:26,603 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 15594ff76b1e479cd57b5c6777ecb759 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:36:26,668 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 15594ff76b1e479cd57b5c6777ecb759 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:36:26,700 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Opening region: {ENCODED => 15594ff76b1e479cd57b5c6777ecb759, NAME => 'viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.', STARTKEY => '', ENDKEY => ''}
+2015-08-14 15:36:26,812 INFO  [RS_OPEN_REGION-master:60020-0] impl.MetricsSourceAdapter: MBean for source RegionServer,sub=Regions registered.
+2015-08-14 15:36:26,812 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table viewdefinitions 15594ff76b1e479cd57b5c6777ecb759
+2015-08-14 15:36:26,813 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Instantiated viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:36:26,886 INFO  [StoreOpener-15594ff76b1e479cd57b5c6777ecb759-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:36:26,891 DEBUG [StoreOpener-15594ff76b1e479cd57b5c6777ecb759-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/viewdefinitions/15594ff76b1e479cd57b5c6777ecb759/colfam1
+2015-08-14 15:36:26,912 INFO  [StoreOpener-15594ff76b1e479cd57b5c6777ecb759-1] util.ChecksumType: Checksum using org.apache.hadoop.util.PureJavaCrc32
+2015-08-14 15:36:26,924 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/viewdefinitions/15594ff76b1e479cd57b5c6777ecb759
+2015-08-14 15:36:26,930 INFO  [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Onlined 15594ff76b1e479cd57b5c6777ecb759; next sequenceid=1
+2015-08-14 15:36:26,930 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node 15594ff76b1e479cd57b5c6777ecb759
+2015-08-14 15:36:26,932 INFO  [PostOpenDeployTasks:15594ff76b1e479cd57b5c6777ecb759] regionserver.HRegionServer: Post open deploy tasks for region=viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:36:27,057 INFO  [PostOpenDeployTasks:15594ff76b1e479cd57b5c6777ecb759] catalog.MetaEditor: Updated row viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759. with server=master,60020,1439559356821
+2015-08-14 15:36:27,057 INFO  [PostOpenDeployTasks:15594ff76b1e479cd57b5c6777ecb759] regionserver.HRegionServer: Finished post open deploy task for viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:36:27,058 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 15594ff76b1e479cd57b5c6777ecb759 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:36:27,073 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 15594ff76b1e479cd57b5c6777ecb759 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:36:27,073 DEBUG [RS_OPEN_REGION-master:60020-0] handler.OpenRegionHandler: Transitioned 15594ff76b1e479cd57b5c6777ecb759 to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:36:27,073 DEBUG [RS_OPEN_REGION-master:60020-0] handler.OpenRegionHandler: Opened viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759. on master,60020,1439559356821
+2015-08-14 15:36:28,326 WARN  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: HDFS pipeline error detected. Found 2 replicas but expecting no less than 3 replicas.  Requesting close of hlog. current pipeline: [10.0.2.9:50010, 10.0.2.10:50010]
+2015-08-14 15:36:28,327 DEBUG [regionserver60020.logRoller] regionserver.LogRoller: HLog roll requested
+2015-08-14 15:36:28,379 INFO  [regionserver60020.logRoller] wal.FSHLog: Rolled WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559362435 with entries=1, filesize=233.0; new WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388327
+2015-08-14 15:36:28,386 WARN  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: HDFS pipeline error detected. Found 2 replicas but expecting no less than 3 replicas.  Requesting close of hlog. current pipeline: [10.0.2.9:50010, 10.0.2.10:50010]
+2015-08-14 15:36:28,386 DEBUG [regionserver60020.logRoller] regionserver.LogRoller: HLog roll requested
+2015-08-14 15:36:28,428 DEBUG [regionserver60020.logRoller] wal.FSHLog: cleanupCurrentWriter  waiting for transactions to get synced  total 6 synced till here 5
+2015-08-14 15:36:28,458 INFO  [regionserver60020.logRoller] wal.FSHLog: Rolled WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388327 with entries=5, filesize=745.0; new WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388386
+2015-08-14 15:36:28,468 WARN  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: HDFS pipeline error detected. Found 2 replicas but expecting no less than 3 replicas.  Requesting close of hlog. current pipeline: [10.0.2.9:50010, 10.0.2.10:50010]
+2015-08-14 15:36:28,468 DEBUG [regionserver60020.logRoller] regionserver.LogRoller: HLog roll requested
+2015-08-14 15:36:28,530 INFO  [regionserver60020.logRoller] wal.FSHLog: Rolled WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388386 with entries=5, filesize=759.0; new WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388468
+2015-08-14 15:36:28,534 WARN  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: HDFS pipeline error detected. Found 2 replicas but expecting no less than 3 replicas.  Requesting close of hlog. current pipeline: [10.0.2.9:50010, 10.0.2.10:50010]
+2015-08-14 15:36:28,536 DEBUG [regionserver60020.logRoller] regionserver.LogRoller: HLog roll requested
+2015-08-14 15:36:28,627 INFO  [regionserver60020.logRoller] wal.FSHLog: Rolled WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388468 with entries=9, filesize=1.2k; new WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388536
+2015-08-14 15:36:28,630 WARN  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: HDFS pipeline error detected. Found 2 replicas but expecting no less than 3 replicas.  Requesting close of hlog. current pipeline: [10.0.2.9:50010, 10.0.2.10:50010]
+2015-08-14 15:36:28,632 DEBUG [regionserver60020.logRoller] regionserver.LogRoller: HLog roll requested
+2015-08-14 15:36:28,707 INFO  [regionserver60020.logRoller] wal.FSHLog: Rolled WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388536 with entries=10, filesize=1.4k; new WAL /hbase/WALs/master,60020,1439559356821/master%2C60020%2C1439559356821.1439559388632
+2015-08-14 15:36:28,716 WARN  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: Too many consecutive RollWriter requests, it's a sign of the total number of live datanodes is lower than the tolerable replicas.
+2015-08-14 15:37:30,150 INFO  [PriorityRpcServer.handler=1,queue=0,port=60020] regionserver.HRegionServer: Open bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:37:30,505 INFO  [PriorityRpcServer.handler=1,queue=0,port=60020] regionserver.HRegionServer: Open bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:37:30,535 INFO  [PriorityRpcServer.handler=1,queue=0,port=60020] regionserver.HRegionServer: Open bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:37:30,553 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning cb6f85b651a9a99e9bb117dd3a7bdb19 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:30,559 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 640b96458105ca0d39ea4998a6f3556a from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:30,591 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 70860ae0d3958bd6bab3ed7586161ea7 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:30,621 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 70860ae0d3958bd6bab3ed7586161ea7 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:30,622 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Opening region: {ENCODED => 70860ae0d3958bd6bab3ed7586161ea7, NAME => 'bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.', STARTKEY => 'x57', ENDKEY => 'x76'}
+2015-08-14 15:37:30,629 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 640b96458105ca0d39ea4998a6f3556a from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:30,648 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node cb6f85b651a9a99e9bb117dd3a7bdb19 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:30,648 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Opening region: {ENCODED => cb6f85b651a9a99e9bb117dd3a7bdb19, NAME => 'bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.', STARTKEY => '', ENDKEY => 'x00'}
+2015-08-14 15:37:30,633 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Opening region: {ENCODED => 640b96458105ca0d39ea4998a6f3556a, NAME => 'bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.', STARTKEY => 'x19', ENDKEY => 'x38'}
+2015-08-14 15:37:30,736 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table bt2 70860ae0d3958bd6bab3ed7586161ea7
+2015-08-14 15:37:30,767 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table bt2 640b96458105ca0d39ea4998a6f3556a
+2015-08-14 15:37:30,737 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table bt2 cb6f85b651a9a99e9bb117dd3a7bdb19
+2015-08-14 15:37:30,781 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Instantiated bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:37:30,791 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Instantiated bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:37:30,795 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Instantiated bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:37:31,469 INFO  [StoreOpener-cb6f85b651a9a99e9bb117dd3a7bdb19-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:31,411 INFO  [StoreOpener-640b96458105ca0d39ea4998a6f3556a-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:31,412 INFO  [StoreOpener-70860ae0d3958bd6bab3ed7586161ea7-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:31,540 DEBUG [StoreOpener-cb6f85b651a9a99e9bb117dd3a7bdb19-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt2/cb6f85b651a9a99e9bb117dd3a7bdb19/colfam1
+2015-08-14 15:37:31,542 DEBUG [StoreOpener-640b96458105ca0d39ea4998a6f3556a-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt2/640b96458105ca0d39ea4998a6f3556a/colfam1
+2015-08-14 15:37:31,544 DEBUG [StoreOpener-70860ae0d3958bd6bab3ed7586161ea7-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt2/70860ae0d3958bd6bab3ed7586161ea7/colfam1
+2015-08-14 15:37:31,644 INFO  [StoreOpener-cb6f85b651a9a99e9bb117dd3a7bdb19-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:31,667 DEBUG [StoreOpener-cb6f85b651a9a99e9bb117dd3a7bdb19-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt2/cb6f85b651a9a99e9bb117dd3a7bdb19/sigfam1
+2015-08-14 15:37:31,833 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/bt2/cb6f85b651a9a99e9bb117dd3a7bdb19
+2015-08-14 15:37:31,835 INFO  [StoreOpener-640b96458105ca0d39ea4998a6f3556a-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:31,857 INFO  [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Onlined cb6f85b651a9a99e9bb117dd3a7bdb19; next sequenceid=1
+2015-08-14 15:37:31,858 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node cb6f85b651a9a99e9bb117dd3a7bdb19
+2015-08-14 15:37:31,872 INFO  [PostOpenDeployTasks:cb6f85b651a9a99e9bb117dd3a7bdb19] regionserver.HRegionServer: Post open deploy tasks for region=bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:37:31,929 INFO  [StoreOpener-70860ae0d3958bd6bab3ed7586161ea7-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:31,964 DEBUG [StoreOpener-640b96458105ca0d39ea4998a6f3556a-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt2/640b96458105ca0d39ea4998a6f3556a/sigfam1
+2015-08-14 15:37:32,002 DEBUG [StoreOpener-70860ae0d3958bd6bab3ed7586161ea7-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt2/70860ae0d3958bd6bab3ed7586161ea7/sigfam1
+2015-08-14 15:37:32,022 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/bt2/640b96458105ca0d39ea4998a6f3556a
+2015-08-14 15:37:32,034 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/bt2/70860ae0d3958bd6bab3ed7586161ea7
+2015-08-14 15:37:32,111 INFO  [PostOpenDeployTasks:cb6f85b651a9a99e9bb117dd3a7bdb19] catalog.MetaEditor: Updated row bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19. with server=master,60020,1439559356821
+2015-08-14 15:37:32,115 INFO  [PostOpenDeployTasks:cb6f85b651a9a99e9bb117dd3a7bdb19] regionserver.HRegionServer: Finished post open deploy task for bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:37:32,136 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning cb6f85b651a9a99e9bb117dd3a7bdb19 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:32,150 INFO  [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Onlined 640b96458105ca0d39ea4998a6f3556a; next sequenceid=1
+2015-08-14 15:37:32,162 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node 640b96458105ca0d39ea4998a6f3556a
+2015-08-14 15:37:32,173 INFO  [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Onlined 70860ae0d3958bd6bab3ed7586161ea7; next sequenceid=1
+2015-08-14 15:37:32,181 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node 70860ae0d3958bd6bab3ed7586161ea7
+2015-08-14 15:37:32,489 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node cb6f85b651a9a99e9bb117dd3a7bdb19 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:32,489 DEBUG [RS_OPEN_REGION-master:60020-2] handler.OpenRegionHandler: Transitioned cb6f85b651a9a99e9bb117dd3a7bdb19 to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:37:32,514 DEBUG [RS_OPEN_REGION-master:60020-2] handler.OpenRegionHandler: Opened bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19. on master,60020,1439559356821
+2015-08-14 15:37:32,518 INFO  [PostOpenDeployTasks:640b96458105ca0d39ea4998a6f3556a] regionserver.HRegionServer: Post open deploy tasks for region=bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:37:32,523 INFO  [PostOpenDeployTasks:70860ae0d3958bd6bab3ed7586161ea7] regionserver.HRegionServer: Post open deploy tasks for region=bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:37:32,569 INFO  [PostOpenDeployTasks:640b96458105ca0d39ea4998a6f3556a] catalog.MetaEditor: Updated row bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a. with server=master,60020,1439559356821
+2015-08-14 15:37:32,583 INFO  [PostOpenDeployTasks:640b96458105ca0d39ea4998a6f3556a] regionserver.HRegionServer: Finished post open deploy task for bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:37:33,699 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 640b96458105ca0d39ea4998a6f3556a from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:33,704 INFO  [PostOpenDeployTasks:70860ae0d3958bd6bab3ed7586161ea7] catalog.MetaEditor: Updated row bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7. with server=master,60020,1439559356821
+2015-08-14 15:37:33,710 INFO  [PostOpenDeployTasks:70860ae0d3958bd6bab3ed7586161ea7] regionserver.HRegionServer: Finished post open deploy task for bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:37:33,769 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 70860ae0d3958bd6bab3ed7586161ea7 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:33,786 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 640b96458105ca0d39ea4998a6f3556a from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:33,786 DEBUG [RS_OPEN_REGION-master:60020-1] handler.OpenRegionHandler: Transitioned 640b96458105ca0d39ea4998a6f3556a to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:37:33,786 DEBUG [RS_OPEN_REGION-master:60020-1] handler.OpenRegionHandler: Opened bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a. on master,60020,1439559356821
+2015-08-14 15:37:33,792 INFO  [PriorityRpcServer.handler=2,queue=0,port=60020] regionserver.HRegionServer: Open bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:37:33,819 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 70860ae0d3958bd6bab3ed7586161ea7 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:33,825 DEBUG [RS_OPEN_REGION-master:60020-0] handler.OpenRegionHandler: Transitioned 70860ae0d3958bd6bab3ed7586161ea7 to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:37:33,825 DEBUG [RS_OPEN_REGION-master:60020-0] handler.OpenRegionHandler: Opened bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7. on master,60020,1439559356821
+2015-08-14 15:37:33,866 INFO  [PriorityRpcServer.handler=2,queue=0,port=60020] regionserver.HRegionServer: Open bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:37:33,874 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 851cd41d6171ab0f56b181849a37529c from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:33,919 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 33a110995811c34666260e5905ec0298 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:33,924 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 851cd41d6171ab0f56b181849a37529c from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:33,932 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Opening region: {ENCODED => 851cd41d6171ab0f56b181849a37529c, NAME => 'bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.', STARTKEY => '', ENDKEY => 'k0000'}
+2015-08-14 15:37:33,932 INFO  [PriorityRpcServer.handler=2,queue=0,port=60020] regionserver.HRegionServer: Open bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:37:33,952 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table bt1 851cd41d6171ab0f56b181849a37529c
+2015-08-14 15:37:33,962 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Instantiated bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:37:33,969 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 33a110995811c34666260e5905ec0298 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:33,972 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning d501f71e2d81f28fff45f6a222865410 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:33,976 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Opening region: {ENCODED => 33a110995811c34666260e5905ec0298, NAME => 'bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.', STARTKEY => 'k0800', ENDKEY => ''}
+2015-08-14 15:37:33,985 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table bt1 33a110995811c34666260e5905ec0298
+2015-08-14 15:37:34,028 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Instantiated bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:37:34,064 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node d501f71e2d81f28fff45f6a222865410 from M_ZK_REGION_OFFLINE to RS_ZK_REGION_OPENING
+2015-08-14 15:37:34,066 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Opening region: {ENCODED => d501f71e2d81f28fff45f6a222865410, NAME => 'bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.', STARTKEY => 'k0400', ENDKEY => 'k0600'}
+2015-08-14 15:37:34,078 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.MetricsRegionSourceImpl: Creating new MetricsRegionSourceImpl for table bt1 d501f71e2d81f28fff45f6a222865410
+2015-08-14 15:37:34,078 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Instantiated bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:37:34,216 INFO  [StoreOpener-d501f71e2d81f28fff45f6a222865410-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:34,298 DEBUG [StoreOpener-d501f71e2d81f28fff45f6a222865410-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410/colfam1
+2015-08-14 15:37:34,377 INFO  [StoreOpener-851cd41d6171ab0f56b181849a37529c-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:34,381 INFO  [StoreOpener-33a110995811c34666260e5905ec0298-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:34,393 DEBUG [StoreOpener-851cd41d6171ab0f56b181849a37529c-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt1/851cd41d6171ab0f56b181849a37529c/colfam1
+2015-08-14 15:37:34,482 INFO  [StoreOpener-d501f71e2d81f28fff45f6a222865410-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:34,488 DEBUG [StoreOpener-33a110995811c34666260e5905ec0298-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298/colfam1
+2015-08-14 15:37:34,504 DEBUG [StoreOpener-d501f71e2d81f28fff45f6a222865410-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410/sigfam1
+2015-08-14 15:37:34,583 DEBUG [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410
+2015-08-14 15:37:34,591 INFO  [StoreOpener-851cd41d6171ab0f56b181849a37529c-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:34,618 INFO  [RS_OPEN_REGION-master:60020-0] regionserver.HRegion: Onlined d501f71e2d81f28fff45f6a222865410; next sequenceid=1
+2015-08-14 15:37:34,622 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node d501f71e2d81f28fff45f6a222865410
+2015-08-14 15:37:34,632 INFO  [PostOpenDeployTasks:d501f71e2d81f28fff45f6a222865410] regionserver.HRegionServer: Post open deploy tasks for region=bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:37:34,698 DEBUG [StoreOpener-851cd41d6171ab0f56b181849a37529c-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt1/851cd41d6171ab0f56b181849a37529c/sigfam1
+2015-08-14 15:37:34,727 INFO  [StoreOpener-33a110995811c34666260e5905ec0298-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+2015-08-14 15:37:34,760 DEBUG [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/bt1/851cd41d6171ab0f56b181849a37529c
+2015-08-14 15:37:34,823 INFO  [RS_OPEN_REGION-master:60020-2] regionserver.HRegion: Onlined 851cd41d6171ab0f56b181849a37529c; next sequenceid=1
+2015-08-14 15:37:34,823 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node 851cd41d6171ab0f56b181849a37529c
+2015-08-14 15:37:34,841 DEBUG [StoreOpener-33a110995811c34666260e5905ec0298-1] regionserver.HRegionFileSystem: No StoreFiles for: hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298/sigfam1
+2015-08-14 15:37:34,992 INFO  [PostOpenDeployTasks:851cd41d6171ab0f56b181849a37529c] regionserver.HRegionServer: Post open deploy tasks for region=bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:37:34,995 DEBUG [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Found 0 recovered edits file(s) under hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298
+2015-08-14 15:37:35,027 INFO  [PostOpenDeployTasks:d501f71e2d81f28fff45f6a222865410] catalog.MetaEditor: Updated row bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410. with server=master,60020,1439559356821
+2015-08-14 15:37:35,032 INFO  [PostOpenDeployTasks:d501f71e2d81f28fff45f6a222865410] regionserver.HRegionServer: Finished post open deploy task for bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:37:35,053 INFO  [RS_OPEN_REGION-master:60020-1] regionserver.HRegion: Onlined 33a110995811c34666260e5905ec0298; next sequenceid=1
+2015-08-14 15:37:35,054 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Attempting to retransition opening state of node 33a110995811c34666260e5905ec0298
+2015-08-14 15:37:35,099 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning d501f71e2d81f28fff45f6a222865410 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:35,132 INFO  [PostOpenDeployTasks:33a110995811c34666260e5905ec0298] regionserver.HRegionServer: Post open deploy tasks for region=bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:37:35,147 DEBUG [RS_OPEN_REGION-master:60020-0] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node d501f71e2d81f28fff45f6a222865410 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:35,147 DEBUG [RS_OPEN_REGION-master:60020-0] handler.OpenRegionHandler: Transitioned d501f71e2d81f28fff45f6a222865410 to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:37:35,147 DEBUG [RS_OPEN_REGION-master:60020-0] handler.OpenRegionHandler: Opened bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410. on master,60020,1439559356821
+2015-08-14 15:37:35,182 INFO  [PostOpenDeployTasks:851cd41d6171ab0f56b181849a37529c] catalog.MetaEditor: Updated row bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c. with server=master,60020,1439559356821
+2015-08-14 15:37:35,182 INFO  [PostOpenDeployTasks:851cd41d6171ab0f56b181849a37529c] regionserver.HRegionServer: Finished post open deploy task for bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:37:35,209 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 851cd41d6171ab0f56b181849a37529c from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:35,274 DEBUG [RS_OPEN_REGION-master:60020-2] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 851cd41d6171ab0f56b181849a37529c from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:35,274 DEBUG [RS_OPEN_REGION-master:60020-2] handler.OpenRegionHandler: Transitioned 851cd41d6171ab0f56b181849a37529c to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:37:35,274 DEBUG [RS_OPEN_REGION-master:60020-2] handler.OpenRegionHandler: Opened bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c. on master,60020,1439559356821
+2015-08-14 15:37:35,306 INFO  [PostOpenDeployTasks:33a110995811c34666260e5905ec0298] catalog.MetaEditor: Updated row bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298. with server=master,60020,1439559356821
+2015-08-14 15:37:35,306 INFO  [PostOpenDeployTasks:33a110995811c34666260e5905ec0298] regionserver.HRegionServer: Finished post open deploy task for bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:37:35,326 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioning 33a110995811c34666260e5905ec0298 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:35,347 DEBUG [RS_OPEN_REGION-master:60020-1] zookeeper.ZKAssign: regionserver:60020-0x14f2c6c7afa0002, quorum=master:2181, baseZNode=/hbase Transitioned node 33a110995811c34666260e5905ec0298 from RS_ZK_REGION_OPENING to RS_ZK_REGION_OPENED
+2015-08-14 15:37:35,349 DEBUG [RS_OPEN_REGION-master:60020-1] handler.OpenRegionHandler: Transitioned 33a110995811c34666260e5905ec0298 to OPENED in zk on master,60020,1439559356821
+2015-08-14 15:37:35,349 DEBUG [RS_OPEN_REGION-master:60020-1] handler.OpenRegionHandler: Opened bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298. on master,60020,1439559356821
+2015-08-14 15:37:38,578 INFO  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: Slow sync cost: 180 ms, current pipeline: [10.0.2.9:50010, 10.0.2.10:50010]
+2015-08-14 15:38:13,228 INFO  [regionserver60020] regionserver.HRegionServer: Closing user regions
+2015-08-14 15:38:13,246 DEBUG [RS_CLOSE_REGION-master:60020-0] handler.CloseRegionHandler: Processing close of bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:38:13,246 DEBUG [RS_CLOSE_REGION-master:60020-1] handler.CloseRegionHandler: Processing close of bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:38:13,251 DEBUG [RS_CLOSE_REGION-master:60020-2] handler.CloseRegionHandler: Processing close of bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:38:13,251 DEBUG [RS_CLOSE_REGION-master:60020-1] regionserver.HRegion: Closing bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.: disabling compactions & flushes
+2015-08-14 15:38:13,251 DEBUG [RS_CLOSE_REGION-master:60020-1] regionserver.HRegion: Updates disabled for region bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:38:13,251 INFO  [RS_CLOSE_REGION-master:60020-1] regionserver.HRegion: Started memstore flush for bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298., current region memstore size 3.4k
+2015-08-14 15:38:13,252 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Closing bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.: disabling compactions & flushes
+2015-08-14 15:38:13,252 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Updates disabled for region bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:38:13,252 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Closing bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.: disabling compactions & flushes
+2015-08-14 15:38:13,252 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Updates disabled for region bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:38:13,258 INFO  [StoreCloserThread-bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,260 INFO  [StoreCloserThread-bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.-1] regionserver.HStore: Closed sigfam1
+2015-08-14 15:38:13,261 INFO  [StoreCloserThread-bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,265 INFO  [StoreCloserThread-bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.-1] regionserver.HStore: Closed sigfam1
+2015-08-14 15:38:13,266 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Closed bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:38:13,266 DEBUG [RS_CLOSE_REGION-master:60020-0] handler.CloseRegionHandler: Closed bt2,x57,1439559445402.70860ae0d3958bd6bab3ed7586161ea7.
+2015-08-14 15:38:13,266 DEBUG [RS_CLOSE_REGION-master:60020-0] handler.CloseRegionHandler: Processing close of bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:38:13,266 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Closed bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:38:13,267 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Closing bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.: disabling compactions & flushes
+2015-08-14 15:38:13,267 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Updates disabled for region bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:38:13,267 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Started memstore flush for bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410., current region memstore size 4.5k
+2015-08-14 15:38:13,267 DEBUG [RS_CLOSE_REGION-master:60020-2] handler.CloseRegionHandler: Closed bt2,x19,1439559445402.640b96458105ca0d39ea4998a6f3556a.
+2015-08-14 15:38:13,267 DEBUG [RS_CLOSE_REGION-master:60020-2] handler.CloseRegionHandler: Processing close of viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:38:13,268 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Closing viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.: disabling compactions & flushes
+2015-08-14 15:38:13,268 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Updates disabled for region viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:38:13,268 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Started memstore flush for viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759., current region memstore size 11.1k
+2015-08-14 15:38:13,343 DEBUG [RS_CLOSE_REGION-master:60020-1] util.FSUtils: DFS Client does not support most favored nodes create; using default create
+2015-08-14 15:38:13,361 DEBUG [RS_CLOSE_REGION-master:60020-2] util.FSUtils: DFS Client does not support most favored nodes create; using default create
+2015-08-14 15:38:13,366 DEBUG [RS_CLOSE_REGION-master:60020-0] util.FSUtils: DFS Client does not support most favored nodes create; using default create
+2015-08-14 15:38:13,492 INFO  [RS_CLOSE_REGION-master:60020-1] regionserver.DefaultStoreFlusher: Flushed, sequenceid=12, memsize=3.1k, hasBloomFilter=true, into tmp file hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298/.tmp/6b24b4fedea648df9aaf7a840465f830
+2015-08-14 15:38:13,502 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.DefaultStoreFlusher: Flushed, sequenceid=59, memsize=3.6k, hasBloomFilter=true, into tmp file hdfs://master:9000/hbase/data/default/viewdefinitions/15594ff76b1e479cd57b5c6777ecb759/.tmp/da66b9f0f3be4cd5961db2b93f63cd38
+2015-08-14 15:38:13,521 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.DefaultStoreFlusher: Flushed, sequenceid=15, memsize=4.5k, hasBloomFilter=true, into tmp file hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410/.tmp/5849e053df8c44c29d766a41638d8d74
+2015-08-14 15:38:13,656 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegionFileSystem: Committing store file hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410/.tmp/5849e053df8c44c29d766a41638d8d74 as hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410/colfam1/5849e053df8c44c29d766a41638d8d74
+2015-08-14 15:38:13,660 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegionFileSystem: Committing store file hdfs://master:9000/hbase/data/default/viewdefinitions/15594ff76b1e479cd57b5c6777ecb759/.tmp/da66b9f0f3be4cd5961db2b93f63cd38 as hdfs://master:9000/hbase/data/default/viewdefinitions/15594ff76b1e479cd57b5c6777ecb759/colfam1/da66b9f0f3be4cd5961db2b93f63cd38
+2015-08-14 15:38:13,678 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.HStore: Added hdfs://master:9000/hbase/data/default/bt1/d501f71e2d81f28fff45f6a222865410/colfam1/5849e053df8c44c29d766a41638d8d74, entries=26, sequenceid=15, filesize=2.1k
+2015-08-14 15:38:13,680 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Finished memstore flush of ~4.5k/4576, currentsize=0.0/0 for region bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410. in 413ms, sequenceid=15, compaction requested=false
+2015-08-14 15:38:13,681 DEBUG [RS_CLOSE_REGION-master:60020-1] regionserver.HRegionFileSystem: Committing store file hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298/.tmp/6b24b4fedea648df9aaf7a840465f830 as hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298/colfam1/6b24b4fedea648df9aaf7a840465f830
+2015-08-14 15:38:13,692 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.HStore: Added hdfs://master:9000/hbase/data/default/viewdefinitions/15594ff76b1e479cd57b5c6777ecb759/colfam1/da66b9f0f3be4cd5961db2b93f63cd38, entries=17, sequenceid=59, filesize=2.4k
+2015-08-14 15:38:13,692 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Finished memstore flush of ~11.1k/11336, currentsize=0.0/0 for region viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759. in 424ms, sequenceid=59, compaction requested=false
+2015-08-14 15:38:13,700 INFO  [StoreCloserThread-bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,700 INFO  [StoreCloserThread-bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.-1] regionserver.HStore: Closed sigfam1
+2015-08-14 15:38:13,700 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Closed bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:38:13,700 DEBUG [RS_CLOSE_REGION-master:60020-0] handler.CloseRegionHandler: Closed bt1,k0400,1439559445808.d501f71e2d81f28fff45f6a222865410.
+2015-08-14 15:38:13,700 DEBUG [RS_CLOSE_REGION-master:60020-0] handler.CloseRegionHandler: Processing close of bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:38:13,701 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Closing bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.: disabling compactions & flushes
+2015-08-14 15:38:13,701 DEBUG [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Updates disabled for region bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:38:13,702 INFO  [StoreCloserThread-viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,702 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Closed viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:38:13,702 DEBUG [RS_CLOSE_REGION-master:60020-2] handler.CloseRegionHandler: Closed viewdefinitions,,1439559386142.15594ff76b1e479cd57b5c6777ecb759.
+2015-08-14 15:38:13,702 DEBUG [RS_CLOSE_REGION-master:60020-2] handler.CloseRegionHandler: Processing close of bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:38:13,703 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Closing bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.: disabling compactions & flushes
+2015-08-14 15:38:13,703 DEBUG [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Updates disabled for region bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:38:13,703 INFO  [StoreCloserThread-bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,703 INFO  [StoreCloserThread-bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.-1] regionserver.HStore: Closed sigfam1
+2015-08-14 15:38:13,703 INFO  [RS_CLOSE_REGION-master:60020-0] regionserver.HRegion: Closed bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:38:13,703 DEBUG [RS_CLOSE_REGION-master:60020-0] handler.CloseRegionHandler: Closed bt1,,1439559445793.851cd41d6171ab0f56b181849a37529c.
+2015-08-14 15:38:13,707 INFO  [StoreCloserThread-bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,707 INFO  [StoreCloserThread-bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.-1] regionserver.HStore: Closed sigfam1
+2015-08-14 15:38:13,707 INFO  [RS_CLOSE_REGION-master:60020-2] regionserver.HRegion: Closed bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:38:13,707 DEBUG [RS_CLOSE_REGION-master:60020-2] handler.CloseRegionHandler: Closed bt2,,1439559445401.cb6f85b651a9a99e9bb117dd3a7bdb19.
+2015-08-14 15:38:13,735 INFO  [RS_CLOSE_REGION-master:60020-1] regionserver.HStore: Added hdfs://master:9000/hbase/data/default/bt1/33a110995811c34666260e5905ec0298/colfam1/6b24b4fedea648df9aaf7a840465f830, entries=18, sequenceid=12, filesize=1.8k
+2015-08-14 15:38:13,735 INFO  [RS_CLOSE_REGION-master:60020-1] regionserver.HRegion: Finished memstore flush of ~3.4k/3520, currentsize=0.0/0 for region bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298. in 484ms, sequenceid=12, compaction requested=false
+2015-08-14 15:38:13,736 INFO  [StoreCloserThread-bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.-1] regionserver.HStore: Closed colfam1
+2015-08-14 15:38:13,736 INFO  [StoreCloserThread-bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.-1] regionserver.HStore: Closed sigfam1
+2015-08-14 15:38:13,736 INFO  [RS_CLOSE_REGION-master:60020-1] regionserver.HRegion: Closed bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:38:13,736 DEBUG [RS_CLOSE_REGION-master:60020-1] handler.CloseRegionHandler: Closed bt1,k0800,1439559445822.33a110995811c34666260e5905ec0298.
+2015-08-14 15:38:16,251 INFO  [regionserver60020] regionserver.HRegionServer: STOPPED: Exiting; cluster shutdown set and not carrying any regions
+2015-08-14 15:38:16,253 INFO  [regionserver60020] ipc.RpcServer: Stopping server on 60020
+2015-08-14 15:38:16,254 INFO  [RpcServer.listener,port=60020] ipc.RpcServer: RpcServer.listener,port=60020: stopping
+2015-08-14 15:38:16,259 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopped
+2015-08-14 15:38:16,259 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopping
+2015-08-14 15:38:16,276 INFO  [regionserver60020] regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+2015-08-14 15:38:16,288 INFO  [regionserver60020] regionserver.HRegionServer: Stopping infoServer
+2015-08-14 15:38:16,289 INFO  [SplitLogWorker-master,60020,1439559356821] regionserver.SplitLogWorker: SplitLogWorker interrupted while waiting for task, exiting: java.lang.InterruptedException
+2015-08-14 15:38:16,294 INFO  [SplitLogWorker-master,60020,1439559356821] regionserver.SplitLogWorker: SplitLogWorker master,60020,1439559356821 exiting
+2015-08-14 15:38:16,310 INFO  [regionserver60020] mortbay.log: Stopped SelectChannelConnector@0.0.0.0:60030
+2015-08-14 15:38:16,321 INFO  [master,60020,1439559356821-HeapMemoryChore] regionserver.HeapMemoryManager$HeapMemoryChore: master,60020,1439559356821-HeapMemoryChore exiting
+2015-08-14 15:38:16,348 INFO  [regionserver60020] snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+2015-08-14 15:38:16,348 INFO  [regionserver60020] regionserver.HRegionServer: stopping server master,60020,1439559356821
+2015-08-14 15:38:16,348 DEBUG [regionserver60020] catalog.CatalogTracker: Stopping catalog tracker org.apache.hadoop.hbase.catalog.CatalogTracker@3e0f07bc
+2015-08-14 15:38:16,348 INFO  [regionserver60020.logRoller] regionserver.LogRoller: LogRoller exiting.
+2015-08-14 15:38:16,349 INFO  [regionserver60020] client.HConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x14f2c6c7afa0005
+2015-08-14 15:38:16,349 INFO  [regionserver60020.compactionChecker] regionserver.HRegionServer$CompactionChecker: regionserver60020.compactionChecker exiting
+2015-08-14 15:38:16,322 INFO  [MemStoreFlusher.0] regionserver.MemStoreFlusher: MemStoreFlusher.0 exiting
+2015-08-14 15:38:16,349 INFO  [MemStoreFlusher.1] regionserver.MemStoreFlusher: MemStoreFlusher.1 exiting
+2015-08-14 15:38:16,352 INFO  [regionserver60020] zookeeper.ZooKeeper: Session: 0x14f2c6c7afa0005 closed
+2015-08-14 15:38:16,356 INFO  [regionserver60020.nonceCleaner] regionserver.ServerNonceManager$1: regionserver60020.nonceCleaner exiting
+2015-08-14 15:38:16,357 INFO  [regionserver60020] regionserver.HRegionServer: stopping server master,60020,1439559356821; all regions closed.
+2015-08-14 15:38:16,357 DEBUG [regionserver60020-WAL.AsyncNotifier] wal.FSHLog: regionserver60020-WAL.AsyncNotifier interrupted while waiting for  notification from AsyncSyncer thread
+2015-08-14 15:38:16,357 INFO  [regionserver60020-WAL.AsyncNotifier] wal.FSHLog: regionserver60020-WAL.AsyncNotifier exiting
+2015-08-14 15:38:16,357 DEBUG [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: regionserver60020-WAL.AsyncSyncer0 interrupted while waiting for notification from AsyncWriter thread
+2015-08-14 15:38:16,357 INFO  [regionserver60020-WAL.AsyncSyncer0] wal.FSHLog: regionserver60020-WAL.AsyncSyncer0 exiting
+2015-08-14 15:38:16,359 DEBUG [regionserver60020-WAL.AsyncSyncer1] wal.FSHLog: regionserver60020-WAL.AsyncSyncer1 interrupted while waiting for notification from AsyncWriter thread
+2015-08-14 15:38:16,359 INFO  [regionserver60020-WAL.AsyncSyncer1] wal.FSHLog: regionserver60020-WAL.AsyncSyncer1 exiting
+2015-08-14 15:38:16,360 INFO  [regionserver60020-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2015-08-14 15:38:16,365 DEBUG [regionserver60020-WAL.AsyncSyncer2] wal.FSHLog: regionserver60020-WAL.AsyncSyncer2 interrupted while waiting for notification from AsyncWriter thread
+2015-08-14 15:38:16,365 INFO  [regionserver60020-WAL.AsyncSyncer2] wal.FSHLog: regionserver60020-WAL.AsyncSyncer2 exiting
+2015-08-14 15:38:16,368 DEBUG [regionserver60020-WAL.AsyncSyncer3] wal.FSHLog: regionserver60020-WAL.AsyncSyncer3 interrupted while waiting for notification from AsyncWriter thread
+2015-08-14 15:38:16,368 INFO  [regionserver60020-WAL.AsyncSyncer3] wal.FSHLog: regionserver60020-WAL.AsyncSyncer3 exiting
+2015-08-14 15:38:16,370 DEBUG [regionserver60020-WAL.AsyncSyncer4] wal.FSHLog: regionserver60020-WAL.AsyncSyncer4 interrupted while waiting for notification from AsyncWriter thread
+2015-08-14 15:38:16,370 INFO  [regionserver60020-WAL.AsyncSyncer4] wal.FSHLog: regionserver60020-WAL.AsyncSyncer4 exiting
+2015-08-14 15:38:16,370 DEBUG [regionserver60020-WAL.AsyncWriter] wal.FSHLog: regionserver60020-WAL.AsyncWriter interrupted while waiting for newer writes added to local buffer
+2015-08-14 15:38:16,370 INFO  [regionserver60020-WAL.AsyncWriter] wal.FSHLog: regionserver60020-WAL.AsyncWriter exiting
+2015-08-14 15:38:16,370 DEBUG [regionserver60020] wal.FSHLog: Closing WAL writer in hdfs://master:9000/hbase/WALs/master,60020,1439559356821
+2015-08-14 15:38:16,408 DEBUG [regionserver60020] wal.FSHLog: Moved 6 WAL file(s) to /hbase/oldWALs
+2015-08-14 15:38:16,411 INFO  [regionserver60020] regionserver.Leases: regionserver60020 closing leases
+2015-08-14 15:38:16,411 INFO  [regionserver60020] regionserver.Leases: regionserver60020 closed leases
+2015-08-14 15:38:23,701 INFO  [regionserver60020.leaseChecker] regionserver.Leases: regionserver60020.leaseChecker closing leases
+2015-08-14 15:38:23,702 INFO  [regionserver60020.leaseChecker] regionserver.Leases: regionserver60020.leaseChecker closed leases
+2015-08-14 15:38:23,707 INFO  [regionserver60020.periodicFlusher] regionserver.HRegionServer$PeriodicMemstoreFlusher: regionserver60020.periodicFlusher exiting
+2015-08-14 15:38:23,708 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Split Thread to finish...
+2015-08-14 15:38:23,708 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Merge Thread to finish...
+2015-08-14 15:38:23,708 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Large Compaction Thread to finish...
+2015-08-14 15:38:23,708 INFO  [regionserver60020] regionserver.CompactSplitThread: Waiting for Small Compaction Thread to finish...
+2015-08-14 15:38:23,721 INFO  [regionserver60020] client.HConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x14f2c6c7afa0009
+2015-08-14 15:38:23,725 INFO  [regionserver60020] zookeeper.ZooKeeper: Session: 0x14f2c6c7afa0009 closed
+2015-08-14 15:38:23,734 INFO  [regionserver60020-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2015-08-14 15:38:23,742 INFO  [regionserver60020-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2015-08-14 15:38:23,742 INFO  [regionserver60020] zookeeper.ZooKeeper: Session: 0x14f2c6c7afa0002 closed
+2015-08-14 15:38:23,742 INFO  [regionserver60020] regionserver.HRegionServer: stopping server master,60020,1439559356821; zookeeper connection closed.
+2015-08-14 15:38:23,742 INFO  [regionserver60020] regionserver.HRegionServer: regionserver60020 exiting
+2015-08-14 15:38:23,765 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=Thread[Thread-8,5,main]
+2015-08-14 15:38:23,765 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Starting fs shutdown hook thread.
+2015-08-14 15:38:23,768 INFO  [Shutdownhook:regionserver60020] regionserver.ShutdownHook: Shutdown hook finished.

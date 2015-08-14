@@ -1,0 +1,1504 @@
+de.webdataplatform.settings.SystemConfig: Loading system config:
+de.webdataplatform.settings.SystemConfig: SystemConfig.HDFS_USERNAME:hwb
+de.webdataplatform.settings.SystemConfig: SystemConfig.HDFS_PASSWORD:
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_USERNAME:hwb
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_PASSWORD:123321
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_PASSWORDLESSLOGIN:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_PRIVATEKEY:/home/hwb/.ssh/id_dsa
+de.webdataplatform.settings.SystemConfig: SystemConfig.SSH_KNOWNHOSTS:/home/hwb/.ssh/known_hosts
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_HDFS:/home/hwb/Documents/hadoop-1.2.1/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_HDFSSTORAGE:/home/hwb/dfsDataDir/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_HBASE:/home/hwb/Documents/hbase-0.98.12-hadoop1/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_VMSYSTEM:/home/hwb/Documents/scalablevm/
+de.webdataplatform.settings.SystemConfig: SystemConfig.DIRECTORY_ZOOKEEPERSTORAGE:/home/hwb/Documents/zookeeper/
+de.webdataplatform.settings.SystemConfig: SystemConfig.MASTER_ZOOKEEPERPATH:/hbase/vmaster
+de.webdataplatform.settings.SystemConfig: SystemConfig.MASTER_LOADBALANCINGINTERVAL:
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_ZOOKEEPERPATH:/hbase/vm
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_HDFSPATH:/viewmanager/
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_STATUSINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_CALCSTATUSINTERVAL:1000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_DISPLAYINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_CRUDOPERATIONSALARMTHRESHOLD:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_UPDATEPOLLINGINTERVAL:2
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_LOGUPDATES:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.VIEWMANAGER_LOGPERFORMANCE:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_ZOOKEEPERPATH:/hbase/rstest
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_STATUSINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_CALCSTATUSINTERVAL:1000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_DISPLAYINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_WALPOLLINGINTERVAL:1000
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_MAXREPLICASHASHRING:500
+de.webdataplatform.settings.SystemConfig: SystemConfig.REGIONSERVER_LOGWAL:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.CLIENT_LOGINTERVAL:10000
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_STARTSEQUENCE:<
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_ENDSEQUENCE:>
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_SPLITSEQUENCE:;
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_SPLITCONTENTSEQUENCE::
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_SPLITIDSEQUENCE:,
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_MARKERPREFIX:marker:
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_POLLINGINTERVAL:100
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_LENGTH:250
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_RETRYINTERVAL:3000
+de.webdataplatform.settings.SystemConfig: SystemConfig.MESSAGES_NUMOFRETRIES:3
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_CONSOLE:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_FILE:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_STATISTICS:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.LOGGING_LOGUPDATES:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.FAULTTOLERANCE_SIGNATURES:true
+de.webdataplatform.settings.SystemConfig: SystemConfig.FAULTTOLERANCE_COMMITLOG:false
+de.webdataplatform.settings.SystemConfig: SystemConfig.FAULTTOLERANCE_TESTANDSET:true
+de.webdataplatform.settings.SystemConfig: --------------------------------------------------------------
+de.webdataplatform.settings.NetworkConfig: Loading network config:
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.ZOOKEEPER_QUORUM:master
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.ZOOKEEPER_CLIENTPORT:0
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.HBASE_MASTER:Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.VM_MASTER:Node [ipAddress=master, messagePort=4004, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.CLIENTS:[Node [ipAddress=master, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=0, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.REGIONSERVERS:[Node [ipAddress=master, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=4133, updatePort=0, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.VIEWMANAGERS:[Node [ipAddress=master, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=master, port=22, user=hwb, password=123321]], Node [ipAddress=rs1, messagePort=4130, updatePort=4230, sshConnection=SSHConnection [address=rs1, port=22, user=hwb, password=123321]]]
+de.webdataplatform.settings.NetworkConfig: NetworkConfig.HDFS:hdfs://master:9000/hbase
+de.webdataplatform.settings.NetworkConfig: --------------------------------------------------------------
+de.webdataplatform.viewmanager.ViewManager: initializing new View Manager with config:
+de.webdataplatform.viewmanager.ViewManager: name: vm2
+de.webdataplatform.viewmanager.ViewManager: address: rs1
+de.webdataplatform.viewmanager.ViewManager: port: 4130
+de.webdataplatform.view.ViewDefinitions: connecting to zookeeper on address: master:0
+de.webdataplatform.view.ViewDefinitions:  scanning table 
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.view.ViewDefinitions:  view definitions {join1=JOIN,join1,joinpair1,delta1fam1:delta2fam1,2,null, max1=AGGREGATION_MAX,max1,colAggKey,colAggVal,2,bt1, min1=AGGREGATION_MIN,min1,colAggKey,colAggVal,2,bt1, joinpair1=REVERSE_JOIN,joinpair1,10,true,delta1:colAggKey,delta2:colAggKey,delta3:colAggKey,, sum2=AGGREGATION_SUM,sum2,colAggKey,colAggVal,2,bt1, index1=INDEX,delta1,colAggKey, sum1=AGGREGATION_SUM,sum1,colAggKey,colAggVal,2,bt1, count1=AGGREGATION_COUNT,count1,colAggKey,colAggVal,2,bt1, delta1=DELTA,delta1,colAggKey:colAggVal,2,null, delta2=DELTA,delta2,colAggKey:colAggVal,2,null, zfinish_marker=zfinish_marker, selection1=SELECTION,colAggVal,>,10}
+de.webdataplatform.view.ViewDefinitions:  view assignments {bt1=[delta1], joinpair1=[join1], bt2=[delta2], delta1=[count1, index1, joinpair1, max1, min1, selection1, sum1, sum2, zfinish_marker], delta2=[joinpair1, zfinish_marker], delta3=[joinpair1, zfinish_marker], delta4=[zfinish_marker]}
+de.webdataplatform.viewmanager.VMController: connecting to zookeeper on address: master:0
+de.webdataplatform.viewmanager.VMController: creating session node
+de.webdataplatform.zookeeper.ZookeeperService: zookeeper event: WatchedEvent state:SyncConnected type:None path:null
+de.webdataplatform.zookeeper.ZookeeperService: triggers: []
+de.webdataplatform.viewmanager.VMController: session node created: true
+de.webdataplatform.viewmanager.VMController: master found at: master1,master,4004
+de.webdataplatform.viewmanager.VMController: starting message server on port:4130
+de.webdataplatform.viewmanager.VMController: starting update server on port:4230
+de.webdataplatform.viewmanager.VMController: start pre-processing udpates
+de.webdataplatform.viewmanager.VMController: start processing udpates
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.Processing:  load currently at 0
+de.webdataplatform.viewmanager.processing.Processing:  updates processed 0
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.VMController: sending assign vm:vm2,rs1,4130,4230 to rs:rs2,rs1,4133
+de.webdataplatform.viewmanager.ServerUpdateHandler: starting handshake: Message [component=regionServer, name=rs2, operation=startUP, content=rs2,rs1,4133], sending back ok
+de.webdataplatform.viewmanager.VMController: receive message from region server
+de.webdataplatform.viewmanager.VMController: sending vm assigned to master:master1,master,4004
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  input queue size: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  updates received: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.VMController: sending status report to rs:rs2,rs1,4133
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.Processing:  load currently at 0
+de.webdataplatform.viewmanager.processing.Processing:  updates processed 0
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  input queue size: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  updates received: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.VMController: sending status report to rs:rs2,rs1,4133
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.Processing:  load currently at 0
+de.webdataplatform.viewmanager.processing.Processing:  updates processed 0
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  input queue size: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  updates received: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.VMController: sending status report to rs:rs2,rs1,4133
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.Processing:  load currently at 0
+de.webdataplatform.viewmanager.processing.Processing:  updates processed 0
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  input queue size: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  updates received: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.processing.Processing: marker received, putting to map: BaseTableUpdate [log=de.webdataplatform.log.Log@3143f31d, baseTable=marker:assignvm1,master,4130,4230, regionServer=rs2,rs1,4133, region=region, seqNo=m1, timestamp=m1, key=m2, type=m3, viewTable=null, viewDefinition=null, columns={}, oldColumns={}, colFamilies={}]
+de.webdataplatform.viewmanager.VMController: marker: marker:assignvm1,master,4130,4230 received sending answer to :rs2,rs1,4133
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.viewmanager.VMController: sending status report to rs:rs2,rs1,4133
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.viewmanager.processing.Processing:  load currently at 29
+de.webdataplatform.viewmanager.processing.Processing:  updates processed 1
+de.webdataplatform.viewmanager.processing.Processing:  ---------------------
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.client.Client: NetworkConfig.ZOOKEEPER_QUORUM: master
+de.webdataplatform.client.Client: NetworkConfig.HBASE_MASTER: master
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta2
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta2: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.TableNotFoundException: delta1
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1221)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1090)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1047)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.getRegionLocation(HConnectionManager.java:888)
+	at org.apache.hadoop.hbase.client.RegionServerCallable.prepare(RegionServerCallable.java:72)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:113)
+	at org.apache.hadoop.hbase.client.HTable.get(HTable.java:780)
+	at de.webdataplatform.view.TableService.getWithTimestampRange(TableService.java:285)
+	at de.webdataplatform.view.TableService.get(TableService.java:243)
+	at de.webdataplatform.viewmanager.processing.Processing.retrieveViewRecord(Processing.java:564)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:367)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: delta1: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at de.webdataplatform.view.TableService.checkAndPut(TableService.java:189)
+	at de.webdataplatform.view.TableService.put(TableService.java:150)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1053)
+	at de.webdataplatform.viewmanager.processing.Processing.insertToViewTable(Processing.java:1031)
+	at de.webdataplatform.viewmanager.processing.Processing.updateView(Processing.java:842)
+	at de.webdataplatform.viewmanager.processing.Processing.propagate(Processing.java:390)
+	at de.webdataplatform.viewmanager.processing.Processing.propagateUpdate(Processing.java:282)
+	at de.webdataplatform.viewmanager.processing.Processing.process(Processing.java:204)
+	at de.webdataplatform.viewmanager.processing.Processing.run(Processing.java:133)
+	at java.lang.Thread.run(Thread.java:745)
+de.webdataplatform.view.TableService///////////////////////////////////////////////////////
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.processing.PreProcessing:  input queue size: 0
+de.webdataplatform.viewmanager.processing.PreProcessing:  updates received: 37
+de.webdataplatform.viewmanager.processing.PreProcessing:  ---------------------
+de.webdataplatform.viewmanager.VMController: sending status report to rs:rs2,rs1,4133
