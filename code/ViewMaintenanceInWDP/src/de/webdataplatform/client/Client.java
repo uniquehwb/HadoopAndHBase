@@ -203,6 +203,9 @@ public class Client {
 					HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes(colFam));
 					desc.addFamily(coldef);
 				}
+			} else {
+				HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes("colfam1"));
+				desc.addFamily(coldef);
 			}
 			HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes("sigfam1"));
 			desc.addFamily(coldef);
@@ -299,6 +302,8 @@ public class Client {
 			
 			regions = createRegionArray(tableName, regCount);
 		} else {
+			HColumnDescriptor coldef = new HColumnDescriptor(Bytes.toBytes("colfam1"));
+			desc.addFamily(coldef);
 			regions = new byte[][] {
 					Bytes.toBytes("k0"),
 					Bytes.toBytes("k50")

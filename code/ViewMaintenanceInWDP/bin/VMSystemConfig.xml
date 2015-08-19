@@ -75,7 +75,7 @@
 	    <file>true</file>
 	    <statistics>true</statistics>
 	    <statisticsLineSeparator>;</statisticsLineSeparator>
-	    <logUpdates>false</logUpdates>
+	    <logUpdates>true</logUpdates>
 	</logging>
 	
 	<faulttolerance>
